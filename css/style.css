@@ -11,7 +11,6 @@ body {
 }
 
 #flags {
-    font-size: 10px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -41,13 +40,13 @@ body {
 }
 
 .scale-small {
-    font-size: .1em;
+    width: 100px;
 }
 
 .scale-medium {
-    font-size: .25em;
+    width: 250px;
 }
 
 .scale-large {
-    font-size: .5em;
+    width: 500px;
 }
