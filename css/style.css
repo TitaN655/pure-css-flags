@@ -1,0 +1,53 @@
+*::before {
+    box-sizing: border-box;
+}
+
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#flags {
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flag {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: white;
+    margin: 10px;
+    padding: 2px;
+    width: 100em;
+}
+
+.flag > div {
+    border: 3px solid black;
+}
+
+.flag p {
+    font-size: 1rem;
+    text-align: center;
+    margin: .5rem;
+}
+
+.hide {
+    display: none;
+}
+
+.scale-small {
+    font-size: .1em;
+}
+
+.scale-medium {
+    font-size: .25em;
+}
+
+.scale-large {
+    font-size: .5em;
+}

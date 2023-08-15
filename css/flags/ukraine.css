@@ -1,0 +1,11 @@
+#ukraine {
+    aspect-ratio: 3 / 2;
+    background-color: #005bbb;
+}
+
+#ukraine > div {
+    height: 50%;
+    position: relative;
+    top: 50%;
+    background-color: #ffd500;
+}

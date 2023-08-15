@@ -1,0 +1,12 @@
+#nigeria {
+    aspect-ratio: 2 / 1;
+    background-color: #008751;
+}
+
+#nigeria > div {
+    width: calc(100% / 3); /* one-third */
+    height: 100%;
+    position: relative;
+    left: calc(100% / 3); /* one-third */
+    background-color: #fff;
+}

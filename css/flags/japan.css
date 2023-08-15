@@ -1,0 +1,14 @@
+#japan {
+    aspect-ratio: 3 / 2;
+    background-color: #fff;
+}
+
+#japan > div {
+    width: 40%;
+    height: 60%;
+    position: relative;
+    top: 20%;
+    left: 30%;
+    background-color: #bc002d;
+    border-radius: 50%;
+}
