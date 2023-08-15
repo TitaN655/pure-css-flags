@@ -1,0 +1,23 @@
+#finland {
+    aspect-ratio: 18 / 11;
+    position: relative;
+    background-color: #fff;
+}
+
+#finland > div {
+    background-color: #003580;
+}
+
+#finland > div.rect1 {
+    height: calc(300% / 11); /* three-elevenths */
+    position: relative;
+    top: calc(400% / 11); /* four-elevenths */
+}
+
+#finland > div.rect2 {
+    width: calc(100% / 6); /* one-sixth */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: calc(500% / 18); /* five-eighteenths */;
+}

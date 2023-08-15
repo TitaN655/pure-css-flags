@@ -1,0 +1,22 @@
+#bahamas {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background-color: #00abc9;
+}
+
+#bahamas > div.rect {
+    height: calc(100% / 3); /* one-third */
+    position: relative;
+    top: calc(100% / 3); /* one-third */
+    background-color: #fae042;
+}
+
+#bahamas > div.poly {
+    position: absolute;
+    top: 0;
+    width: calc(500% / 12); /* five-twelfths */
+    height: 100%;
+    background: #000;
+    -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+}

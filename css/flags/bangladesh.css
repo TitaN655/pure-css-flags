@@ -5,7 +5,7 @@
 
 #bangladesh > div {
     width: 40%;
-    height: calc((100% / 3) * 2); /* two-thirds */
+    height: calc(200% / 3); /* two-thirds */
     position: relative;
     top: calc(100% / 6); /* one-sixth */
     left: 25%;
