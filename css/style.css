@@ -10,7 +10,11 @@ body {
     font-family: sans-serif;
 }
 
-#flags {
+header p {
+    line-height: 1.5rem;
+}
+
+.flags {
     display: flex;
     flex-wrap: wrap;
 }
@@ -22,7 +26,7 @@ body {
     background-color: white;
     margin: 10px;
     padding: 2px;
-    width: 100em;
+    width: 120px;
 }
 
 .flag > div {
@@ -39,14 +43,14 @@ body {
     display: none;
 }
 
-.scale-small {
-    width: 100px;
-}
-
 .scale-medium {
     width: 250px;
 }
 
 .scale-large {
     width: 500px;
+}
+
+.scale-x-large {
+    width: 1000px;
 }

@@ -1,0 +1,22 @@
+#hungary {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background-color: #fff;
+}
+
+#hungary::before {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    background-color: #CE2939;
+}
+
+#hungary::after {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #477050;
+}

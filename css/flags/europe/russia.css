@@ -1,0 +1,22 @@
+#russia {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #0036A7;
+}
+
+#russia::before {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+}
+
+#russia::after {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #D62718;
+}

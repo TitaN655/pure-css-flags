@@ -1,0 +1,22 @@
+#yemen {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #fff;
+}
+
+#yemen::before {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    background-color: #CE1126;
+}
+
+#yemen::after {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+}

@@ -1,14 +1,51 @@
-@import "flags/palau.css";
-@import "flags/japan.css";
-@import "flags/ukraine.css";
-@import "flags/latvia.css";
-@import "flags/nigeria.css";
-@import "flags/peru.css";
-@import "flags/poland.css";
-@import "flags/monaco.css";
-@import "flags/indonesia.css";
-@import "flags/austria.css";
-@import "flags/bangladesh.css";
-@import "flags/bahamas.css";
-@import "flags/bahrain.css";
-@import "flags/finland.css";
+/* Africa */
+@import "flags/africa/nigeria.css";
+@import "flags/africa/benin.css";
+@import "flags/africa/niger.css";
+@import "flags/africa/cote-divoire.css";
+@import "flags/africa/mali.css";
+@import "flags/africa/sierra-leone.css";
+@import "flags/africa/gabon.css";
+@import "flags/africa/guinea.css";
+@import "flags/africa/chad.css";
+
+/* America */
+@import "flags/america/peru.css";
+@import "flags/america/bahamas.css";
+
+/* Asia */
+@import "flags/asia/japan.css";
+@import "flags/asia/indonesia.css";
+@import "flags/asia/bangladesh.css";
+@import "flags/asia/bahrain.css";
+@import "flags/asia/yemen.css";
+@import "flags/asia/thailand.css";
+@import "flags/asia/palestine.css";
+@import "flags/asia/armenia.css";
+
+/* Europe */
+@import "flags/europe/ukraine.css";
+@import "flags/europe/latvia.css";
+@import "flags/europe/poland.css";
+@import "flags/europe/monaco.css";
+@import "flags/europe/austria.css";
+@import "flags/europe/finland.css";
+@import "flags/europe/sweden.css";
+@import "flags/europe/belgium.css";
+@import "flags/europe/switzerland.css";
+@import "flags/europe/greece.css";
+@import "flags/europe/netherlands.css";
+@import "flags/europe/bulgaria.css";
+@import "flags/europe/italy.css";
+@import "flags/europe/ireland.css";
+@import "flags/europe/romania.css";
+@import "flags/europe/russia.css";
+@import "flags/europe/germany.css";
+@import "flags/europe/hungary.css";
+@import "flags/europe/luxembourg.css";
+@import "flags/europe/lithuania.css";
+@import "flags/europe/estonia.css";
+@import "flags/europe/france.css";
+
+/* Oceania */
+@import "flags/oceania/palau.css";

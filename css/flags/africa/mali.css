@@ -1,0 +1,22 @@
+#mali {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #FCD116;
+}
+
+#mali::before {
+    content: '';
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+    background-color: #14B53A;
+}
+
+#mali::after {
+    content: '';
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+    right: 0;
+    background-color: #CE1126;
+}

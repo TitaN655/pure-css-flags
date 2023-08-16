@@ -1,0 +1,25 @@
+#switzerland {
+    aspect-ratio: 1 / 1;
+    position: relative;
+    background-color: #f00;
+}
+
+#switzerland > div {
+    background-color: #fff;
+}
+
+#switzerland > div.rect1 {
+    width: 62.5%;
+    height: 18.75%;
+    position: relative;
+    top: 40.625%;
+    left: 18.75%;
+}
+
+#switzerland > div.rect2 {
+    width: 18.75%;
+    height: 62.5%;
+    position: absolute;
+    top: 18.75%;
+    left: 40.625%;
+}

@@ -1,0 +1,11 @@
+#poland {
+    aspect-ratio: 8 / 5;
+    background-color: #fff;
+}
+
+#poland > div {
+    height: 50%;
+    position: relative;
+    top: 50%;
+    background-color: #DC143C;
+}

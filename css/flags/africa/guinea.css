@@ -1,0 +1,22 @@
+#guinea {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #FCD116;
+}
+
+#guinea::before {
+    content: '';
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+    background-color: #CE1126;
+}
+
+#guinea::after {
+    content: '';
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+    right: 0;
+    background-color: #009460;
+}

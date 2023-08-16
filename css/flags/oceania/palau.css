@@ -1,0 +1,14 @@
+#palau {
+    aspect-ratio: 8 / 5;
+    background-color: #0099FF;
+}
+
+#palau > div {
+    aspect-ratio: 1 / 1;
+    width: 37.5%;
+    position: relative;
+    top: 20%;
+    left: 25%;
+    background-color: #FFFF00;
+    border-radius: 50%;
+}

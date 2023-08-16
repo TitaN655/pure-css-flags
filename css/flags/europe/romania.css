@@ -1,0 +1,22 @@
+#romania {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #FCD116;
+}
+
+#romania::before {
+    content: '';
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+    background-color: #002B7F;
+}
+
+#romania::after {
+    content: '';
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+    right: 0;
+    background-color: #CE1126;
+}

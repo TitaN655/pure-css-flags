@@ -1,0 +1,11 @@
+#austria {
+    aspect-ratio: 3 / 2;
+    background-color: #ED2939;
+}
+
+#austria > div {
+    height: calc(100% / 3);
+    position: relative;
+    top: calc(100% / 3);
+    background-color: #fff;
+}

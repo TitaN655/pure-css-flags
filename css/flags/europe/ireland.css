@@ -1,0 +1,22 @@
+#ireland {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background-color: #fff;
+}
+
+#ireland::before {
+    content: '';
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+    background-color: #169B62;
+}
+
+#ireland::after {
+    content: '';
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+    right: 0;
+    background-color: #FF883E;
+}

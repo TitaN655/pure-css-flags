@@ -1,0 +1,22 @@
+#estonia {
+    aspect-ratio: 5 / 3;
+    position: relative;
+    background-color: #000;
+}
+
+#estonia::before {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    background-color: #0072CE;
+}
+
+#estonia::after {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+}

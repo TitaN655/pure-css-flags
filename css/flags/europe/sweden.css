@@ -1,0 +1,23 @@
+#sweden {
+    aspect-ratio: 18 / 11;
+    position: relative;
+    background-color: #006AA7;
+}
+
+#sweden > div {
+    background-color: #FFCD00;
+}
+
+#sweden > div.rect1 {
+    height: 20%;
+    position: relative;
+    top: 40%;
+}
+
+#sweden > div.rect2 {
+    width: 12.5%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 25%;
+}

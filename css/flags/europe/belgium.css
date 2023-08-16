@@ -1,0 +1,22 @@
+#belgium {
+    aspect-ratio: 15 / 13;
+    position: relative;
+    background-color: #FDDA24;
+}
+
+#belgium::before {
+    content: '';
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+    background-color: #000;
+}
+
+#belgium::after {
+    content: '';
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+    right: 0;
+    background-color: #EF3340;
+}

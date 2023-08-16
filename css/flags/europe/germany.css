@@ -1,0 +1,22 @@
+#germany {
+    aspect-ratio: 5 / 3;
+    position: relative;
+    background-color: #d00;
+}
+
+#germany::before {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    background-color: #000;
+}
+
+#germany::after {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #FFCC00;
+}

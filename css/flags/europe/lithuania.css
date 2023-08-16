@@ -1,0 +1,22 @@
+#lithuania {
+    aspect-ratio: 5 / 3;
+    position: relative;
+    background-color: #006a44;
+}
+
+#lithuania::before {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    background-color: #FDB913;
+}
+
+#lithuania::after {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #c1272d;
+}

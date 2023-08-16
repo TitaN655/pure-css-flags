@@ -1,0 +1,11 @@
+#latvia {
+    aspect-ratio: 2 / 1;
+    background-color: #9D2235;
+}
+
+#latvia > div {
+    height: 20%;
+    position: relative;
+    top: 40%;
+    background-color: #fff;
+}

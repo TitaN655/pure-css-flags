@@ -1,0 +1,22 @@
+#armenia {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background-color: #0033A0;
+}
+
+#armenia::before {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    background-color: #D90012;
+}
+
+#armenia::after {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #F2A800;
+}
