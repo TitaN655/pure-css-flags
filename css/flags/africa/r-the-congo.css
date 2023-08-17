@@ -17,7 +17,7 @@
 #r-the-congo::after {
     content: '';
     height: 100%;
-    width: calc(200% / 3);;
+    width: calc(200% / 3);
     position: absolute;
     right: 0;
     background-color: #DC241F;

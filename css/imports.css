@@ -8,10 +8,14 @@
 @import "flags/africa/cote-divoire.css";
 @import "flags/africa/mali.css";
 @import "flags/africa/sierra-leone.css";
+@import "flags/africa/madagascar.css";
 @import "flags/africa/gabon.css";
 @import "flags/africa/guinea.css";
 @import "flags/africa/chad.css";
-@import "flags/africa/madagascar.css";
+@import "flags/africa/tanzania.css";
+@import "flags/africa/gambia.css";
+@import "flags/africa/mauritius.css";
+@import "flags/africa/sudan.css";
 
 /* America */
 @import "flags/america/peru.css";
@@ -60,6 +64,7 @@
 @import "flags/europe/lithuania.css";
 @import "flags/europe/estonia.css";
 @import "flags/europe/france.css";
+@import "flags/europe/norway.css";
 
 /* Oceania */
 @import "flags/oceania/palau.css";

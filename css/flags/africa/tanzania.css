@@ -1,0 +1,41 @@
+#tanzania {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #1EB53A;
+    overflow: hidden;
+}
+
+#tanzania::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    background-color: #00A3DD;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+#tanzania > div {
+    /* measurement according to construction sheet */
+    height: calc(calc(100% / 48) * 19);
+    width: 125%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #FCD116;
+    transform:
+        translate(-50%, -50%)
+        rotate(-33.69deg);
+    z-index: 1;
+}
+
+#tanzania > div::after {
+    content: '';
+    /* measurement according to construction sheet */
+    height: calc(calc(100% / 19) * 13);
+    width: 100%;
+    position: absolute;
+    top: calc(100% / 6);
+    background-color: #000;
+}
