@@ -1,0 +1,20 @@
+#botswana {
+    aspect-ratio: 3 / 2;
+    background-color: #6DA9D2;
+}
+
+#botswana > div {
+    height: 25%;
+    position: relative;
+    top: 37.5%;
+    background-color: #fff;
+}
+
+#botswana > div::after {
+    content: '';
+    height: calc(100% / 1.5);
+    width: 100%;
+    position: absolute;
+    top: calc(100% / 6);
+    background-color: #000;
+}

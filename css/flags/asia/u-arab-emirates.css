@@ -1,32 +1,30 @@
-#palestine {
+#u-arab-emirates {
     aspect-ratio: 2 / 1;
     position: relative;
     background-color: #fff;
 }
 
-#palestine::before {
+#u-arab-emirates::before {
     content: '';
     height: calc(100% / 3);
     width: 100%;
     position: absolute;
-    background-color: #000;
+    background-color: #00843D;
 }
 
-#palestine::after {
+#u-arab-emirates::after {
     content: '';
     height: calc(100% / 3);
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-color: #009736;
+    background-color: #000;
 }
 
-#palestine > div {
+#u-arab-emirates > div {
     position: relative;
-    width: calc(100% / 3);
+    width: 25%;
     height: 100%;
-    background: #EE2A35;
-    -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
-    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    background: #f00;
     z-index: 1;
 }

@@ -1,0 +1,30 @@
+#trinidad-tobago {
+    aspect-ratio: 5 / 3;
+    position: relative;
+    background-color: #DA1A35;
+    overflow: hidden;
+
+    /* measurement units according to construction sheet */
+    --unit-y: calc(100% / 18);
+}
+
+#trinidad-tobago > div {
+    height: calc(var(--unit-y) * 6);
+    width: 115%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+    transform:
+        translate(-50%, -50%)
+        rotate(40.83871793deg); /* defined by construction sheet */
+}
+
+#trinidad-tobago > div::after {
+    content: '';
+    height: calc(100% / 1.5);
+    width: 100%;
+    position: absolute;
+    top: calc(100% / 6);
+    background-color: #000;
+}

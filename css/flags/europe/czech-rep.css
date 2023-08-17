@@ -1,0 +1,24 @@
+#czech-rep {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #fff;
+}
+
+#czech-rep::after {
+    content: '';
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #D7141A;
+}
+
+#czech-rep > div {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #11457E;
+    -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    z-index: 1;
+}

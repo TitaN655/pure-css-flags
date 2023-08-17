@@ -1,0 +1,22 @@
+#colombia {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #003893;
+}
+
+#colombia::before {
+    content: '';
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    background-color: #FCD116;
+}
+
+#colombia::after {
+    content: '';
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #CE1126;
+}

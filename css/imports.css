@@ -2,16 +2,23 @@
 @import "flags/africa/nigeria.css";
 @import "flags/africa/benin.css";
 @import "flags/africa/niger.css";
+@import "flags/africa/ghana.css";
+@import "flags/africa/botswana.css";
+@import "flags/africa/r-the-congo.css";
 @import "flags/africa/cote-divoire.css";
 @import "flags/africa/mali.css";
 @import "flags/africa/sierra-leone.css";
 @import "flags/africa/gabon.css";
 @import "flags/africa/guinea.css";
 @import "flags/africa/chad.css";
+@import "flags/africa/madagascar.css";
 
 /* America */
 @import "flags/america/peru.css";
 @import "flags/america/bahamas.css";
+@import "flags/america/colombia.css";
+@import "flags/america/costa-rica.css";
+@import "flags/america/trinidad-tobago.css";
 
 /* Asia */
 @import "flags/asia/japan.css";
@@ -22,6 +29,9 @@
 @import "flags/asia/thailand.css";
 @import "flags/asia/palestine.css";
 @import "flags/asia/armenia.css";
+@import "flags/asia/laos.css";
+@import "flags/asia/u-arab-emirates.css";
+@import "flags/asia/kuwait.css";
 
 /* Europe */
 @import "flags/europe/ukraine.css";
@@ -41,6 +51,9 @@
 @import "flags/europe/romania.css";
 @import "flags/europe/russia.css";
 @import "flags/europe/germany.css";
+@import "flags/europe/iceland.css";
+@import "flags/europe/czech-rep.css";
+@import "flags/europe/denmark.css";
 @import "flags/europe/hungary.css";
 @import "flags/europe/luxembourg.css";
 @import "flags/europe/lithuania.css";

@@ -1,0 +1,52 @@
+#ghana {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #FCD20F;
+}
+
+#ghana::before {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    background-color: #CF0921;
+}
+
+#ghana::after {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #006B3D;
+}
+
+#ghana > div {
+    aspect-ratio: 1 / 1;
+    height: calc((100% / 3));
+    position: absolute;
+    top: calc(100% / 3);
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+#ghana > div::after {
+    content: '';
+    /* bottom of clip-path is 95.1% - 104.9% fits clip-path to 100% of div */
+    height: 104.9%;
+    width: 100%;
+    position: absolute;
+    background-color: #000;
+    clip-path: polygon(50% 0%,
+        61.8% 36.32%,
+        100% 36.32%,
+        69.1% 58.78%,
+        80.9% 95.1%,
+        50% 72.65%,
+        19.1% 95.1%,
+        30.9% 58.78%,
+        0% 36.32%,
+        38.2% 36.32%);
+}

@@ -1,0 +1,24 @@
+#laos {
+    aspect-ratio: 3 / 2;
+    background-color: #CE1126;
+}
+
+#laos > div {
+    height: 50%;
+    position: relative;
+    top: 25%;
+    background-color: #002868;
+}
+
+#laos > div::after {
+    content: '';
+    aspect-ratio: 1 / 1;
+    width: calc(100% / 3.75);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

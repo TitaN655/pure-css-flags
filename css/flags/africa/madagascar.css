@@ -1,0 +1,29 @@
+#madagascar {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #fff;
+}
+
+#madagascar > div {
+    height: 100%;
+    width: calc(200% / 3);
+    position: absolute;
+    right: 0;
+}
+
+#madagascar > div::before {
+    content: '';
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    background-color: #FC3D32;
+}
+
+#madagascar > div::after {
+    content: '';
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #007E3A;
+}
