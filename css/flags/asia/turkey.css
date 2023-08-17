@@ -40,6 +40,7 @@
         rotate(270deg);
     transform: translate(0, -50%)
         rotate(270deg);
+    /* True centre of the star is offset */
     -webkit-transform-origin: 50% 55.03%;
     transform-origin: 50% 55.03%;
     -webkit-clip-path: polygon(50% 2.45%,
