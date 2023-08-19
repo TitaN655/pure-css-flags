@@ -31,11 +31,13 @@
 }
 
 #tanzania > div::after {
-    content: '';
     /* measurement according to construction sheet */
-    height: calc(calc(100% / 19) * 13);
+    --unit-y: calc(100% / 19);
+
+    content: '';
+    height: calc(var(--unit-y) * 13);
     width: 100%;
     position: absolute;
-    top: calc(100% / 6);
+    top: calc(var(--unit-y) * 3);
     background-color: #000;
 }
