@@ -1,0 +1,52 @@
+#pride-flag {
+    aspect-ratio: 3 / 2;
+}
+
+#pride-flag > div.upper-pt {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background-color: #FFA52C;
+}
+
+#pride-flag > div.upper-pt::before {
+    content: '';
+    width: 100%;
+    height: calc(100% / 3);
+    position: absolute;
+    background-color: #FF0018;
+}
+
+#pride-flag > div.upper-pt::after {
+    content: '';
+    width: 100%;
+    height: calc(100% / 3);
+    position: absolute;
+    bottom: 0;
+    background-color: #FFFF41;
+}
+
+#pride-flag > div.lower-pt {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    bottom: 0;
+    background-color: #0000F9;
+}
+
+#pride-flag > div.lower-pt::before {
+    content: '';
+    width: 100%;
+    height: calc(100% / 3);
+    position: absolute;
+    background-color: #008018;
+}
+
+#pride-flag > div.lower-pt::after {
+    content: '';
+    width: 100%;
+    height: calc(100% / 3);
+    position: absolute;
+    bottom: 0;
+    background-color: #86007D;
+}

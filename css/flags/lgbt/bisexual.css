@@ -1,0 +1,22 @@
+#bisexual {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #9B4797;
+}
+
+#bisexual::before {
+    content: '';
+    width: 100%;
+    height: calc(200% / 5);
+    position: absolute;
+    background-color: #D50071;
+}
+
+#bisexual::after {
+    content: '';
+    width: 100%;
+    height: calc(200% / 5);
+    position: absolute;
+    bottom: 0;
+    background-color: #002BA9;
+}

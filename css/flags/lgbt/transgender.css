@@ -1,0 +1,20 @@
+#transgender {
+    aspect-ratio: 3 / 2;
+    background-color: #60CFFA;
+}
+
+#transgender > div {
+    height: calc(300% / 5);
+    position: relative;
+    top: calc(100% / 5);
+    background-color: #F4A8BA;
+}
+
+#transgender > div::after {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    top: calc(100% / 3);
+    background-color: #fff;
+}

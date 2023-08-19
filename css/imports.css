@@ -14,6 +14,7 @@
 @import "flags/africa/chad.css";
 @import "flags/africa/tanzania.css";
 @import "flags/africa/gambia.css";
+@import "flags/africa/dr-the-congo.css";
 @import "flags/africa/mauritius.css";
 @import "flags/africa/sudan.css";
 
@@ -68,3 +69,10 @@
 
 /* Oceania */
 @import "flags/oceania/palau.css";
+
+/* LGBTQ+ */
+@import "flags/lgbt/pride-flag.css";
+@import "flags/lgbt/mlm-flag.css";
+@import "flags/lgbt/lesbian.css";
+@import "flags/lgbt/bisexual.css";
+@import "flags/lgbt/transgender.css";
