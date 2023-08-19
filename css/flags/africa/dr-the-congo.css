@@ -1,0 +1,60 @@
+#dr-the-congo {
+    aspect-ratio: 4 / 3;
+    position: relative;
+    background-color: #007FFF;
+    overflow: hidden;
+
+    /* measurement units according to construction sheet */
+    --unit-x: calc(100% / 20);
+    --unit-y: calc(100% / 15);
+}
+
+#dr-the-congo > div.star {
+    width: 27%;
+    height: 34.2%;
+    position: absolute;
+    top: calc(var(--unit-y) * .9);
+    left: calc(var(--unit-x) * 1.03);
+    background-color: #F7D618;
+    -webkit-clip-path: polygon(50% 2.45%,
+        61.8% 38.77%,
+        100% 38.77%,
+        69.1% 61.23%,
+        80.9% 97.55%,
+        50% 75.1%,
+        19.1% 97.55%,
+        30.9% 61.23%,
+        0% 38.77%,
+        38.2% 38.77%);
+    clip-path: polygon(50% 2.45%,
+        61.8% 38.77%,
+        100% 38.77%,
+        69.1% 61.23%,
+        80.9% 97.55%,
+        50% 75.1%,
+        19.1% 97.55%,
+        30.9% 61.23%,
+        0% 38.77%,
+        38.2% 38.77%);
+}
+
+#dr-the-congo > div.rect {
+    height: calc(var(--unit-y) * 2.96);
+    width: 125%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #F7D618;
+    transform:
+        translate(-50%, -50%)
+        rotate(-31.75deg);
+}
+
+#dr-the-congo > div.rect::after {
+    content: '';
+    height: 75%;
+    width: 100%;
+    position: absolute;
+    top: 12.5%;
+    background-color: #CE1021;
+}
