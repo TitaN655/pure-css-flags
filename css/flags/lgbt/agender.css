@@ -1,0 +1,29 @@
+#agender {
+    aspect-ratio: 3 / 2;
+    background-color: #000;
+}
+
+#agender > div {
+    height: calc(500% / 7);
+    position: relative;
+    top: calc(100% / 7);
+    background-color: #B6B6B6;
+}
+
+#agender > div::before {
+    content: '';
+    height: calc(300% / 5);
+    width: 100%;
+    position: absolute;
+    top: calc(100% / 5);
+    background-color: #fff;
+}
+
+#agender > div::after {
+    content: '';
+    height: calc(100% / 5);
+    width: 100%;
+    position: absolute;
+    top: calc(200% / 5);
+    background-color: #BBF884;
+}

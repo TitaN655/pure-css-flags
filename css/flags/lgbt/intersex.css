@@ -1,0 +1,30 @@
+#intersex {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #FEDB09;
+}
+
+#intersex > div {
+    aspect-ratio: 1 / 1;
+    height: 49%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #7800AB;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#intersex > div::after {
+    content: '';
+    aspect-ratio: 1 / 1;
+    height: calc(194% / 2.94);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #FEDB09;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

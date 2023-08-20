@@ -1,0 +1,31 @@
+#asexual {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #000;
+}
+
+#asexual::after {
+    content: '';
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #7F0081;
+}
+
+#asexual > div {
+    height: 25%;
+    width: 100%;
+    position: relative;
+    top: 25%;
+    background-color: #A5A5A5;
+}
+
+#asexual > div::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+}

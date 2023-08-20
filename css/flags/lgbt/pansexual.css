@@ -1,0 +1,22 @@
+#pansexual {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #FEDB09;
+}
+
+#pansexual::before,
+#pansexual::after {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+}
+
+#pansexual::before {
+    background-color: #FC008D;
+}
+
+#pansexual::after {
+    bottom: 0;
+    background-color: #27B1FF;
+}

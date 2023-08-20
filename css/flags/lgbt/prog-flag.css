@@ -1,0 +1,91 @@
+#prog-flag {
+    aspect-ratio: 3 / 2;
+    position: relative;
+
+    /* ensures a chevron angle of 45deg */
+    --max-chev-width: calc(115.625% / 2.34375);
+}
+
+#prog-flag > div.upper-pt {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background-color: #FF8C00;
+}
+
+#prog-flag > div.lower-pt {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background-color: #004DFF;
+}
+
+#prog-flag > div.upper-pt::before,
+#prog-flag > div.upper-pt::after,
+#prog-flag > div.lower-pt::before,
+#prog-flag > div.lower-pt::after {
+    content: '';
+    width: 100%;
+    height: calc(100% / 3);
+    position: absolute;
+}
+
+#prog-flag > div.upper-pt::before {
+    background-color: #E40303;
+}
+
+#prog-flag > div.upper-pt::after {
+    bottom: 0;
+    background-color: #FFED00;
+}
+
+#prog-flag > div.lower-pt::before {
+    background-color: #008026;
+}
+
+#prog-flag > div.lower-pt::after {
+    bottom: 0;
+    background-color: #750787;
+}
+
+#prog-flag > div.chevrons > div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#prog-flag > div.chevrons > div.poly1 {
+    background-color: #000;
+    /* extended triangle */
+    clip-path: polygon(var(--max-chev-width) 50%,
+        16% 0,
+        0 0,
+        0 100%,
+        16% 100%);
+}
+
+#prog-flag > div.chevrons > div.poly2 {
+    background-color: #613915;
+    /* extended triangle */
+    clip-path: polygon(calc(var(--max-chev-width) - 8%) 50%,
+        8% 0,
+        0 0,
+        0 100%,
+        8% 100%);
+}
+
+#prog-flag > div.chevrons > div.poly3 {
+    background-color: #74D7EE;
+    clip-path: polygon(calc(var(--max-chev-width) - 16%) 50%, 0 0, 0 100%);
+}
+
+#prog-flag > div.chevrons > div.poly4 {
+    background-color: #FFAFC8;
+    clip-path: polygon(calc(var(--max-chev-width) - 24%) 50%, 0 12%, 0 88%);
+}
+
+#prog-flag > div.chevrons > div.poly5 {
+    background-color: #fff;
+    clip-path: polygon(calc(var(--max-chev-width) - 32%) 50%, 0 24%, 0 76%);
+}

@@ -74,8 +74,17 @@
 @import "flags/oceania/tonga.css";
 
 /* LGBTQ+ */
+@import "flags/lgbt/prog-flag.css";
 @import "flags/lgbt/pride-flag.css";
+@import "flags/lgbt/ally-flag.css";
 @import "flags/lgbt/mlm-flag.css";
 @import "flags/lgbt/lesbian.css";
 @import "flags/lgbt/bisexual.css";
 @import "flags/lgbt/transgender.css";
+@import "flags/lgbt/pansexual.css";
+@import "flags/lgbt/asexual.css";
+@import "flags/lgbt/nonbinary.css";
+@import "flags/lgbt/aromantic.css";
+@import "flags/lgbt/genderfluid.css";
+@import "flags/lgbt/agender.css";
+@import "flags/lgbt/intersex.css";

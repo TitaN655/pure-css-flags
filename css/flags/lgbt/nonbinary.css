@@ -1,0 +1,31 @@
+#nonbinary {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #FFF82F;
+}
+
+#nonbinary::after {
+    content: '';
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+}
+
+#nonbinary > div {
+    height: 25%;
+    width: 100%;
+    position: relative;
+    top: 25%;
+    background-color: #fff;
+}
+
+#nonbinary > div::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: #9C4DD2;
+}
