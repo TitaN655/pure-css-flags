@@ -4,19 +4,19 @@
     background-color: #FCD116;
 }
 
-#gabon::before {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
-    background-color: #009E60;
-}
-
+#gabon::before,
 #gabon::after {
     content: '';
     height: calc(100% / 3);
     width: 100%;
     position: absolute;
+}
+
+#gabon::before {
+    background-color: #009E60;
+}
+
+#gabon::after {
     bottom: 0;
     background-color: #3A75C4;
 }

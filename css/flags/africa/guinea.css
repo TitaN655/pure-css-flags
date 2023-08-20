@@ -4,19 +4,19 @@
     background-color: #FCD116;
 }
 
-#guinea::before {
-    content: '';
-    height: 100%;
-    width: calc(100% / 3);
-    position: absolute;
-    background-color: #CE1126;
-}
-
+#guinea::before,
 #guinea::after {
     content: '';
     height: 100%;
     width: calc(100% / 3);
     position: absolute;
+}
+
+#guinea::before {
+    background-color: #CE1126;
+}
+
+#guinea::after {
     right: 0;
     background-color: #009460;
 }

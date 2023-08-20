@@ -4,19 +4,19 @@
     background-color: #FDDA24;
 }
 
-#belgium::before {
-    content: '';
-    height: 100%;
-    width: calc(100% / 3);
-    position: absolute;
-    background-color: #000;
-}
-
+#belgium::before,
 #belgium::after {
     content: '';
     height: 100%;
     width: calc(100% / 3);
     position: absolute;
+}
+
+#belgium::before {
+    background-color: #000;
+}
+
+#belgium::after {
     right: 0;
     background-color: #EF3340;
 }

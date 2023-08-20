@@ -4,19 +4,19 @@
     background-color: #F4F5F0;
 }
 
-#italy::before {
-    content: '';
-    height: 100%;
-    width: calc(100% / 3);
-    position: absolute;
-    background-color: #008C45;
-}
-
+#italy::before,
 #italy::after {
     content: '';
     height: 100%;
     width: calc(100% / 3);
     position: absolute;
+}
+
+#italy::before {
+    background-color: #008C45;
+}
+
+#italy::after {
     right: 0;
     background-color: #CD212A;
 }

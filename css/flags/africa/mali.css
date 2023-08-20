@@ -4,19 +4,19 @@
     background-color: #FCD116;
 }
 
-#mali::before {
-    content: '';
-    height: 100%;
-    width: calc(100% / 3);
-    position: absolute;
-    background-color: #14B53A;
-}
-
+#mali::before,
 #mali::after {
     content: '';
     height: 100%;
     width: calc(100% / 3);
     position: absolute;
+}
+
+#mali::before {
+    background-color: #14B53A;
+}
+
+#mali::after {
     right: 0;
     background-color: #CE1126;
 }

@@ -4,19 +4,19 @@
     background-color: #FECB00;
 }
 
-#chad::before {
-    content: '';
-    height: 100%;
-    width: calc(100% / 3);
-    position: absolute;
-    background-color: #002664;
-}
-
+#chad::before,
 #chad::after {
     content: '';
     height: 100%;
     width: calc(100% / 3);
     position: absolute;
+}
+
+#chad::before {
+    background-color: #002664;
+}
+
+#chad::after {
     right: 0;
     background-color: #C60C30;
 }

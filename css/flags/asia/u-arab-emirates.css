@@ -4,19 +4,19 @@
     background-color: #fff;
 }
 
-#u-arab-emirates::before {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
-    background-color: #00843D;
-}
-
+#u-arab-emirates::before,
 #u-arab-emirates::after {
     content: '';
     height: calc(100% / 3);
     width: 100%;
     position: absolute;
+}
+
+#u-arab-emirates::before {
+    background-color: #00843D;
+}
+
+#u-arab-emirates::after {
     bottom: 0;
     background-color: #000;
 }

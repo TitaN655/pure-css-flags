@@ -4,19 +4,19 @@
     background-color: #fff;
 }
 
-#ireland::before {
-    content: '';
-    height: 100%;
-    width: calc(100% / 3);
-    position: absolute;
-    background-color: #169B62;
-}
-
+#ireland::before,
 #ireland::after {
     content: '';
     height: 100%;
     width: calc(100% / 3);
     position: absolute;
+}
+
+#ireland::before {
+    background-color: #169B62;
+}
+
+#ireland::after {
     right: 0;
     background-color: #FF883E;
 }

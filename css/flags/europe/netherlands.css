@@ -4,19 +4,19 @@
     background-color: #fff;
 }
 
-#netherlands::before {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
-    background-color: #AD1D25;
-}
-
+#netherlands::before,
 #netherlands::after {
     content: '';
     height: calc(100% / 3);
     width: 100%;
     position: absolute;
+}
+
+#netherlands::before {
+    background-color: #AD1D25;
+}
+
+#netherlands::after {
     bottom: 0;
     background-color: #1E4785;
 }

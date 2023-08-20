@@ -4,19 +4,19 @@
     background-color: #fff;
 }
 
-#hungary::before {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
-    background-color: #CE2939;
-}
-
+#hungary::before,
 #hungary::after {
     content: '';
     height: calc(100% / 3);
     width: 100%;
     position: absolute;
+}
+
+#hungary::before {
+    background-color: #CE2939;
+}
+
+#hungary::after {
     bottom: 0;
     background-color: #477050;
 }

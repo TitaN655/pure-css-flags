@@ -4,19 +4,19 @@
     background-color: #fff;
 }
 
-#sierra-leone::before {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
-    background-color: #1EB53A;
-}
-
+#sierra-leone::before,
 #sierra-leone::after {
     content: '';
     height: calc(100% / 3);
     width: 100%;
     position: absolute;
+}
+
+#sierra-leone::before {
+    background-color: #1EB53A;
+}
+
+#sierra-leone::after {
     bottom: 0;
     background-color: #0072C6;
 }

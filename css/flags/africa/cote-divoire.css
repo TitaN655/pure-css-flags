@@ -4,19 +4,19 @@
     background-color: #fff;
 }
 
-#cote-divoire::before {
-    content: '';
-    height: 100%;
-    width: calc(100% / 3);
-    position: absolute;
-    background-color: #F77F00;
-}
-
+#cote-divoire::before,
 #cote-divoire::after {
     content: '';
     height: 100%;
     width: calc(100% / 3);
     position: absolute;
+}
+
+#cote-divoire::before {
+    background-color: #F77F00;
+}
+
+#cote-divoire::after {
     right: 0;
     background-color: #009E60;
 }

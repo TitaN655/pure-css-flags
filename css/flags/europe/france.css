@@ -4,19 +4,19 @@
     background-color: #fff;
 }
 
-#france::before {
-    content: '';
-    height: 100%;
-    width: calc(100% / 3);
-    position: absolute;
-    background-color: #0055A4;
-}
-
+#france::before,
 #france::after {
     content: '';
     height: 100%;
     width: calc(100% / 3);
     position: absolute;
+}
+
+#france::before {
+    background-color: #0055A4;
+}
+
+#france::after {
     right: 0;
     background-color: #EF4135;
 }

@@ -4,19 +4,19 @@
     background-color: #fff;
 }
 
-#kuwait::before {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
-    background-color: #007A3D;
-}
-
+#kuwait::before,
 #kuwait::after {
     content: '';
     height: calc(100% / 3);
     width: 100%;
     position: absolute;
+}
+
+#kuwait::before {
+    background-color: #007A3D;
+}
+
+#kuwait::after {
     bottom: 0;
     background-color: #CE1126;
 }

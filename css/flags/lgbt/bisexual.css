@@ -4,19 +4,19 @@
     background-color: #9B4797;
 }
 
-#bisexual::before {
-    content: '';
-    width: 100%;
-    height: calc(200% / 5);
-    position: absolute;
-    background-color: #D50071;
-}
-
+#bisexual::before,
 #bisexual::after {
     content: '';
     width: 100%;
     height: calc(200% / 5);
     position: absolute;
+}
+
+#bisexual::before {
+    background-color: #D50071;
+}
+
+#bisexual::after {
     bottom: 0;
     background-color: #002BA9;
 }

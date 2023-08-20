@@ -16,9 +16,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    background-color: #C10000;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background-color: #C10000;
 }
 
 #tonga > div::before {

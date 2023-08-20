@@ -4,21 +4,20 @@
     background-color: #008850;
 }
 
-#benin::before {
-    content: '';
-    height: 50%;
-    width: 60%;
-    position: absolute;
-    left: 40%;
-    background-color: #FCD20F;
-}
-
+#benin::before,
 #benin::after {
     content: '';
     height: 50%;
     width: 60%;
     position: absolute;
     left: 40%;
+}
+
+#benin::before {
+    background-color: #FCD20F;
+}
+
+#benin::after {
     bottom: 0;
     background-color: #E90929;
 }

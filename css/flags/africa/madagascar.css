@@ -11,19 +11,19 @@
     right: 0;
 }
 
-#madagascar > div::before {
-    content: '';
-    height: 50%;
-    width: 100%;
-    position: absolute;
-    background-color: #FC3D32;
-}
-
+#madagascar > div::before,
 #madagascar > div::after {
     content: '';
     height: 50%;
     width: 100%;
     position: absolute;
+}
+
+#madagascar > div::before {
+    background-color: #FC3D32;
+}
+
+#madagascar > div::after {
     bottom: 0;
     background-color: #007E3A;
 }
