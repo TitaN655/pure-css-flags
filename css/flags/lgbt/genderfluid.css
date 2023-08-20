@@ -4,14 +4,14 @@
     background-color: #BD00D7;
 }
 
-#genderfluid > div.upper-pt {
+#genderfluid > .upper-pt {
     width: 100%;
     height: calc(200% / 5);
     position: relative;
     background-color: #FD6EA4;
 }
 
-#genderfluid > div.lower-pt {
+#genderfluid > .lower-pt {
     width: 100%;
     height: calc(200% / 5);
     position: absolute;
@@ -19,8 +19,8 @@
     background-color: #000;
 }
 
-#genderfluid > div.upper-pt::after,
-#genderfluid > div.lower-pt::after {
+#genderfluid > .upper-pt::after,
+#genderfluid > .lower-pt::after {
     content: '';
     width: 100%;
     height: 50%;
@@ -28,10 +28,10 @@
     bottom: 0;
 }
 
-#genderfluid > div.upper-pt::after {
+#genderfluid > .upper-pt::after {
     background-color: #fff;
 }
 
-#genderfluid > div.lower-pt::after {
+#genderfluid > .lower-pt::after {
     background-color: #2F2FBE;
 }

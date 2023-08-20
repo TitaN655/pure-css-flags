@@ -4,14 +4,14 @@
     background-color: #fff;
 }
 
-#aromantic > div.upper-pt {
+#aromantic > .upper-pt {
     width: 100%;
     height: calc(200% / 5);
     position: relative;
     background-color: #338733;
 }
 
-#aromantic > div.lower-pt {
+#aromantic > .lower-pt {
     width: 100%;
     height: calc(200% / 5);
     position: absolute;
@@ -19,8 +19,8 @@
     background-color: #aaa;
 }
 
-#aromantic > div.upper-pt::after,
-#aromantic > div.lower-pt::after {
+#aromantic > .upper-pt::after,
+#aromantic > .lower-pt::after {
     content: '';
     width: 100%;
     height: 50%;
@@ -28,10 +28,10 @@
     bottom: 0;
 }
 
-#aromantic > div.upper-pt::after {
+#aromantic > .upper-pt::after {
     background-color: #AAD77A;
 }
 
-#aromantic > div.lower-pt::after {
+#aromantic > .lower-pt::after {
     background-color: #000;
 }

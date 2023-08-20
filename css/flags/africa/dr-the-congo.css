@@ -9,7 +9,7 @@
     --unit-y: calc(100% / 15);
 }
 
-#dr-the-congo > div.star {
+#dr-the-congo > .star {
     width: 27%;
     height: 34.2%;
     position: relative;
@@ -17,7 +17,7 @@
     left: calc(var(--unit-x) * 1.03);
 }
 
-#dr-the-congo > div.star::after {
+#dr-the-congo > .star::after {
     content: '';
     width: 100%;
     /* account for 4.9% empty space @ bottom */
@@ -46,7 +46,7 @@
         38.2% 36.32%);
 }
 
-#dr-the-congo > div.rect {
+#dr-the-congo > .rect {
     height: calc(var(--unit-y) * 2.96);
     width: 125%;
     position: absolute;
@@ -59,7 +59,7 @@
         rotate(-31.75deg);
 }
 
-#dr-the-congo > div.rect::after {
+#dr-the-congo > .rect::after {
     content: '';
     height: 75%;
     width: 100%;

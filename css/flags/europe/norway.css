@@ -7,7 +7,7 @@
     --unit-x: calc(100% / 22);
 }
 
-#norway > div.rect1 {
+#norway > .rect1 {
     height: 25%;
     position: relative;
     top: 37.5%;
@@ -15,7 +15,7 @@
     z-index: 1;
 }
 
-#norway > div.rect1::after {
+#norway > .rect1::after {
     content: '';
     height: 50%;
     width: 100%;
@@ -24,7 +24,7 @@
     background-color: #00205B;
 }
 
-#norway > div.rect2 {
+#norway > .rect2 {
     width: calc(var(--unit-x) * 4);
     height: 100%;
     position: absolute;
@@ -33,7 +33,7 @@
     background-color: #fff;
 }
 
-#norway > div.rect3 {
+#norway > .rect3 {
     width: calc(var(--unit-x) * 2);
     height: 100%;
     position: absolute;
