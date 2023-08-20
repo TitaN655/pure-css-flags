@@ -12,30 +12,38 @@
 #dr-the-congo > div.star {
     width: 27%;
     height: 34.2%;
-    position: absolute;
+    position: relative;
     top: calc(var(--unit-y) * .9);
     left: calc(var(--unit-x) * 1.03);
+}
+
+#dr-the-congo > div.star::after {
+    content: '';
+    width: 100%;
+    /* account for 4.9% empty space @ bottom */
+    height: 104.9%;
+    position: absolute;
     background-color: #F7D618;
-    -webkit-clip-path: polygon(50% 2.45%,
-        61.8% 38.77%,
-        100% 38.77%,
-        69.1% 61.23%,
-        80.9% 97.55%,
-        50% 75.1%,
-        19.1% 97.55%,
-        30.9% 61.23%,
-        0% 38.77%,
-        38.2% 38.77%);
-    clip-path: polygon(50% 2.45%,
-        61.8% 38.77%,
-        100% 38.77%,
-        69.1% 61.23%,
-        80.9% 97.55%,
-        50% 75.1%,
-        19.1% 97.55%,
-        30.9% 61.23%,
-        0% 38.77%,
-        38.2% 38.77%);
+    -webkit-clip-path: polygon(50% 0%,
+        61.8% 36.32%,
+        100% 36.32%,
+        69.1% 58.78%,
+        80.9% 95.1%,
+        50% 72.65%,
+        19.1% 95.1%,
+        30.9% 58.78%,
+        0% 36.32%,
+        38.2% 36.32%);
+    clip-path: polygon(50% 0%,
+        61.8% 36.32%,
+        100% 36.32%,
+        69.1% 58.78%,
+        80.9% 95.1%,
+        50% 72.65%,
+        19.1% 95.1%,
+        30.9% 58.78%,
+        0% 36.32%,
+        38.2% 36.32%);
 }
 
 #dr-the-congo > div.rect {
@@ -47,6 +55,7 @@
     background-color: #F7D618;
     transform:
         translate(-50%, -50%)
+        /* unfortunately a visual estimate */
         rotate(-31.75deg);
 }
 
