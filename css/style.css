@@ -17,6 +17,7 @@ header p {
 .flags {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
 }
 
 .flag {
