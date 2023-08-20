@@ -58,6 +58,11 @@
 #prog-flag > div.chevrons > div.poly1 {
     background-color: #000;
     /* extended triangle */
+    -webkit-clip-path: polygon(var(--max-chev-width) 50%,
+        16% 0,
+        0 0,
+        0 100%,
+        16% 100%);
     clip-path: polygon(var(--max-chev-width) 50%,
         16% 0,
         0 0,
@@ -68,6 +73,11 @@
 #prog-flag > div.chevrons > div.poly2 {
     background-color: #613915;
     /* extended triangle */
+    -webkit-clip-path: polygon(calc(var(--max-chev-width) - 8%) 50%,
+        8% 0,
+        0 0,
+        0 100%,
+        8% 100%);
     clip-path: polygon(calc(var(--max-chev-width) - 8%) 50%,
         8% 0,
         0 0,
@@ -77,15 +87,18 @@
 
 #prog-flag > div.chevrons > div.poly3 {
     background-color: #74D7EE;
+    -webkit-clip-path: polygon(calc(var(--max-chev-width) - 16%) 50%, 0 0, 0 100%);
     clip-path: polygon(calc(var(--max-chev-width) - 16%) 50%, 0 0, 0 100%);
 }
 
 #prog-flag > div.chevrons > div.poly4 {
     background-color: #FFAFC8;
+    -webkit-clip-path: polygon(calc(var(--max-chev-width) - 24%) 50%, 0 12%, 0 88%);
     clip-path: polygon(calc(var(--max-chev-width) - 24%) 50%, 0 12%, 0 88%);
 }
 
 #prog-flag > div.chevrons > div.poly5 {
     background-color: #fff;
+    -webkit-clip-path: polygon(calc(var(--max-chev-width) - 32%) 50%, 0 24%, 0 76%);
     clip-path: polygon(calc(var(--max-chev-width) - 32%) 50%, 0 24%, 0 76%);
 }
