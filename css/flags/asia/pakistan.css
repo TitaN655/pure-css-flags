@@ -3,7 +3,7 @@
     background-color: #fff;
 }
 
-#pakistan > .rect {
+#pakistan .rect {
     width: 75%;
     height: 100%;
     position: relative;
@@ -11,7 +11,7 @@
     background-color: #00401A;
 }
 
-#pakistan > .rect > .cres {
+#pakistan .cres {
     aspect-ratio: 1 / 1;
     height: 60%;
     background-color: #fff;
@@ -25,7 +25,7 @@
     border-radius: 50%;
 }
 
-#pakistan > .rect > .cres::after {
+#pakistan .cres::after {
     /* measurements according to construction sheet */
     content: '';
     aspect-ratio: 1 / 1;
@@ -39,45 +39,38 @@
     border-radius: 50%;
 }
 
-#pakistan > .rect > .star {
+#pakistan .star {
     aspect-ratio: 1 / 1;
     height: 20%;
     position: absolute;
     top: 30%;
     left: 50%;
+    background-color: #fff;
     -webkit-transform: translate(-50%, -50%)
         rotate(48.37deg);
     transform: translate(-50%, -50%)
-        rotate(48.37deg);   
+        rotate(48.37deg);
     -webkit-transform-origin: 50% 150%;
     transform-origin: 50% 150%;
-}
-
-#pakistan > .rect > .star::after {
-    content: '';
-    width: 100%;
-    /* account for 4.9% empty space @ bottom */
-    height: 104.9%;
-    position: absolute;
-    background-color: #fff;
+    /* 5-pointed star measured by cicle */
     -webkit-clip-path: polygon(50% 0%,
-        61.8% 36.32%,
-        100% 36.32%,
-        69.1% 58.78%,
-        80.9% 95.1%,
-        50% 72.65%,
-        19.1% 95.1%,
-        30.9% 58.78%,
-        0% 36.32%,
-        38.2% 36.32%);
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
     clip-path: polygon(50% 0%,
-        61.8% 36.32%,
-        100% 36.32%,
-        69.1% 58.78%,
-        80.9% 95.1%,
-        50% 72.65%,
-        19.1% 95.1%,
-        30.9% 58.78%,
-        0% 36.32%,
-        38.2% 36.32%);
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
 }

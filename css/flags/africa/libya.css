@@ -21,7 +21,7 @@
     background-color: #239E46;
 }
 
-#libya > .cres {
+#libya .cres {
     aspect-ratio: 1 / 1;
     height: 25%;
     background-color: #fff;
@@ -33,7 +33,7 @@
     border-radius: 50%;
 }
 
-#libya > .cres::after {
+#libya .cres::after {
     /* measurements according to construction sheet */
     content: '';
     aspect-ratio: 1 / 1;
@@ -47,44 +47,37 @@
     border-radius: 50%;
 }
 
-#libya > .star {
+#libya .star {
     /* measurements according to construction sheet */
     aspect-ratio: 1 / 1;
     height: calc((100% / 24) * 4.460976414);
     position: absolute;
     top: 50%;
     left: calc(50% + ((100% / 48) * 3.689258762));
+    background-color: #fff;
     -webkit-transform: translate(-50%, -50%)
         rotate(270deg);
     transform: translate(-50%, -50%)
         rotate(270deg);
-}
-
-#libya > .star::after {
-    content: '';
-    width: 100%;
-    /* account for 4.9% empty space @ bottom */
-    height: 104.9%;
-    position: absolute;
-    background-color: #fff;
+    /* 5-pointed star measured by cicle */
     -webkit-clip-path: polygon(50% 0%,
-        61.8% 36.32%,
-        100% 36.32%,
-        69.1% 58.78%,
-        80.9% 95.1%,
-        50% 72.65%,
-        19.1% 95.1%,
-        30.9% 58.78%,
-        0% 36.32%,
-        38.2% 36.32%);
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
     clip-path: polygon(50% 0%,
-        61.8% 36.32%,
-        100% 36.32%,
-        69.1% 58.78%,
-        80.9% 95.1%,
-        50% 72.65%,
-        19.1% 95.1%,
-        30.9% 58.78%,
-        0% 36.32%,
-        38.2% 36.32%);
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
 }

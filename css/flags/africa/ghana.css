@@ -21,34 +21,35 @@
     background-color: #006B3D;
 }
 
-#ghana > div {
+#ghana div {
+    /* measurements according to construction sheet */
     aspect-ratio: 1 / 1;
-    /* account for 2.45% empty space top and bottom */
-    height: calc((104.9% / 3));
+    width: calc((100% / 18) * 4.422291236);
     position: absolute;
-    top: 50%;
-    left: calc((100% / 3) * 1.5);
+    top: calc(50% + ((100% / 12) * .211145618));
+    left: 50%;
     background-color: #000;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    -webkit-clip-path: polygon(50% 2.45%,
-        61.8% 38.77%,
-        100% 38.77%,
-        69.1% 61.23%,
-        80.9% 97.55%,
-        50% 75.1%,
-        19.1% 97.55%,
-        30.9% 61.23%,
-        0% 38.77%,
-        38.2% 38.77%);
-    clip-path: polygon(50% 2.45%,
-        61.8% 38.77%,
-        100% 38.77%,
-        69.1% 61.23%,
-        80.9% 97.55%,
-        50% 75.1%,
-        19.1% 97.55%,
-        30.9% 61.23%,
-        0% 38.77%,
-        38.2% 38.77%);
+    /* 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
 }

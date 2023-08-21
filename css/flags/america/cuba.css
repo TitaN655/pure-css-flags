@@ -36,35 +36,29 @@
     position: absolute;
     top: 50%;
     left: calc(100% / 3);
-    -webkit-transform: translate(-50%, -54.9%);
-    transform: translate(-50%, -54.9%);
-}
-
-#cuba .star::after {
-    content: '';
-    width: 100%;
-    /* account for 4.9% empty space @ bottom */
-    height: 104.9%;
-    position: absolute;
     background-color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* 5-pointed star measured by cicle */
     -webkit-clip-path: polygon(50% 0%,
-        61.8% 36.32%,
-        100% 36.32%,
-        69.1% 58.78%,
-        80.9% 95.1%,
-        50% 72.65%,
-        19.1% 95.1%,
-        30.9% 58.78%,
-        0% 36.32%,
-        38.2% 36.32%);
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
     clip-path: polygon(50% 0%,
-        61.8% 36.32%,
-        100% 36.32%,
-        69.1% 58.78%,
-        80.9% 95.1%,
-        50% 72.65%,
-        19.1% 95.1%,
-        30.9% 58.78%,
-        0% 36.32%,
-        38.2% 36.32%);
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    z-index: 1;
 }

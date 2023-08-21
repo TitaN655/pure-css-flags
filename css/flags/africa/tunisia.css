@@ -49,8 +49,6 @@
         rotate(270deg);
     transform: translate(0, -50%)
         rotate(270deg);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
     /* 5-pointed star measured by cicle */
     -webkit-clip-path: polygon(50% 0%,
         61% 35%,
