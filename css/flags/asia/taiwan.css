@@ -1,0 +1,82 @@
+#taiwan {
+    aspect-ratio: 3 / 2;
+    background-color: #F20000;
+}
+
+#taiwan > .rect {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    background-color: #0029CC;
+}
+
+#taiwan .dodecagram {
+    aspect-ratio: 1 / 1;
+    height: 75%;
+    width: calc(100% / 7.5);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#taiwan .dodecagram > div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+#taiwan .dodecagram > div.poly2 {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+#taiwan .dodecagram > div.poly3 {
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+#taiwan .dodecagram > div.poly4 {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#taiwan .dodecagram > div.poly5 {
+    -webkit-transform: rotate(120deg);
+    transform: rotate(120deg);
+}
+
+#taiwan .dodecagram > div.poly6 {
+    -webkit-transform: rotate(150deg);
+    transform: rotate(150deg);
+}
+
+#taiwan > .rect > .circ {
+    aspect-ratio: 1 / 1;
+    height: 42.5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: inherit;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+#taiwan > .rect > .circ::after {
+    content: '';
+    aspect-ratio: 1 / 1;
+    /* measurement units according to construction sheet */
+    height: calc((100% / 17) * 15);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
