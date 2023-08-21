@@ -1,0 +1,70 @@
+#cuba {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background-color: #002590;
+}
+
+#cuba .rect {
+    height: 60%;
+    position: relative;
+    top: 20%;
+    background-color: #fff;
+}
+
+#cuba .rect::after {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    top: calc(100% / 3);
+    background-color: #002590;
+}
+
+#cuba .poly {
+    position: absolute;
+    top: 0;
+    width: 43.3%;
+    height: 100%;
+    background: #CC0D0D;
+    -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+
+#cuba .star {
+    aspect-ratio: 1 / 1;
+    height: calc(100% / 3);
+    position: absolute;
+    top: 50%;
+    left: calc(100% / 3);
+    -webkit-transform: translate(-50%, -54.9%);
+    transform: translate(-50%, -54.9%);
+}
+
+#cuba .star::after {
+    content: '';
+    width: 100%;
+    /* account for 4.9% empty space @ bottom */
+    height: 104.9%;
+    position: absolute;
+    background-color: #fff;
+    -webkit-clip-path: polygon(50% 0%,
+        61.8% 36.32%,
+        100% 36.32%,
+        69.1% 58.78%,
+        80.9% 95.1%,
+        50% 72.65%,
+        19.1% 95.1%,
+        30.9% 58.78%,
+        0% 36.32%,
+        38.2% 36.32%);
+    clip-path: polygon(50% 0%,
+        61.8% 36.32%,
+        100% 36.32%,
+        69.1% 58.78%,
+        80.9% 95.1%,
+        50% 72.65%,
+        19.1% 95.1%,
+        30.9% 58.78%,
+        0% 36.32%,
+        38.2% 36.32%);
+}

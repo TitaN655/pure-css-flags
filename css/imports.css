@@ -18,6 +18,7 @@
 @import "flags/africa/mauritius.css";
 @import "flags/africa/sudan.css";
 @import "flags/africa/libya.css";
+@import "flags/africa/tunisia.css";
 
 /* America */
 @import "flags/america/peru.css";
@@ -29,6 +30,7 @@
 @import "flags/america/jamaica.css";
 @import "flags/america/suriname.css";
 @import "flags/america/stvincent-grenadines.css";
+@import "flags/america/cuba.css";
 
 /* Asia */
 @import "flags/asia/japan.css";
