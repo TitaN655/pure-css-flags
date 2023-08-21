@@ -1,0 +1,83 @@
+#pakistan {
+    aspect-ratio: 3 / 2;
+    background-color: #fff;
+}
+
+#pakistan > .rect {
+    width: 75%;
+    height: 100%;
+    position: relative;
+    left: 25%;
+    background-color: #00401A;
+}
+
+#pakistan > .rect > .cres {
+    aspect-ratio: 1 / 1;
+    height: 60%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%)
+        rotate(-41.63deg);
+    transform: translate(-50%, -50%)
+        rotate(-41.63deg);
+    border-radius: 50%;
+}
+
+#pakistan > .rect > .cres::after {
+    /* measurements according to construction sheet */
+    content: '';
+    aspect-ratio: 1 / 1;
+    height: calc((100% / 6) * 5.5);
+    background-color: #00401A;
+    position: absolute;
+    top: 50%;
+    left: calc(50% + ((100% / 6) * 1.0259966115));
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+#pakistan > .rect > .star {
+    aspect-ratio: 1 / 1;
+    height: 20%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%)
+        rotate(48.37deg);
+    transform: translate(-50%, -50%)
+        rotate(48.37deg);   
+    -webkit-transform-origin: 50% 150%;
+    transform-origin: 50% 150%;
+}
+
+#pakistan > .rect > .star::after {
+    content: '';
+    width: 100%;
+    /* account for 4.9% empty space @ bottom */
+    height: 104.9%;
+    position: absolute;
+    background-color: #fff;
+    -webkit-clip-path: polygon(50% 0%,
+        61.8% 36.32%,
+        100% 36.32%,
+        69.1% 58.78%,
+        80.9% 95.1%,
+        50% 72.65%,
+        19.1% 95.1%,
+        30.9% 58.78%,
+        0% 36.32%,
+        38.2% 36.32%);
+    clip-path: polygon(50% 0%,
+        61.8% 36.32%,
+        100% 36.32%,
+        69.1% 58.78%,
+        80.9% 95.1%,
+        50% 72.65%,
+        19.1% 95.1%,
+        30.9% 58.78%,
+        0% 36.32%,
+        38.2% 36.32%);
+}

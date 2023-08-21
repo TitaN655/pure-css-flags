@@ -17,6 +17,7 @@
 @import "flags/africa/dr-the-congo.css";
 @import "flags/africa/mauritius.css";
 @import "flags/africa/sudan.css";
+@import "flags/africa/libya.css";
 
 /* America */
 @import "flags/america/peru.css";
@@ -26,6 +27,8 @@
 @import "flags/america/trinidad-tobago.css";
 @import "flags/america/st-lucia.css";
 @import "flags/america/jamaica.css";
+@import "flags/america/suriname.css";
+@import "flags/america/stvincent-grenadines.css";
 
 /* Asia */
 @import "flags/asia/japan.css";
@@ -40,6 +43,9 @@
 @import "flags/asia/u-arab-emirates.css";
 @import "flags/asia/kuwait.css";
 @import "flags/asia/turkey.css";
+@import "flags/asia/qatar.css";
+@import "flags/asia/pakistan.css";
+@import "flags/asia/maldives.css";
 
 /* Europe */
 @import "flags/europe/ukraine.css";
