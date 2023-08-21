@@ -14,9 +14,16 @@ header p {
     line-height: 1.5rem;
 }
 
+h2 {
+    padding: 10px;
+    background-color: #ddd;
+    text-align: center;
+}
+
 .flags {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: baseline;
 }
 
@@ -27,7 +34,8 @@ header p {
     background-color: white;
     margin: 10px;
     padding: 2px;
-    width: 150px;
+    width: 12vw;
+    min-width: 100px;
 }
 
 .flag > div {
