@@ -27,7 +27,6 @@
     height: calc((104.9% / 3));
     position: absolute;
     top: 50%;
-    left: 50%;
     left: calc((100% / 3) * 1.5);
     background-color: #000;
     -webkit-transform: translate(-50%, -50%);
