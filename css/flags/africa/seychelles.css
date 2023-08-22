@@ -1,0 +1,50 @@
+#seychelles {
+    aspect-ratio: 2 / 1;
+    background-color: #D92323;
+}
+
+#seychelles {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background-color: #D92323;
+}
+
+#seychelles .poly1 {
+    width: calc(200% / 3);
+    height: 100%;
+    position: relative;
+    background-color: #FCD955;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+
+#seychelles .poly1::after {
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #003D88;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+
+#seychelles .poly2 {
+    width: 100%;
+    height: calc(200% / 3);
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0);
+    clip-path: polygon(0 100%, 100% 100%, 100% 0);
+}
+
+#seychelles .poly2::after {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    background-color: #007A3A;
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0);
+    clip-path: polygon(0 100%, 100% 100%, 100% 0);
+}
