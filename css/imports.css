@@ -20,6 +20,7 @@
 @import "flags/africa/libya.css";
 @import "flags/africa/tunisia.css";
 @import "flags/africa/seychelles.css";
+@import "flags/africa/djibouti.css";
 
 /* America */
 @import "flags/america/peru.css";
@@ -86,6 +87,7 @@
 /* Oceania */
 @import "flags/oceania/palau.css";
 @import "flags/oceania/tonga.css";
+@import "flags/oceania/nauru.css";
 
 /* LGBTQ+ */
 @import "flags/lgbt/prog-flag.css";
