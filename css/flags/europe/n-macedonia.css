@@ -13,7 +13,9 @@
     position: absolute;
     top: 50%;
     background-color: #F9D616;
+    -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
+    -webkit-clip-path: polygon(100% 50%, 0 100%, 0 0);
     clip-path: polygon(100% 50%, 0 100%, 0 0);
 }
 
@@ -24,7 +26,9 @@
     right: 0;
     top: 50%;
     background-color: #F9D616;
+    -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
+    -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%);
     clip-path: polygon(0 50%, 100% 0, 100% 100%);
 }
 
@@ -34,7 +38,9 @@
     position: absolute;
     left: 50%;
     background-color: #F9D616;
+    -webkit-transform: translate(-50%);
     transform: translate(-50%);
+    -webkit-clip-path: polygon(50% 100%, 100% 0, 0 0);
     clip-path: polygon(50% 100%, 100% 0, 0 0);
 }
 
@@ -45,7 +51,9 @@
     bottom: 0;
     left: 50%;
     background-color: #F9D616;
+    -webkit-transform: translate(-50%);
     transform: translate(-50%);
+    -webkit-clip-path: polygon(50% 0, 0 100%, 100% 100%);
     clip-path: polygon(50% 0, 0 100%, 100% 100%);
 }
 
@@ -55,9 +63,12 @@
     position: absolute;
     top: 0;
     background-color: #F9D616;
+    -webkit-clip-path: polygon(0 0,
+        calc(30% - var(--ray-h-offset-y)) 0,
+            100% 100%);
     clip-path: polygon(0 0,
-    calc(30% - var(--ray-h-offset-y)) 0,
-        100% 100%);
+        calc(30% - var(--ray-h-offset-y)) 0,
+            100% 100%);
 }
 
 #n-macedonia .poly6 {
@@ -67,6 +78,9 @@
     top: 0;
     right: 0;
     background-color: #F9D616;
+    -webkit-clip-path: polygon(0 100%,
+        calc(70% + var(--ray-h-offset-y)) 0,
+        100% 0);
     clip-path: polygon(0 100%,
         calc(70% + var(--ray-h-offset-y)) 0,
         100% 0);
@@ -78,6 +92,9 @@
     position: absolute;
     bottom: 0;
     background-color: #F9D616;
+    -webkit-clip-path: polygon(0 100%,
+        calc(30% - var(--ray-h-offset-y)) 100%,
+        100% 0);
     clip-path: polygon(0 100%,
         calc(30% - var(--ray-h-offset-y)) 100%,
         100% 0);
@@ -90,6 +107,9 @@
     bottom: 0;
     right: 0;
     background-color: #F9D616;
+    -webkit-clip-path: polygon(0 0,
+        calc(70% + var(--ray-h-offset-y)) 100%,
+        100% 100%);
     clip-path: polygon(0 0,
         calc(70% + var(--ray-h-offset-y)) 100%,
         100% 100%);
@@ -102,6 +122,7 @@
     top: 50%;
     left: 50%;
     background-color: #CE2028;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 50%;
 }
