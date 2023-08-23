@@ -10,49 +10,64 @@
     background-color: #0029CC;
 }
 
-#taiwan .dodecagram {
+#taiwan .star {
     aspect-ratio: 1 / 1;
     height: 75%;
-    width: calc(100% / 7.5);
     position: relative;
+    background-color: #fff;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
-
-#taiwan .dodecagram > div {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-color: #fff;
-    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
-
-#taiwan .dodecagram > div.poly2 {
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
-}
-
-#taiwan .dodecagram > div.poly3 {
-    -webkit-transform: rotate(60deg);
-    transform: rotate(60deg);
-}
-
-#taiwan .dodecagram > div.poly4 {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-#taiwan .dodecagram > div.poly5 {
-    -webkit-transform: rotate(120deg);
-    transform: rotate(120deg);
-}
-
-#taiwan .dodecagram > div.poly6 {
-    -webkit-transform: rotate(150deg);
-    transform: rotate(150deg);
+    /* 12-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        56.47% 25.85%,
+        75% 6.7%,
+        67.68% 32.32%,
+        93.3% 25%,
+        74.15% 43.53%,
+        100% 50%,
+        74.15% 56.47%,
+        93.3% 75%,
+        67.68% 67.68%,
+        75% 93.3%,
+        56.47% 74.15%,
+        50% 100%,
+        43.53% 74.15%,
+        25% 93.3%,
+        32.32% 67.68%,
+        6.7% 75%,
+        25.85% 56.47%,
+        0% 50%,
+        25.85% 43.53%,
+        6.7% 25%,
+        32.32% 32.32%,
+        25% 6.7%,
+        43.53% 25.85%);
+    clip-path: polygon(50% 0%,
+        56.47% 25.85%,
+        75% 6.7%,
+        67.68% 32.32%,
+        93.3% 25%,
+        74.15% 43.53%,
+        100% 50%,
+        74.15% 56.47%,
+        93.3% 75%,
+        67.68% 67.68%,
+        75% 93.3%,
+        56.47% 74.15%,
+        50% 100%,
+        43.53% 74.15%,
+        25% 93.3%,
+        32.32% 67.68%,
+        6.7% 75%,
+        25.85% 56.47%,
+        0% 50%,
+        25.85% 43.53%,
+        6.7% 25%,
+        32.32% 32.32%,
+        25% 6.7%,
+        43.53% 25.85%);
 }
 
 #taiwan > .rect > .circ {
