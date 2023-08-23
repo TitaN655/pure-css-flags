@@ -1,0 +1,74 @@
+#jordan {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background-color: #fff;
+}
+
+#jordan::before,
+#jordan::after {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+}
+
+#jordan::before {
+    background-color: #000;
+}
+
+#jordan::after {
+    bottom: 0;
+    background-color: #007A3D;
+}
+
+#jordan .poly {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #CE1126;
+    -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    z-index: 1;
+}
+
+#jordan .star {
+    aspect-ratio: 1 / 1;
+    width: calc(150% / 10.5);
+    position: absolute;
+    top: 50%;
+    /* measurement units according to construction sheet */
+    left: calc((100% / 42) * 12.97871376);
+    background-color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* 7-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        60.85% 27.48%,
+        89.09% 18.83%,
+        74.37% 44.44%,
+        98.74% 61.13%,
+        69.54% 65.59%,
+        71.69% 95.05%,
+        50% 75%,
+        28.31% 95.05%,
+        30.46% 65.59%,
+        1.26% 61.13%,
+        25.63% 44.44%,
+        10.91% 18.83%,
+        39.15% 27.48%);
+    clip-path: polygon(50% 0%,
+        60.85% 27.48%,
+        89.09% 18.83%,
+        74.37% 44.44%,
+        98.74% 61.13%,
+        69.54% 65.59%,
+        71.69% 95.05%,
+        50% 75%,
+        28.31% 95.05%,
+        30.46% 65.59%,
+        1.26% 61.13%,
+        25.63% 44.44%,
+        10.91% 18.83%,
+        39.15% 27.48%);
+    z-index: 1;
+}

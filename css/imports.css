@@ -32,6 +32,7 @@
 @import "flags/america/suriname.css";
 @import "flags/america/stvincent-grenadines.css";
 @import "flags/america/cuba.css";
+@import "flags/america/guyana.css";
 
 /* Asia */
 @import "flags/asia/japan.css";
@@ -50,6 +51,7 @@
 @import "flags/asia/pakistan.css";
 @import "flags/asia/maldives.css";
 @import "flags/asia/taiwan.css";
+@import "flags/asia/jordan.css";
 @import "flags/asia/vietnam.css";
 
 /* Europe */
