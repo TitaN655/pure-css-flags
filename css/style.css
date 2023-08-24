@@ -34,15 +34,15 @@ h2 {
     background-color: white;
     margin: 10px;
     padding: 2px;
-    width: 8vw;
-    min-width: 125px;
+    width: 10vw;
+    min-width: 150px;
 }
 
-.flag > div {
+.flag > div[id] {
     border: 3px solid black;
 }
 
-.flag > div:hover {
+.flag > div[id]:hover {
     box-shadow: -1px 0 black,
         0 1px black,
         1px 0 black,
@@ -50,13 +50,34 @@ h2 {
 }
 
 .flag p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
     margin: .5rem;
 }
 
-.hide {
-    display: none;
+.flag .ratios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.flag .ratios li {
+    margin: 0;
+    padding: 4px 4%;
+    list-style: none;
+}
+
+.flag .ratios li a {
+    padding: 2px 8px;
+    border: 1px solid;
+    text-decoration: none;
+}
+
+.flag .ratios li a:hover {
+    background-color: #CCE6FF;
 }
 
 .scale-medium {

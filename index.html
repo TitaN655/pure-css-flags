@@ -593,8 +593,15 @@
                     <div class="rect5"></div>
                 </div>
                 <p>United Kingdom</p>
+                <ul class="ratios">
+                    <li>
+                        <a href="javascript:void(0)" onclick="updateAspectRatio('u-kingdom', '1:2')">1:2</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" onclick="updateAspectRatio('u-kingdom', '3:5')">3:5</a>
+                    </li>
+                </ul>
             </div>
-            
         </div>
 
         <hr />
@@ -729,5 +736,13 @@
             <hr />
             <p>Copyright &copy; Matthew Meade. All rights reserved.</p>
         </footer>
+
+        <script type="text/javascript">
+            function updateAspectRatio(elementId, ratio)
+            {
+                element = document.getElementById(elementId);
+                element.setAttribute("data-aspect-ratio", ratio);
+            }
+        </script>
     </body>
 </html>
