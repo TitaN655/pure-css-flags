@@ -3,7 +3,7 @@
     background-color: #F20000;
 }
 
-#taiwan > .rect {
+#taiwan .rect {
     width: 50%;
     height: 50%;
     position: relative;
@@ -70,7 +70,7 @@
         43.53% 25.85%);
 }
 
-#taiwan > .rect > .circ {
+#taiwan .circ {
     aspect-ratio: 1 / 1;
     height: 42.5%;
     position: absolute;
@@ -82,7 +82,7 @@
     border-radius: 50%;
 }
 
-#taiwan > .rect > .circ::after {
+#taiwan .circ::after {
     content: '';
     aspect-ratio: 1 / 1;
     /* measurement units according to construction sheet */

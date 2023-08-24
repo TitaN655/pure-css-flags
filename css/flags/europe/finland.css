@@ -8,17 +8,17 @@
     --unit-y: calc(100% / 11);
 }
 
-#finland > div {
+#finland div {
     background-color: #002F6C;
 }
 
-#finland > div.rect1 {
+#finland .rect1 {
     height: calc(var(--unit-y) * 3);
     position: relative;
     top: calc(var(--unit-y) * 4);
 }
 
-#finland > div.rect2 {
+#finland .rect2 {
     width: calc(var(--unit-x) * 3);
     height: 100%;
     position: absolute;

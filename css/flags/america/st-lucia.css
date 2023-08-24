@@ -3,7 +3,7 @@
     background-color: #66CCFF;
 }
 
-#st-lucia > div {
+#st-lucia div {
     /* measurement units according to construction sheet */
     width: calc(150% / 4.5);
     height: calc(370.80992425% / 4.5);
@@ -17,7 +17,7 @@
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
-#st-lucia > div::before {
+#st-lucia div::before {
     content: '';
     /* measurement units according to construction sheet */
     width: calc(100% - (100% / 7.416198485));
@@ -32,7 +32,7 @@
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
-#st-lucia > div::after {
+#st-lucia div::after {
     content: '';
     width: 100%;
     height: 50%;

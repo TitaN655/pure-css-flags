@@ -21,7 +21,7 @@
     background-color: #0DB02B;
 }
 
-#niger > div {
+#niger div {
     aspect-ratio: 1 / 1;
     width: calc((100% / 3) * .7);
     position: relative;

@@ -16,7 +16,7 @@
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
 
-#tanzania > div {
+#tanzania div {
     /* measurement according to construction sheet */
     height: calc(calc(100% / 48) * 19);
     width: 125%;
@@ -30,7 +30,7 @@
     z-index: 1;
 }
 
-#tanzania > div::after {
+#tanzania div::after {
     /* measurement according to construction sheet */
     --unit-y: calc(100% / 19);
 

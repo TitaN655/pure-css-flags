@@ -8,17 +8,17 @@
     --unit-y: calc(100% / 28);
 }
 
-#denmark > div {
+#denmark div {
     background-color: #fff;
 }
 
-#denmark > div.rect1 {
+#denmark .rect1 {
     height: calc(var(--unit-y) * 4);
     position: relative;
     top: calc(var(--unit-y) * 12);
 }
 
-#denmark > div.rect2 {
+#denmark .rect2 {
     width: calc(var(--unit-x) * 4);
     height: 100%;
     position: absolute;

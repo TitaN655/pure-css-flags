@@ -16,7 +16,7 @@
     background-color: #000;
 }
 
-#ally-flag > div.rainbow {
+#ally-flag .rainbow {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -35,45 +35,45 @@
         100% 100%);
 }
 
-#ally-flag > div.rainbow > .upper-pt,
-#ally-flag > div.rainbow > .lower-pt {
+#ally-flag .upper-pt,
+#ally-flag .lower-pt {
     width: 100%;
     height: 50%;
     position: relative;
 }
 
-#ally-flag > div.rainbow > .upper-pt {
+#ally-flag .upper-pt {
     background-color: #FF8C00;
 }
 
-#ally-flag > div.rainbow > .lower-pt {
+#ally-flag .lower-pt {
     background-color: #004DFF;
 }
 
-#ally-flag > div.rainbow > .upper-pt::before,
-#ally-flag > div.rainbow > .upper-pt::after,
-#ally-flag > div.rainbow > .lower-pt::before,
-#ally-flag > div.rainbow > .lower-pt::after {
+#ally-flag .upper-pt::before,
+#ally-flag .upper-pt::after,
+#ally-flag .lower-pt::before,
+#ally-flag .lower-pt::after {
     content: '';
     width: 100%;
     height: calc(100% / 3);
     position: absolute;
 }
 
-#ally-flag > div.rainbow > .upper-pt::before {
+#ally-flag .upper-pt::before {
     background-color: #E40303;
 }
 
-#ally-flag > div.rainbow > .upper-pt::after {
+#ally-flag .upper-pt::after {
     bottom: 0;
     background-color: #FFED00;
 }
 
-#ally-flag > div.rainbow > .lower-pt::before {
+#ally-flag .lower-pt::before {
     background-color: #008026;
 }
 
-#ally-flag > div.rainbow > .lower-pt::after {
+#ally-flag .lower-pt::after {
     bottom: 0;
     background-color: #750787;
 }

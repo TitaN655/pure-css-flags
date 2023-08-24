@@ -13,7 +13,7 @@
     background-color: #00A650;
 }
 
-#mauritius > div {
+#mauritius div {
     height: 25%;
     width: 100%;
     position: relative;
@@ -21,7 +21,7 @@
     background-color: #131A6D;
 }
 
-#mauritius > div::after {
+#mauritius div::after {
     content: '';
     height: 100%;
     width: 100%;

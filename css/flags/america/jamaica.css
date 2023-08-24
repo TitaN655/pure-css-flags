@@ -25,7 +25,7 @@
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
-#jamaica > div {
+#jamaica div {
     height: calc(100% / 6);
     width: 125%;
     position: absolute;
@@ -35,12 +35,12 @@
     z-index: 1;
 }
 
-#jamaica > div.rect1 {
+#jamaica .rect1 {
     transform: translate(-50%, -50%)
         rotate(-26.565deg);
 }
 
-#jamaica > div.rect2 {
+#jamaica .rect2 {
     transform: translate(-50%, -50%)
         rotate(26.565deg);
 }

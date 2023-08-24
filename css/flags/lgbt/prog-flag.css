@@ -6,56 +6,56 @@
     --max-chev-width: calc(115.625% / 2.34375);
 }
 
-#prog-flag > .upper-pt {
+#prog-flag .upper-pt {
     width: 100%;
     height: 50%;
     position: relative;
     background-color: #FF8C00;
 }
 
-#prog-flag > .lower-pt {
+#prog-flag .lower-pt {
     width: 100%;
     height: 50%;
     position: relative;
     background-color: #004DFF;
 }
 
-#prog-flag > .upper-pt::before,
-#prog-flag > .upper-pt::after,
-#prog-flag > .lower-pt::before,
-#prog-flag > .lower-pt::after {
+#prog-flag .upper-pt::before,
+#prog-flag .upper-pt::after,
+#prog-flag .lower-pt::before,
+#prog-flag .lower-pt::after {
     content: '';
     width: 100%;
     height: calc(100% / 3);
     position: absolute;
 }
 
-#prog-flag > .upper-pt::before {
+#prog-flag .upper-pt::before {
     background-color: #E40303;
 }
 
-#prog-flag > .upper-pt::after {
+#prog-flag .upper-pt::after {
     bottom: 0;
     background-color: #FFED00;
 }
 
-#prog-flag > .lower-pt::before {
+#prog-flag .lower-pt::before {
     background-color: #008026;
 }
 
-#prog-flag > .lower-pt::after {
+#prog-flag .lower-pt::after {
     bottom: 0;
     background-color: #750787;
 }
 
-#prog-flag > .chevrons > div {
+#prog-flag .chevrons div {
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
 }
 
-#prog-flag > .chevrons > div.poly1 {
+#prog-flag .poly1 {
     background-color: #000;
     /* extended triangle */
     -webkit-clip-path: polygon(var(--max-chev-width) 50%,
@@ -70,7 +70,7 @@
         16% 100%);
 }
 
-#prog-flag > .chevrons > div.poly2 {
+#prog-flag .poly2 {
     background-color: #613915;
     /* extended triangle */
     -webkit-clip-path: polygon(calc(var(--max-chev-width) - 8%) 50%,
@@ -85,19 +85,19 @@
         8% 100%);
 }
 
-#prog-flag > .chevrons > div.poly3 {
+#prog-flag .poly3 {
     background-color: #74D7EE;
     -webkit-clip-path: polygon(calc(var(--max-chev-width) - 16%) 50%, 0 0, 0 100%);
     clip-path: polygon(calc(var(--max-chev-width) - 16%) 50%, 0 0, 0 100%);
 }
 
-#prog-flag > .chevrons > div.poly4 {
+#prog-flag .poly4 {
     background-color: #FFAFC8;
     -webkit-clip-path: polygon(calc(var(--max-chev-width) - 24%) 50%, 0 12%, 0 88%);
     clip-path: polygon(calc(var(--max-chev-width) - 24%) 50%, 0 12%, 0 88%);
 }
 
-#prog-flag > .chevrons > div.poly5 {
+#prog-flag .poly5 {
     background-color: #fff;
     -webkit-clip-path: polygon(calc(var(--max-chev-width) - 32%) 50%, 0 24%, 0 76%);
     clip-path: polygon(calc(var(--max-chev-width) - 32%) 50%, 0 24%, 0 76%);

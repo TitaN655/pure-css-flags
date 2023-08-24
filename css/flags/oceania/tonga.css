@@ -3,15 +3,15 @@
     background-color: #C10000;
 }
 
-#tonga > div {
+#tonga div {
     width: calc(125% / 3);
     height: 50%;
     position: relative;
     background-color: #fff;
 }
 
-#tonga > div::before,
-#tonga > div::after {
+#tonga div::before,
+#tonga div::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -21,12 +21,12 @@
     transform: translate(-50%, -50%);
 }
 
-#tonga > div::before {
+#tonga div::before {
     width: 45%;
     height: 25%;
 }
 
-#tonga > div::after {
+#tonga div::after {
     width: 15%;
     height: 75%;
 }

@@ -4,17 +4,17 @@
     background-color: #006AA7;
 }
 
-#sweden > div {
+#sweden div {
     background-color: #FFCD00;
 }
 
-#sweden > div.rect1 {
+#sweden .rect1 {
     height: 20%;
     position: relative;
     top: 40%;
 }
 
-#sweden > div.rect2 {
+#sweden .rect2 {
     width: 12.5%;
     height: 100%;
     position: absolute;

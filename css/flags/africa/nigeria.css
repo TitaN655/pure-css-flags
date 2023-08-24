@@ -3,7 +3,7 @@
     background-color: #008753;
 }
 
-#nigeria > div {
+#nigeria div {
     width: calc(100% / 3);
     height: 100%;
     position: relative;

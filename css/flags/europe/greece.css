@@ -8,38 +8,38 @@
     --unit-y: calc(100% / 18);
 }
 
-#greece div > div {
+#greece div div {
     background-color: #fff;
 }
 
-#greece > .cross {
+#greece .cross {
     width: calc(var(--unit-x) * 10);
     height: calc(var(--unit-y) * 10);
     position: absolute;
 }
 
-#greece > .cross > .rect1 {
+#greece .cross .rect1 {
     width: 100%;
     height: 20%;
     position: absolute;
     top: 40%;
 }
 
-#greece > .cross > .rect2 {
+#greece .cross .rect2 {
     width: 20%;
     height: 100%;
     position: absolute;
     left: 40%;
 }
 
-#greece > .stripes1 {
+#greece .stripes1 {
     width: calc(var(--unit-x) * 17);
     height: calc(var(--unit-y) * 8);
     position: absolute;
     right: 0;
 }
 
-#greece > .stripes2 {
+#greece .stripes2 {
     width: 100%;
     height: calc(var(--unit-y) * 8);
     position: absolute;
@@ -47,8 +47,8 @@
     bottom: calc(var(--unit-y) * 2);;
 }
 
-#greece > .stripes1 > .rect1, 
-#greece > .stripes2 > .rect1 {
+#greece .stripes1 .rect1, 
+#greece .stripes2 .rect1 {
     content: '';
     width: 100%;
     height: 25%;
@@ -56,8 +56,8 @@
     top: 25%;
 }
 
-#greece > .stripes1 > .rect2, 
-#greece > .stripes2 > .rect2 {
+#greece .stripes1 .rect2, 
+#greece .stripes2 .rect2 {
     content: '';
     width: 100%;
     height: 25%;

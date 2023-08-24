@@ -3,7 +3,7 @@
     background-color: #D21034;
 }
 
-#maldives > .rect {
+#maldives .rect {
     width: calc(100% / 1.5);
     height: 50%;
     position: relative;
@@ -12,7 +12,7 @@
     background-color: #007E3A;
 }
 
-#maldives > .rect > .cres {
+#maldives .cres {
     aspect-ratio: 1 / 1;
     height: calc(100% / 1.5);
     background-color: #fff;
@@ -24,7 +24,7 @@
     border-radius: 50%;
 }
 
-#maldives > .rect > .cres::after {
+#maldives .cres::after {
     content: '';
     aspect-ratio: 1 / 1;
     height: 100%;

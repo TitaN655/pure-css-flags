@@ -3,14 +3,14 @@
     background-color: #A51931;
 }
 
-#thailand > div {
+#thailand div {
     height: calc(200% / 3);
     position: relative;
     top: calc(100% / 6);
     background-color: #fff;
 }
 
-#thailand > div::after {
+#thailand div::after {
     content: '';
     height: 50%;
     width: 100%;

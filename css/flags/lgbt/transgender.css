@@ -3,14 +3,14 @@
     background-color: #60CFFA;
 }
 
-#transgender > div {
+#transgender div {
     height: calc(300% / 5);
     position: relative;
     top: calc(100% / 5);
     background-color: #F4A8BA;
 }
 
-#transgender > div::after {
+#transgender div::after {
     content: '';
     height: calc(100% / 3);
     width: 100%;

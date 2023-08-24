@@ -21,7 +21,7 @@
     background-color: #009E60;
 }
 
-#stvincent-grenadines > div {
+#stvincent-grenadines div {
     height: calc(100% / 3);
     width: calc(100% / 9);
     position: absolute;
@@ -30,18 +30,18 @@
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
-#stvincent-grenadines > div.diam1 {
+#stvincent-grenadines .diam1 {
     left: 50%;
     bottom: 12.5%;
     transform: translate(-50%);
 }
 
-#stvincent-grenadines > div.diam2 {
+#stvincent-grenadines .diam2 {
     left: 37.5%;
     bottom: calc(100% / 3);
 }
 
-#stvincent-grenadines > div.diam3 {
+#stvincent-grenadines .diam3 {
     right: 37.5%;
     bottom: calc(100% / 3);
 }

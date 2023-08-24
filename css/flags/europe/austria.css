@@ -3,7 +3,7 @@
     background-color: #ED2939;
 }
 
-#austria > div {
+#austria div {
     height: calc(100% / 3);
     position: relative;
     top: calc(100% / 3);
