@@ -1,0 +1,92 @@
+#azerbaijan {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background-color: #EF3340;
+}
+
+#azerbaijan::before,
+#azerbaijan::after {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+}
+
+#azerbaijan::before {
+    background-color: #00B5E2;
+}
+
+#azerbaijan::after {
+    bottom: 0;
+    background-color: #509E2F;
+}
+
+#azerbaijan .cres {
+    aspect-ratio: 1 / 1;
+    height: calc(300% / 10);
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    border-radius: 50%;
+}
+
+#azerbaijan .cres::after {
+    /* measurements according to construction sheet */
+    content: '';
+    aspect-ratio: 1 / 1;
+    height: calc(250% / 3);
+    background-color: #EF3340;
+    position: absolute;
+    top: 50%;
+    left: calc(100% / 4.5);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    border-radius: 50%;
+}
+
+#azerbaijan .star {
+    aspect-ratio: 1 / 1;
+    height: calc(100% / 6);
+    position: absolute;
+    top: 50%;
+    left: calc(193.75% / 3.75);
+    background-color: #fff;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    /* 8-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        59.57% 26.9%,
+        85.36% 14.65%,
+        73.1% 40.43%,
+        100% 50%,
+        73.1% 59.57%,
+        85.36% 85.36%,
+        59.57% 73.1%,
+        50% 100%,
+        40.43% 73.1%,
+        14.65% 85.36%,
+        26.9% 59.57%,
+        0% 50%,
+        26.9% 40.43%,
+        14.65% 14.65%,
+        40.43% 26.9%);
+    clip-path: polygon(50% 0%,
+        59.57% 26.9%,
+        85.36% 14.65%,
+        73.1% 40.43%,
+        100% 50%,
+        73.1% 59.57%,
+        85.36% 85.36%,
+        59.57% 73.1%,
+        50% 100%,
+        40.43% 73.1%,
+        14.65% 85.36%,
+        26.9% 59.57%,
+        0% 50%,
+        26.9% 40.43%,
+        14.65% 14.65%,
+        40.43% 26.9%);
+}

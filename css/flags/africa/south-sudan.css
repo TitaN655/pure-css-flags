@@ -1,0 +1,83 @@
+#south-sudan {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background-color: #fff;
+
+    /* measurement units according to construction sheet */
+    --unit-y: calc(100% / 57);
+}
+
+#south-sudan::before,
+#south-sudan::after {
+    content: '';
+    height: calc(var(--unit-y) * 17);
+    width: 100%;
+    position: absolute;
+}
+
+#south-sudan::before {
+    background-color: #000;
+}
+
+#south-sudan::after {
+    bottom: 0;
+    background-color: #078930;
+}
+
+#south-sudan .rect {
+    height: calc(var(--unit-y) * 17);
+    width: 100%;
+    position: relative;
+    top: 50%;
+    background-color: #DA121A;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+#south-sudan .poly {
+    /* equilateral triangle based on height of flag */
+    height: 100%;
+    width: calc((50% / 2) * tan(60deg));
+    position: absolute;
+    top: 0;
+    background-color: #0F47AF;
+    -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    z-index: 1;
+}
+
+#south-sudan .star {
+    aspect-ratio: 1 / 1;
+    height: calc(100% / 3);
+    position: absolute;
+    /* position in the centre of the equilateral triangle */
+    top: 50%;
+    left: calc((50% / 2) * tan(30deg));
+    background-color: #FCDD09;
+    -webkit-transform: translate(-50%, -50%)
+        rotate(270deg);
+    transform: translate(-50%, -50%)
+        rotate(270deg);
+    /* 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    z-index: 1;
+}

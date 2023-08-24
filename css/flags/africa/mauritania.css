@@ -1,0 +1,78 @@
+#mauritania {
+    aspect-ratio: 3 / 2;
+    background-color: #D01C1F;
+}
+
+#mauritania .rect {
+    height: 60%;
+    position: relative;
+    top: 20%;
+    background-color: #00A95C;
+    overflow: hidden;
+}
+
+#mauritania .cres {
+    aspect-ratio: 1 / 1;
+    width: 50%;
+    position: absolute;
+    bottom: calc(100% / 6);
+    left: 50%;
+    background-color: #FFD700;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    border-radius: 50%;
+}
+
+#mauritania .cres::after {
+    content: '';
+    height: calc(122.65625% / 1.46484375);
+    width: calc(100% + (100% / 75));
+    background-color: #fff;
+    position: absolute;
+    bottom: 13.6%;
+    left: 50%;
+    background-color: #00A95C;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    border-radius: 50%;
+}
+
+#mauritania .star {
+    height: calc(149.21875% / 4.6875);
+    width: 13.4%;
+    position: absolute;
+    top: calc(100% / 6);
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+#mauritania .star::after {
+    content: '';
+    width: 100%;
+    /* account for 4.9% empty space @ bottom */
+    height: 104.9%;
+    position: absolute;
+    background-color: #FFD700;
+    /* 5-pointed star measured by box */
+    -webkit-clip-path: polygon(50% 0%,
+        61.8% 36.32%,
+        100% 36.32%,
+        69.1% 58.78%,
+        80.9% 95.1%,
+        50% 72.65%,
+        19.1% 95.1%,
+        30.9% 58.78%,
+        0% 36.32%,
+        38.2% 36.32%);
+    clip-path: polygon(50% 0%,
+        61.8% 36.32%,
+        100% 36.32%,
+        69.1% 58.78%,
+        80.9% 95.1%,
+        50% 72.65%,
+        19.1% 95.1%,
+        30.9% 58.78%,
+        0% 36.32%,
+        38.2% 36.32%);
+}
