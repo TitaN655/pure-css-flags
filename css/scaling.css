@@ -6,8 +6,8 @@
     height: 90vh;
     cursor: zoom-out;
     /* Allows animation when up-scaling */
-    -webkit-transition: height .5s, width .5s;
-    transition: height .5s, width .5s;
+    -webkit-transition: height .5s;
+    transition: height .5s;
 }
 
 .flag.scalable .flag-container:hover {

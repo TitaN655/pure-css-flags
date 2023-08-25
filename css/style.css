@@ -50,8 +50,8 @@ h2 {
     border: 3px solid black;
     cursor: zoom-in;
     /* Prevents animation when down-scaling */
-    -webkit-transition: height 0s, width 0s;
-    transition: height 0s, width 0s;
+    -webkit-transition: height 0s;
+    transition: height 0s;
 }
 
 .flag-container:hover {
