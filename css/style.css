@@ -24,29 +24,74 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: baseline;
+    align-items: flex-start;
 }
 
 .flag {
+    width: 12vw;
+    min-width: 175px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
     background-color: white;
-    margin: 10px;
-    padding: 2px;
-    width: 10vw;
-    min-width: 150px;
+    padding: 5px 16px;
 }
 
-.flag > div[id] {
+.flag-container {
+    height: 12vw;
+    width: 100%;
+    min-width: 175px;
+    min-height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
     border: 3px solid black;
+    cursor: zoom-in;
+    /* Prevents animation when down-scaling */
+    -webkit-transition: height 0s, width 0s;
+    transition: height 0s, width 0s;
 }
 
-.flag > div[id]:hover {
+.flag-container:hover {
     box-shadow: -1px 0 black,
         0 1px black,
         1px 0 black,
         0 -1px black;
+}
+
+.flag-container > div {
+    width: 10vw;
+    min-width: 150px;
+    max-width: 95%;
+    border: 1px solid black;
+    /* Prevents animation when down-scaling */
+    -webkit-transition: width 0s;
+    transition: width 0s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+@media screen and (max-width: 860px) {
+    .flag {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .flag {
+        min-width: 150px;
+    }
+
+    .flag-container {
+        min-width: 150px;
+        min-height: 150px;
+    }
+
+    .flag-container > div {
+        min-width: 125px;
+    }
 }
 
 .flag p {
@@ -56,6 +101,7 @@ h2 {
 }
 
 .flag .ratios {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -78,16 +124,4 @@ h2 {
 
 .flag .ratios li a:hover {
     background-color: #CCE6FF;
-}
-
-.scale-medium {
-    width: 250px;
-}
-
-.scale-large {
-    width: 500px;
-}
-
-.scale-x-large {
-    width: 1000px;
 }

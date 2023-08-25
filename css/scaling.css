@@ -1,0 +1,52 @@
+.flag.scalable {
+    width: 100%;
+}
+
+.flag.scalable .flag-container {
+    height: 90vh;
+    cursor: zoom-out;
+    /* Allows animation when up-scaling */
+    -webkit-transition: height .5s, width .5s;
+    transition: height .5s, width .5s;
+}
+
+.flag.scalable .flag-container:hover {
+    box-shadow: none;
+}
+
+.flag.scalable .flag-container > div {
+    /* Width must be less than ".flag.scalable .flag-container" height */
+    width: 80vh;
+    /* Allows animation when up-scaling */
+    -webkit-transition: width 1s;
+    transition: width 1s;
+}
+
+/* Manually override scaling */
+
+.scale-medium,
+.scale-large,
+.scale-x-large {
+    width: 100%;
+}
+
+.scale-medium .flag-container {
+    width: 250px !important;
+    height: auto !important;
+}
+
+.scale-large .flag-container {
+    width: 500px !important;
+    height: auto !important;
+}
+
+.scale-x-large .flag-container {
+    width: 1000px !important;
+    height: auto !important;
+}
+
+.scale-medium .flag-container > div,
+.scale-large .flag-container > div,
+.scale-x-large .flag-container > div {
+    width: inherit !important;
+}
