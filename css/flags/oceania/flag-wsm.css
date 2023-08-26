@@ -1,0 +1,76 @@
+/* Samoa */
+
+#flag-wsm {
+    aspect-ratio: 2 / 1;
+    background-color: #CE1126;
+}
+
+#flag-wsm .rect {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    background-color: #002B7F;
+}
+
+#flag-wsm .rect div {
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    background-color: #fff;
+    /* 5-pointed star measured by box */
+    -webkit-clip-path: polygon(50% 0%,
+        61.8% 36.32%,
+        100% 36.32%,
+        69.1% 58.78%,
+        80.9% 95.1%,
+        50% 72.65%,
+        19.1% 95.1%,
+        30.9% 58.78%,
+        0% 36.32%,
+        38.2% 36.32%);
+    clip-path: polygon(50% 0%,
+        61.8% 36.32%,
+        100% 36.32%,
+        69.1% 58.78%,
+        80.9% 95.1%,
+        50% 72.65%,
+        19.1% 95.1%,
+        30.9% 58.78%,
+        0% 36.32%,
+        38.2% 36.32%);
+
+    /* measurement units according to construction sheet */
+    --unit-x: calc(100% / 144);
+    --unit-y: calc(100% / 72);
+}
+
+#flag-wsm .star1 {
+    width: calc(var(--unit-x) * 20);
+    /* account for 4.9% empty space @ bottom */
+    bottom: calc(var(--unit-y) * 2.02);
+    left: calc(var(--unit-x) * 62);
+}
+
+#flag-wsm .star2 {
+    width: calc(100% / 9);
+    top: calc(var(--unit-y) * 3);
+    left: calc(100% / 2.25);
+}
+
+#flag-wsm .star3 {
+    width: calc(100% / 9);
+    top: calc(var(--unit-y) * 21);
+    left: calc(var(--unit-x) * 42);
+}
+
+#flag-wsm .star4 {
+    width: calc(var(--unit-x) * 15);
+    top: 25%;
+    right: calc(var(--unit-x) * 42);
+}
+
+#flag-wsm .star5 {
+    width: calc(var(--unit-x) * 10);
+    /* account for 4.9% empty space @ bottom */
+    bottom: calc(var(--unit-y) * 25.51);
+    right: calc(175% / 4.5);
+}

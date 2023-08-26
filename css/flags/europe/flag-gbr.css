@@ -1,16 +1,18 @@
-#u-kingdom {
+/* United Kingdom */
+
+#flag-gbr {
     aspect-ratio: 2 / 1;
     position: relative;
     background-color: #012169;
     overflow: hidden;
 }
 
-#u-kingdom[data-aspect-ratio="3:5"] {
+#flag-gbr[data-aspect-ratio="3:5"] {
     aspect-ratio: 5 / 3;
 }
 
-#u-kingdom .rect1,
-#u-kingdom .rect2 {
+#flag-gbr .rect1,
+#flag-gbr .rect2 {
     height: 20%;
     width: 125%;
     position: absolute;
@@ -19,7 +21,7 @@
     background-color: #fff;
 }
 
-#u-kingdom .rect1 {
+#flag-gbr .rect1 {
     -webkit-transform:
         translate(-50%, -50%)
         rotate(26.565deg);
@@ -28,7 +30,7 @@
         rotate(26.565deg);
 }
 
-#u-kingdom[data-aspect-ratio="3:5"] .rect1 {
+#flag-gbr[data-aspect-ratio="3:5"] .rect1 {
     -webkit-transform:
         translate(-50%, -50%)
         rotate(30.964deg);
@@ -37,7 +39,7 @@
         rotate(30.964deg);
 }
 
-#u-kingdom .rect2 {
+#flag-gbr .rect2 {
     -webkit-transform:
         translate(-50%, -50%)
         rotate(-26.565deg);
@@ -46,7 +48,7 @@
         rotate(-26.565deg);
 }
 
-#u-kingdom[data-aspect-ratio="3:5"] .rect2 {
+#flag-gbr[data-aspect-ratio="3:5"] .rect2 {
     -webkit-transform:
         translate(-50%, -50%)
         rotate(-30.964deg);
@@ -55,8 +57,8 @@
         rotate(-30.964deg);
 }
 
-#u-kingdom .rect1::before,
-#u-kingdom .rect2::before {
+#flag-gbr .rect1::before,
+#flag-gbr .rect2::before {
     content: '';
     height: calc(100% / 3);
     width: 50%;
@@ -67,8 +69,8 @@
     z-index: 1;
 }
 
-#u-kingdom .rect1::after,
-#u-kingdom .rect2::after {
+#flag-gbr .rect1::after,
+#flag-gbr .rect2::after {
     content: '';
     height: calc(100% / 3);
     width: 50%;
@@ -79,7 +81,7 @@
     z-index: 1;
 }
 
-#u-kingdom .rect3 {
+#flag-gbr .rect3 {
     height: calc(100% / 3);
     position: relative;
     top: 50%;
@@ -89,7 +91,7 @@
     z-index: 1;
 }
 
-#u-kingdom .rect3::after {
+#flag-gbr .rect3::after {
     content: '';
     height: 60%;
     width: 100%;
@@ -98,7 +100,7 @@
     background-color: #C8102E;
 }
 
-#u-kingdom .rect4 {
+#flag-gbr .rect4 {
     width: calc(100% / 6);
     height: 100%;
     position: absolute;
@@ -109,11 +111,11 @@
     transform: translate(-50%);
 }
 
-#u-kingdom[data-aspect-ratio="3:5"] .rect4 {
+#flag-gbr[data-aspect-ratio="3:5"] .rect4 {
     width: 20%;
 }
 
-#u-kingdom .rect5 {
+#flag-gbr .rect5 {
     width: 10%;
     height: 100%;
     position: absolute;
@@ -125,6 +127,6 @@
     z-index: 1;
 }
 
-#u-kingdom[data-aspect-ratio="3:5"] .rect5 {
+#flag-gbr[data-aspect-ratio="3:5"] .rect5 {
     width: 12%;
 }

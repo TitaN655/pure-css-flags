@@ -1,0 +1,89 @@
+/* Central African Republic */
+
+#flag-caf {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #003082;
+}
+
+#flag-caf[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}
+
+#flag-caf::after {
+    content: '';
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #FFCE00;
+}
+
+#flag-caf .rect1 {
+    height: 25%;
+    width: 100%;
+    position: relative;
+    top: 25%;
+    background-color: #fff;
+}
+
+#flag-caf .rect1::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: #289728;
+}
+
+#flag-caf .rect2 {
+    height: 100%;
+    width: calc(100% / 6);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: #D21034;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+#flag-caf[data-aspect-ratio="3:5"] .rect2 {
+    width: 15%;
+}
+
+#flag-caf .star {
+    aspect-ratio: 1 / 1;
+    width: 15%;
+    position: absolute;
+    top: 2.3242794075%;
+    left: calc(137.5% / 15);
+    background-color: #FFCE00;
+    /* 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+}
+
+#flag-caf[data-aspect-ratio="3:5"] .star {
+    width: 13.5%;
+    top: calc((100% / 12) * 0.2789135288);
+    left: 8.25%;
+}

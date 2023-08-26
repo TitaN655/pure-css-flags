@@ -1,1 +1,5 @@
-/* CSS files that have not yet been added to flags.min.css */
+/* CSS files that have not yet been added/updated in flags.min.css */
+@import "flags/europe/flag-gbr.css";
+@import "flags/oceania/flag-wsm.css";
+@import "flags/africa/flag-caf.css";
+@import "flags/asia/flag-sgp.css";
