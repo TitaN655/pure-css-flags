@@ -49,4 +49,6 @@
 .scale-large .flag-container > div,
 .scale-x-large .flag-container > div {
     width: inherit !important;
+    max-width: revert !important;
+    border: none !important;
 }
