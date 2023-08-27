@@ -1,15 +1,27 @@
-#vietnam {
+/* Burkina Faso */
+
+#flag-bf {
     aspect-ratio: 3 / 2;
-    background-color: #DA251D;
+    position: relative;
+    background-color: #009E49;
 }
 
-#vietnam div {
+#flag-bf::before {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background-color: #EF2B2D;
+}
+
+#flag-bf div {
     aspect-ratio: 1 / 1;
-    width: 40%;
-    position: relative;
-    top: 20%;
-    left: 30%;
-    background-color: #FFFF00;
+    width: calc(100% / 4.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #FCD116;
+    transform: translate(-50%, -50%);
     /* 5-pointed star measured by cicle */
     -webkit-clip-path: polygon(50% 0%,
         61% 35%,
@@ -31,4 +43,5 @@
         32% 57%,
         2% 35%,
         39% 35%);
+    z-index: 1;
 }

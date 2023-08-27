@@ -1,5 +1,10 @@
 /* CSS files that have not yet been added/updated in flags.min.css */
-@import "flags/europe/flag-gbr.css";
-@import "flags/oceania/flag-wsm.css";
-@import "flags/africa/flag-caf.css";
-@import "flags/asia/flag-sgp.css";
+@import "flags/europe/flag-gb.css";
+@import "flags/asia/flag-vn.css";
+@import "flags/oceania/flag-ws.css";
+@import "flags/africa/flag-cf.css";
+@import "flags/asia/flag-sg.css";
+@import "flags/africa/flag-bf.css";
+@import "flags/oceania/flag-fm.css";
+@import "flags/africa/flag-cm.css";
+@import "flags/africa/flag-sn.css";

@@ -1,0 +1,56 @@
+/* Senegal */
+
+#flag-sn {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #FDEF42;
+}
+
+#flag-sn::before,
+#flag-sn::after {
+    content: '';
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+}
+
+#flag-sn::before {
+    background-color: #00853F;
+}
+
+#flag-sn::after {
+    right: 0;
+    background-color: #E31B23;
+}
+
+#flag-sn div {
+    aspect-ratio: 1 / 1;
+    width: calc(100% / 4.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #00853F;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+}

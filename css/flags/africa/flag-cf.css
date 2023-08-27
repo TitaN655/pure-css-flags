@@ -1,16 +1,16 @@
 /* Central African Republic */
 
-#flag-caf {
+#flag-cf {
     aspect-ratio: 3 / 2;
     position: relative;
     background-color: #003082;
 }
 
-#flag-caf[data-aspect-ratio="3:5"] {
+#flag-cf[data-aspect-ratio="3:5"] {
     aspect-ratio: 5 / 3;
 }
 
-#flag-caf::after {
+#flag-cf::after {
     content: '';
     height: 25%;
     width: 100%;
@@ -19,7 +19,7 @@
     background-color: #FFCE00;
 }
 
-#flag-caf .rect1 {
+#flag-cf .rect1 {
     height: 25%;
     width: 100%;
     position: relative;
@@ -27,7 +27,7 @@
     background-color: #fff;
 }
 
-#flag-caf .rect1::after {
+#flag-cf .rect1::after {
     content: '';
     height: 100%;
     width: 100%;
@@ -36,7 +36,7 @@
     background-color: #289728;
 }
 
-#flag-caf .rect2 {
+#flag-cf .rect2 {
     height: 100%;
     width: calc(100% / 6);
     position: absolute;
@@ -48,11 +48,11 @@
     z-index: 1;
 }
 
-#flag-caf[data-aspect-ratio="3:5"] .rect2 {
+#flag-cf[data-aspect-ratio="3:5"] .rect2 {
     width: 15%;
 }
 
-#flag-caf .star {
+#flag-cf .star {
     aspect-ratio: 1 / 1;
     width: 15%;
     position: absolute;
@@ -82,7 +82,7 @@
         39% 35%);
 }
 
-#flag-caf[data-aspect-ratio="3:5"] .star {
+#flag-cf[data-aspect-ratio="3:5"] .star {
     width: 13.5%;
     top: calc((100% / 12) * 0.2789135288);
     left: 8.25%;

@@ -1,4 +1,4 @@
-#flag-sgp {
+#flag-sg {
     aspect-ratio: 3 / 2;
     position: relative;
     background-color: #fff;
@@ -8,7 +8,7 @@
     --unit-y: calc(100% / 36);
 }
 
-#flag-sgp::before {
+#flag-sg::before {
     content: '';
     width: 100%;
     height: 50%;
@@ -16,7 +16,7 @@
     background-color: #EE2536;
 }
 
-#flag-sgp .cres {
+#flag-sg .cres {
     aspect-ratio: 1 / 1;
     height: calc(var(--unit-y) * 13.25);
     background-color: #fff;
@@ -28,7 +28,7 @@
     border-radius: 50%;
 }
 
-#flag-sgp .cres::after {
+#flag-sg .cres::after {
     content: '';
     aspect-ratio: 1 / 1;
     height: 100%;
@@ -38,7 +38,7 @@
     border-radius: 50%;
 }
 
-#flag-sgp div:not(.cres) {
+#flag-sg div:not(.cres) {
     aspect-ratio: 1 / 1;
     height: calc(var(--unit-y) * 3.45);
     position: absolute;
@@ -66,35 +66,35 @@
         38.2% 36.32%);
 }
 
-#flag-sgp .star1 {
+#flag-sg .star1 {
     top: calc(var(--unit-y) * 5.2);
     left: calc(var(--unit-x) * 15.03);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
-#flag-sgp .star2 {
+#flag-sg .star2 {
     top: calc(var(--unit-y) * (9 - (3.8 * sin(18deg))));
     left: calc(var(--unit-x) * (15.03 - (3.8 * cos(18deg))));
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
-#flag-sgp .star3 {
+#flag-sg .star3 {
     top: calc(var(--unit-y) * (9 - (3.8 * sin(18deg))));
     left: calc(var(--unit-x) * (15.03 + (3.8 * cos(18deg))));
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
-#flag-sgp .star4 {
+#flag-sg .star4 {
     top: calc(var(--unit-y) * (9 + (3.8 * sin(54deg))));
     left: calc(var(--unit-x) * (15.03 - (3.8 * cos(54deg))));
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
-#flag-sgp .star5 {
+#flag-sg .star5 {
     top: calc(var(--unit-y) * (9 + (3.8 * sin(54deg))));
     left: calc(var(--unit-x) * (15.03 + (3.8 * cos(54deg))));
     -webkit-transform: translate(-50%, -50%);

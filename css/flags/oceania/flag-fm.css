@@ -1,0 +1,64 @@
+/* Micronesia */
+
+#flag-fm {
+    aspect-ratio: 19 / 10;
+    position: relative;
+    background-color: #75B2DD;
+
+    /* measurement units according to construction sheet */
+    --unit-x: calc(100% / 38);
+}
+
+#flag-fm div {
+    aspect-ratio: 1 / 1;
+    height: 20%;
+    position: absolute;
+    background-color: #fff;
+    /* 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+}
+
+#flag-fm .star1 {
+    top: 10%;
+    left: calc(var(--unit-x) * 17);
+}
+
+#flag-fm .star2 {
+    top: 40%;
+    right: calc(var(--unit-x) * 11);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#flag-fm .star3 {
+    bottom: 10%;
+    left: calc(var(--unit-x) * 17);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#flag-fm .star4 {
+    top: 40%;
+    left: calc(var(--unit-x) * 11);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
