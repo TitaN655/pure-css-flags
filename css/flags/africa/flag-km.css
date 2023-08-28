@@ -1,0 +1,114 @@
+/* Comoros */
+
+#flag-km {
+    aspect-ratio: 5 / 3;
+    position: relative;
+    background-color: #FFD100;
+}
+
+#flag-km::after {
+    content: '';
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #003DA5;
+}
+
+#flag-km .rect {
+    height: 25%;
+    width: 100%;
+    position: relative;
+    top: 25%;
+    background-color: #fff;
+}
+
+#flag-km .rect::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: #EF3340;
+}
+
+#flag-km .poly {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: #009639;
+    -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    z-index: 1;
+}
+
+#flag-km .cres {
+    aspect-ratio: 1 / 1;
+    width: calc(106.25% / 1.875);
+    background-color: #fff;
+    position: relative;
+    top: 50%;
+    left: calc(175% / 30);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    border-radius: 50%;
+}
+
+#flag-km .cres::after {
+    content: '';
+    aspect-ratio: 1 / 1;
+    width: calc((100% / 68) * 66);
+    background-color: #009639;
+    position: absolute;
+    top: 50%;
+    left: calc((100% / 68) * 14);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    border-radius: 50%;
+}
+
+#flag-km .poly div:not(.cres) {
+    aspect-ratio: 1 / 1;
+    width: calc(175% / 15);
+    position: absolute;
+    left: 35.8974358975%;
+    background-color: #fff;
+    /* 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+}
+
+#flag-km .star1 {
+    top: calc(134.375% / 4.5)
+}
+
+#flag-km .star2 {
+    top: calc(181.25% / 4.5)
+}
+
+#flag-km .star3 {
+    bottom: calc(181.25% / 4.5)
+}
+
+#flag-km .star4 {
+    bottom: calc(134.375% / 4.5)
+}

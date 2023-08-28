@@ -1,0 +1,99 @@
+/* Namibia */
+
+#flag-na {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #002F6C;
+    overflow: hidden;
+}
+
+#flag-na::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    background-color: #009A44;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+#flag-na .rect {
+    height: calc(100% / 3);
+    width: 125%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+    transform:
+        translate(-50%, -50%)
+        rotate(-33.69deg);
+    z-index: 1;
+}
+
+#flag-na .rect::after {
+    content: '';
+    height: 75%;
+    width: 100%;
+    position: absolute;
+    top: 12.5%;
+    background-color: #C8102E;
+}
+
+#flag-na .star {
+    aspect-ratio: 1 / 1;
+    height: calc(100% / 3);
+    position: absolute;
+    background-color: #FFCD00;
+    /* measurement units according to construction sheet */
+    top: calc((100% / 120) * 12.68296097);
+    left: calc(100% / 11.25);
+    /* Namibia-specific 12-pointed star measured by cicle */
+    clip-path: polygon(50% 0%,
+        57.76% 21.02%,
+        75% 6.7%,
+        71.21% 28.79%,
+        93.3% 25%,
+        78.98% 42.24%,
+        100% 50%,
+        78.98% 57.76%,
+        93.3% 75%,
+        71.21% 71.21%,
+        75% 93.3%,
+        57.76% 78.98%,
+        50% 100%,
+        42.24% 78.98%,
+        25% 93.3%,
+        28.79% 71.21%,
+        6.7% 75%,
+        21.02% 57.76%,
+        0% 50%,
+        21.02% 42.24%,
+        6.7% 25%,
+        28.79% 28.79%,
+        25% 6.7%,
+        42.24% 21.02%);
+}
+
+#flag-na .circ {
+    aspect-ratio: 1 / 1;
+    height: 60%;
+    position: relative;
+    top: 20%;
+    left: 20%;
+    background-color: #002F6C;
+    border-radius: 50%;
+}
+
+#flag-na .circ::after {
+    content: '';
+    aspect-ratio: 1 / 1;
+    height: calc(125% / 1.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #FFCD00;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
