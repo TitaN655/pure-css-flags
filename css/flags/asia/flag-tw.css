@@ -1,0 +1,99 @@
+/* Republic of China (Taiwan) */
+
+#flag-tw {
+    aspect-ratio: 3 / 2;
+    background-color: #F20000;
+}
+
+#flag-tw .rect {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    background-color: #0029CC;
+}
+
+#flag-tw .star {
+    aspect-ratio: 1 / 1;
+    height: 75%;
+    position: relative;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* 12-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        56.47% 25.85%,
+        75% 6.7%,
+        67.68% 32.32%,
+        93.3% 25%,
+        74.15% 43.53%,
+        100% 50%,
+        74.15% 56.47%,
+        93.3% 75%,
+        67.68% 67.68%,
+        75% 93.3%,
+        56.47% 74.15%,
+        50% 100%,
+        43.53% 74.15%,
+        25% 93.3%,
+        32.32% 67.68%,
+        6.7% 75%,
+        25.85% 56.47%,
+        0% 50%,
+        25.85% 43.53%,
+        6.7% 25%,
+        32.32% 32.32%,
+        25% 6.7%,
+        43.53% 25.85%);
+    clip-path: polygon(50% 0%,
+        56.47% 25.85%,
+        75% 6.7%,
+        67.68% 32.32%,
+        93.3% 25%,
+        74.15% 43.53%,
+        100% 50%,
+        74.15% 56.47%,
+        93.3% 75%,
+        67.68% 67.68%,
+        75% 93.3%,
+        56.47% 74.15%,
+        50% 100%,
+        43.53% 74.15%,
+        25% 93.3%,
+        32.32% 67.68%,
+        6.7% 75%,
+        25.85% 56.47%,
+        0% 50%,
+        25.85% 43.53%,
+        6.7% 25%,
+        32.32% 32.32%,
+        25% 6.7%,
+        43.53% 25.85%);
+}
+
+#flag-tw .circ {
+    aspect-ratio: 1 / 1;
+    height: 42.5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: inherit;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+#flag-tw .circ::after {
+    content: '';
+    aspect-ratio: 1 / 1;
+    /* measurement units according to construction sheet */
+    height: calc((100% / 17) * 15);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}

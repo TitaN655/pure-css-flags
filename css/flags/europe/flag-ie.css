@@ -1,0 +1,24 @@
+/* Ireland */
+
+#flag-ie {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background-color: #fff;
+}
+
+#flag-ie::before,
+#flag-ie::after {
+    content: '';
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+}
+
+#flag-ie::before {
+    background-color: #169B62;
+}
+
+#flag-ie::after {
+    right: 0;
+    background-color: #FF883E;
+}

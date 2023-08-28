@@ -1,0 +1,61 @@
+/* Guinea-Bissau */
+
+#flag-gw {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background-color: #CE1126;
+}
+
+#flag-gw .rect {
+    height: 100%;
+    width: calc(200% / 3);
+    position: absolute;
+    right: 0;
+}
+
+#flag-gw .rect::before,
+#flag-gw .rect::after {
+    content: '';
+    height: 50%;
+    width: 100%;
+    position: absolute;
+}
+
+#flag-gw .rect::before {
+    background-color: #FCD116;
+}
+
+#flag-gw .rect::after {
+    bottom: 0;
+    background-color: #009E49;
+}
+
+#flag-gw .star {
+    aspect-ratio: 1 / 1;
+    height: calc(100% / 3);
+    position: absolute;
+    top: calc(100% / 3);
+    left: calc(100% / 12);
+    background-color: #000;
+    /* 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+}

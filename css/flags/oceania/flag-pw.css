@@ -1,0 +1,16 @@
+/* Palau */
+
+#flag-pw {
+    aspect-ratio: 8 / 5;
+    background-color: #0099FF;
+}
+
+#flag-pw div {
+    aspect-ratio: 1 / 1;
+    width: 37.5%;
+    position: relative;
+    top: 20%;
+    left: 25%;
+    background-color: #ff0;
+    border-radius: 50%;
+}

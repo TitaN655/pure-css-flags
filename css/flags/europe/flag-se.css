@@ -1,0 +1,25 @@
+/* Sweden */
+
+#flag-se {
+    aspect-ratio: 18 / 11;
+    position: relative;
+    background-color: #006AA7;
+}
+
+#flag-se div {
+    background-color: #FFCD00;
+}
+
+#flag-se .rect1 {
+    height: 20%;
+    position: relative;
+    top: 40%;
+}
+
+#flag-se .rect2 {
+    width: 12.5%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 25%;
+}

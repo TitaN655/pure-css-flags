@@ -1,0 +1,14 @@
+/* Nigeria */
+
+#flag-ng {
+    aspect-ratio: 2 / 1;
+    background-color: #008753;
+}
+
+#flag-ng div {
+    width: calc(100% / 3);
+    height: 100%;
+    position: relative;
+    left: calc(100% / 3);
+    background-color: #fff;
+}

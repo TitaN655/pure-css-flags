@@ -1,0 +1,36 @@
+/* Niger */
+
+#flag-ne {
+    aspect-ratio: 7 / 6;
+    position: relative;
+    background-color: #fff;
+}
+
+#flag-ne::before,
+#flag-ne::after {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+}
+
+#flag-ne::before {
+    background-color: #E05206;
+}
+
+#flag-ne::after {
+    bottom: 0;
+    background-color: #0DB02B;
+}
+
+#flag-ne div {
+    aspect-ratio: 1 / 1;
+    width: calc((100% / 3) * .7);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background-color: #E05206;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

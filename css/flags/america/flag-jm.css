@@ -1,0 +1,48 @@
+/* Jamaica */
+
+#flag-jm {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+}
+
+#flag-jm::before,
+#flag-jm::after {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background-color: #009B3A;
+}
+
+#flag-jm::before {
+    -webkit-clip-path: polygon(50% 100%, 100% 0, 0 0);
+    clip-path: polygon(50% 100%, 100% 0, 0 0);
+}
+
+#flag-jm::after {
+    bottom: 0;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+#flag-jm div {
+    height: calc(100% / 6);
+    width: 125%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #FED100;
+    z-index: 1;
+}
+
+#flag-jm .rect1 {
+    transform: translate(-50%, -50%)
+        rotate(-26.565deg);
+}
+
+#flag-jm .rect2 {
+    transform: translate(-50%, -50%)
+        rotate(26.565deg);
+}

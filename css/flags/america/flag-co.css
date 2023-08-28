@@ -1,0 +1,25 @@
+/* Colombia */
+
+#flag-co {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #003893;
+}
+
+#flag-co::before,
+#flag-co::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+}
+
+#flag-co::before {
+    height: 50%;
+    background-color: #FCD116;
+}
+
+#flag-co::after {
+    height: 25%;
+    bottom: 0;
+    background-color: #CE1126;
+}

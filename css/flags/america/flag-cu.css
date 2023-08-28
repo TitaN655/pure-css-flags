@@ -1,0 +1,66 @@
+/* Cuba */
+
+#flag-cu {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background-color: #002590;
+}
+
+#flag-cu .rect {
+    height: 60%;
+    position: relative;
+    top: 20%;
+    background-color: #fff;
+}
+
+#flag-cu .rect::after {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    top: calc(100% / 3);
+    background-color: #002590;
+}
+
+#flag-cu .poly {
+    position: absolute;
+    top: 0;
+    width: 43.3%;
+    height: 100%;
+    background: #CC0D0D;
+    -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+
+#flag-cu .star {
+    aspect-ratio: 1 / 1;
+    height: calc(100% / 3);
+    position: absolute;
+    top: 50%;
+    left: calc(100% / 3);
+    background-color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    z-index: 1;
+}

@@ -1,0 +1,33 @@
+/* Mauritius */
+
+#flag-mu {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #EB2436;
+}
+
+#flag-mu::after {
+    content: '';
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #00A650;
+}
+
+#flag-mu div {
+    height: 25%;
+    width: 100%;
+    position: relative;
+    top: 25%;
+    background-color: #131A6D;
+}
+
+#flag-mu div::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: #FFD600;
+}

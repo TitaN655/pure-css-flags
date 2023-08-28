@@ -1,0 +1,29 @@
+/* Denmark */
+
+#flag-dk {
+    aspect-ratio: 37 / 28;
+    position: relative;
+    background-color: #C60C30;
+
+    /* measurement units according to construction sheet */
+    --unit-x: calc(100% / 37);
+    --unit-y: calc(100% / 28);
+}
+
+#flag-dk div {
+    background-color: #fff;
+}
+
+#flag-dk .rect1 {
+    height: calc(var(--unit-y) * 4);
+    position: relative;
+    top: calc(var(--unit-y) * 12);
+}
+
+#flag-dk .rect2 {
+    width: calc(var(--unit-x) * 4);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: calc(var(--unit-x) * 12);
+}

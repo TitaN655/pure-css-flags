@@ -1,0 +1,141 @@
+/* North Macedonia */
+
+#flag-mk {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background-color: #CE2028;
+
+    --ray-h-offset-x: calc((150% / 14) * sin(30.55deg));
+    --ray-h-offset-y: calc((150% / 28) * cos(30.55deg));
+}
+
+#flag-mk .poly1 {
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    top: 50%;
+    background-color: #F9D616;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    -webkit-clip-path: polygon(100% 50%, 0 100%, 0 0);
+    clip-path: polygon(100% 50%, 0 100%, 0 0);
+}
+
+#flag-mk .poly2 {
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background-color: #F9D616;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%);
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+
+#flag-mk .poly3 {
+    width: 10%;
+    height: calc((275% / 7));
+    position: absolute;
+    left: 50%;
+    background-color: #F9D616;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    -webkit-clip-path: polygon(50% 100%, 100% 0, 0 0);
+    clip-path: polygon(50% 100%, 100% 0, 0 0);
+}
+
+#flag-mk .poly4 {
+    width: 10%;
+    height: calc((275% / 7));
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: #F9D616;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    -webkit-clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+#flag-mk .poly5 {
+    width: calc(50% + var(--ray-h-offset-y));
+    height: calc(50% + var(--ray-h-offset-x));
+    position: absolute;
+    top: 0;
+    background-color: #F9D616;
+    -webkit-clip-path: polygon(0 0,
+        calc(30% - var(--ray-h-offset-y)) 0,
+            100% 100%);
+    clip-path: polygon(0 0,
+        calc(30% - var(--ray-h-offset-y)) 0,
+            100% 100%);
+}
+
+#flag-mk .poly6 {
+    width: calc(50% + var(--ray-h-offset-y));
+    height: calc(50% + var(--ray-h-offset-x));
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #F9D616;
+    -webkit-clip-path: polygon(0 100%,
+        calc(70% + var(--ray-h-offset-y)) 0,
+        100% 0);
+    clip-path: polygon(0 100%,
+        calc(70% + var(--ray-h-offset-y)) 0,
+        100% 0);
+}
+
+#flag-mk .poly7 {
+    width: calc(50% + var(--ray-h-offset-y));
+    height: calc(50% + var(--ray-h-offset-x));
+    position: absolute;
+    bottom: 0;
+    background-color: #F9D616;
+    -webkit-clip-path: polygon(0 100%,
+        calc(30% - var(--ray-h-offset-y)) 100%,
+        100% 0);
+    clip-path: polygon(0 100%,
+        calc(30% - var(--ray-h-offset-y)) 100%,
+        100% 0);
+}
+
+#flag-mk .poly8 {
+    width: calc(50% + var(--ray-h-offset-y));
+    height: calc(50% + var(--ray-h-offset-x));
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #F9D616;
+    -webkit-clip-path: polygon(0 0,
+        calc(70% + var(--ray-h-offset-y)) 100%,
+        100% 100%);
+    clip-path: polygon(0 0,
+        calc(70% + var(--ray-h-offset-y)) 100%,
+        100% 100%);
+}
+
+#flag-mk .circ {
+    aspect-ratio: 1 / 1;
+    height: calc((250% / 7));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #CE2028;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+#flag-mk .circ::after {
+    content: '';
+    aspect-ratio: 1 / 1;
+    height: 75%;
+    position: absolute;
+    top: 12.5%;
+    left: 12.5%;
+    background-color: #F9D616;
+    border-radius: 50%;
+}

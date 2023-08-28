@@ -1,0 +1,24 @@
+/* Romania */
+
+#flag-ro {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #FCD116;
+}
+
+#flag-ro::before,
+#flag-ro::after {
+    content: '';
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+}
+
+#flag-ro::before {
+    background-color: #002B7F;
+}
+
+#flag-ro::after {
+    right: 0;
+    background-color: #CE1126;
+}

@@ -1,0 +1,61 @@
+/* Suriname */
+
+#flag-sr {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #fff;
+}
+
+#flag-sr::before,
+#flag-sr::after {
+    content: '';
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    background-color: #377E3F;
+}
+
+#flag-sr::after {
+    bottom: 0;
+}
+
+#flag-sr .rect {
+    height: 40%;
+    position: relative;
+    top: 30%;
+    background-color: #B40A2D;
+}
+
+#flag-sr .star {
+    /* measurements according to construction sheet */
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    position: absolute;
+    top: calc((100% / 8) * .381966011);
+    left: 50%;
+    background-color: #ECC81D;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    /* 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    z-index: 1;
+}

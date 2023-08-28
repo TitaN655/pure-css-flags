@@ -1,0 +1,24 @@
+/* Bahamas */
+
+#flag-bs {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background-color: #00778B;
+}
+
+#flag-bs .rect {
+    height: calc(100% / 3);
+    position: relative;
+    top: calc(100% / 3);
+    background-color: #FFC72C;
+}
+
+#flag-bs .poly {
+    position: absolute;
+    top: 0;
+    width: calc(100% / 2.4); /* five-twelfths */
+    height: 100%;
+    background: #000;
+    -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+}

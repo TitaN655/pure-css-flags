@@ -1,0 +1,117 @@
+/* Bosnia and Herzegovina */
+
+#flag-ba {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background-color: #001489;
+}
+
+#flag-ba .poly {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 26.5%;
+    background-color: #FFCD00;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+#flag-ba .poly2 {
+    height: 6.378677105%;
+    width: 9.5%;
+    position: absolute;
+    top: 0;
+    left: 12.25%;
+    background-color: #fff;
+    /* segment of a 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(68% 0%, 79% 91%, 50% 34.79%, 21% 91%, 32% 0%);
+    clip-path: polygon(68% 0%, 79% 91%, 50% 34.79%, 21% 91%, 32% 0%);
+}
+
+#flag-ba .poly3 {
+    height: 10.621322895%;
+    width: 9.5%;
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    left: 62.25%;
+    /* segment of a 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 61.4%,
+        98% 61.4%,
+        68% 100%,
+        32% 100%,
+        2% 61.4%,
+        39% 61.4%);
+    clip-path: polygon(50% 0%,
+        61% 61.4%,
+        98% 61.4%,
+        68% 100%,
+        32% 100%,
+        2% 61.4%,
+        39% 61.4%);
+}
+
+#flag-ba .stars > div {
+    aspect-ratio: 1 / 1;
+    height: 19%;
+    position: absolute;
+    background-color: #fff;
+    /* 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+}
+
+#flag-ba .stars > .star1 {
+    top: 1.878677105%;
+    left: 18.5%;
+}
+
+#flag-ba .stars > .star2 {
+    top: 14.378677105%;
+    left: 24.75%;
+}
+
+#flag-ba .stars > .star3 {
+    top: 26.878677105%;
+    left: 31%;
+}
+
+#flag-ba .stars > .star4 {
+    top: 39.378677105%;
+    left: 37.25%;
+}
+
+#flag-ba .stars > .star5 {
+    top: 51.878677105%;
+    left: 43.5%;
+}
+
+#flag-ba .stars > .star6 {
+    top: 64.378677105%;
+    left: 49.75%;
+}
+
+#flag-ba .stars > .star7 {
+    top: 76.878677105%;
+    left: 56%;
+}

@@ -1,0 +1,24 @@
+/* Sierra Leone */
+
+#flag-sl {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #fff;
+}
+
+#flag-sl::before,
+#flag-sl::after {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+}
+
+#flag-sl::before {
+    background-color: #1EB53A;
+}
+
+#flag-sl::after {
+    bottom: 0;
+    background-color: #0072C6;
+}

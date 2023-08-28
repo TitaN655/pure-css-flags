@@ -1,0 +1,20 @@
+/* Bangladesh */
+
+#flag-bd {
+    aspect-ratio: 5 / 3;
+    background-color: #006747;
+
+    /* measurement units according to construction sheet */
+    --unit-x: calc(100% / 20);
+    --unit-y: calc(100% / 12);
+}
+
+#flag-bd div {
+    aspect-ratio: 1 / 1;
+    width: calc(var(--unit-x) * 8);
+    position: relative;
+    top: calc(var(--unit-y) * 2);
+    left: 25%;
+    background-color: #DA291C;
+    border-radius: 50%;
+}

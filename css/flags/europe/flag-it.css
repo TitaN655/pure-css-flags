@@ -1,0 +1,24 @@
+/* Italy */
+
+#flag-it {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #F4F5F0;
+}
+
+#flag-it::before,
+#flag-it::after {
+    content: '';
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+}
+
+#flag-it::before {
+    background-color: #008C45;
+}
+
+#flag-it::after {
+    right: 0;
+    background-color: #CD212A;
+}

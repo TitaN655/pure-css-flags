@@ -1,0 +1,57 @@
+/* Qatar */
+
+#flag-qa {
+    aspect-ratio: 28 / 11;
+    position: relative;
+    background-color: #fff;
+}
+
+#flag-qa div {
+    width: calc(500% / 7);
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-color: #8A1538;
+    -webkit-clip-path: polygon(0 0,
+        10% calc(50% / 9),
+        0 calc(100% / 9),
+        10% calc((50% / 9) * 3),
+        0 calc((100% / 9) * 2),
+        10% calc((50% / 9) * 5),
+        0 calc((100% / 9) * 3),
+        10% calc((50% / 9) * 7),
+        0 calc((100% / 9) * 4),
+        10% calc((50% / 9) * 9),
+        0 calc((100% / 9) * 5),
+        10% calc((50% / 9) * 11),
+        0 calc((100% / 9) * 6),
+        10% calc((50% / 9) * 13),
+        0 calc((100% / 9) * 7),
+        10% calc((50% / 9) * 15),
+        0 calc((100% / 9) * 8),
+        10% calc((50% / 9) * 17),
+        0 100%,
+        100% 100%,
+        100% 0);
+    clip-path: polygon(0 0,
+        10% calc(50% / 9),
+        0 calc(100% / 9),
+        10% calc((50% / 9) * 3),
+        0 calc((100% / 9) * 2),
+        10% calc((50% / 9) * 5),
+        0 calc((100% / 9) * 3),
+        10% calc((50% / 9) * 7),
+        0 calc((100% / 9) * 4),
+        10% calc((50% / 9) * 9),
+        0 calc((100% / 9) * 5),
+        10% calc((50% / 9) * 11),
+        0 calc((100% / 9) * 6),
+        10% calc((50% / 9) * 13),
+        0 calc((100% / 9) * 7),
+        10% calc((50% / 9) * 15),
+        0 calc((100% / 9) * 8),
+        10% calc((50% / 9) * 17),
+        0 100%,
+        100% 100%,
+        100% 0);
+}

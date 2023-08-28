@@ -1,0 +1,15 @@
+/* Indonesia */
+
+#flag-id {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #fff;
+}
+
+#flag-id::before {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background-color: #FF0000;
+}

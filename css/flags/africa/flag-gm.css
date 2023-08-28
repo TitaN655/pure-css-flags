@@ -1,0 +1,33 @@
+/* Gambia */
+
+#flag-gm {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #fff;
+}
+
+#flag-gm::before,
+#flag-gm::after {
+    content: '';
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+}
+
+#flag-gm::before {
+    background-color: #CE1126;
+}
+
+#flag-gm::after {
+    bottom: 0;
+    background-color: #3A7728;
+}
+
+#flag-gm > div {
+    height: calc(100% / 4.5);
+    position: relative;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    background-color: #0C1C8C;
+}

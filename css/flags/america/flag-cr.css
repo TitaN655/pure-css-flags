@@ -1,0 +1,22 @@
+/* Costa Rica */
+
+#flag-cr {
+    aspect-ratio: 3 / 2;
+    background-color: #001489;
+}
+
+#flag-cr div {
+    height: calc(200% / 3);
+    position: relative;
+    top: calc(100% / 6);
+    background-color: #fff;
+}
+
+#flag-cr div::after {
+    content: '';
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    background-color: #DA291C;
+}

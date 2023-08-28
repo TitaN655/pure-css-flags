@@ -1,0 +1,24 @@
+/* Chad */
+
+#flag-td {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #FECB00;
+}
+
+#flag-td::before,
+#flag-td::after {
+    content: '';
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+}
+
+#flag-td::before {
+    background-color: #002664;
+}
+
+#flag-td::after {
+    right: 0;
+    background-color: #C60C30;
+}

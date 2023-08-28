@@ -1,0 +1,28 @@
+/* Congo */
+
+#flag-cg {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #FBDE4A;
+}
+
+#flag-cg::before,
+#flag-cg::after {
+    content: '';
+    height: 100%;
+    width: calc(200% / 3);
+    position: absolute;
+}
+
+#flag-cg::before {
+    background-color: #009543;
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+#flag-cg::after {
+    right: 0;
+    background-color: #DC241F;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}

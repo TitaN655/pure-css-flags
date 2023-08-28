@@ -1,0 +1,75 @@
+/* People's Republic of China */
+
+#flag-cn {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #EE1C25;
+
+    /* measurement units according to construction sheet */
+    --unit-x: calc(100% / 30);
+}
+
+#flag-cn div {
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    background-color: #ff0;
+    /* 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+}
+
+#flag-cn .star1 {
+    height: 30%;
+    top: 10%;
+    left: calc(var(--unit-x) * 2);
+}
+
+#flag-cn .star2 {
+    height: 10%;
+    top: 5%;
+    left: 30%;
+    -webkit-transform: rotate(-120.964deg);
+    transform: rotate(-120.964deg);
+}
+
+#flag-cn .star3 {
+    height: 10%;
+    top: 15%;
+    left: calc(var(--unit-x) * 11);
+    -webkit-transform: rotate(-98.13deg);
+    transform: rotate(-98.13deg);
+}
+
+#flag-cn .star4 {
+    height: 10%;
+    top: 30%;
+    left: calc(var(--unit-x) * 11);
+    -webkit-transform: rotate(-74.055deg);
+    transform: rotate(-74.055deg);
+}
+
+#flag-cn .star5 {
+    height: 10%;
+    top: 40%;
+    left: 30%;
+    -webkit-transform: rotate(-51.34deg);
+    transform: rotate(-51.34deg);
+}

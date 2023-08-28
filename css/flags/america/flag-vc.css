@@ -1,0 +1,49 @@
+/* Saint Vincent and the Grenadines */
+
+#flag-vc {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background-color: #FCD116;
+}
+
+#flag-vc::before,
+#flag-vc::after {
+    content: '';
+    height: 100%;
+    width: 25%;
+    position: absolute;
+}
+
+#flag-vc::before {
+    background-color: #0072C6;
+}
+
+#flag-vc::after {
+    right: 0;
+    background-color: #009E60;
+}
+
+#flag-vc div {
+    height: calc(100% / 3);
+    width: calc(100% / 9);
+    position: absolute;
+    background-color: #009E60;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+#flag-vc .diam1 {
+    left: 50%;
+    bottom: 12.5%;
+    transform: translate(-50%);
+}
+
+#flag-vc .diam2 {
+    left: 37.5%;
+    bottom: calc(100% / 3);
+}
+
+#flag-vc .diam3 {
+    right: 37.5%;
+    bottom: calc(100% / 3);
+}
