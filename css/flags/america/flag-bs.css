@@ -2,20 +2,14 @@
 
 #flag-bs {
     aspect-ratio: 2 / 1;
-    position: relative;
-    background-color: #00778B;
-}
-
-#flag-bs .rect {
-    height: calc(100% / 3);
-    position: relative;
-    top: calc(100% / 3);
-    background-color: #FFC72C;
+    background: linear-gradient(to bottom,
+        #00778B calc(100% / 3),
+        #FFC72C calc(100% / 3) calc(100% / 1.5),
+        #00778B calc(100% / 1.5));
 }
 
 #flag-bs .poly {
-    position: absolute;
-    top: 0;
+    position: relative;
     width: calc(100% / 2.4); /* five-twelfths */
     height: 100%;
     background: #000;

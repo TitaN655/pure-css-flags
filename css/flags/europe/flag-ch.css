@@ -6,8 +6,8 @@
     background-color: #f00;
 }
 
-#flag-ch div::before,
-#flag-ch div::after {
+#flag-ch .cross::before,
+#flag-ch .cross::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -17,12 +17,12 @@
     transform: translate(-50%, -50%);
 }
 
-#flag-ch div::before {
+#flag-ch .cross::before {
     width: 62.5%;
     height: 18.75%;
 }
 
-#flag-ch div::after {
+#flag-ch .cross::after {
     width: 18.75%;
     height: 62.5%;
 }

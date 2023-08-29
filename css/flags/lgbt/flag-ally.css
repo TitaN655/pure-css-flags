@@ -1,0 +1,34 @@
+#flag-ally {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background: repeating-linear-gradient(to bottom,
+        #000 0 calc(100% / 6),
+        #fff calc(100% / 6) calc(100% / 3));
+}
+
+#flag-ally::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(to bottom,
+        #E50000 0 calc(100% / 6),
+        #FF8D00 calc(100% / 6) calc(100% / 3),
+        #fe0 calc(100% / 3) calc(150% / 3),
+        #028121 calc(150% / 3) calc(100% / 1.5),
+        #004CFF calc(100% / 1.5) calc(125% / 1.5),
+        #708 calc(125% / 1.5) 100%);
+    -webkit-clip-path: polygon(50% 0,
+        0 100%,
+        calc(100% / 3) 100%,
+        50% calc(400% / 6),
+        calc(200% / 3) 100%,
+        100% 100%);
+    clip-path: polygon(50% 0,
+        0 100%,
+        calc(100% / 3) 100%,
+        50% calc(400% / 6),
+        calc(200% / 3) 100%,
+        100% 100%);
+}

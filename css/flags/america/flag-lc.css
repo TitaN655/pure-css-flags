@@ -5,7 +5,7 @@
     background-color: #66CCFF;
 }
 
-#flag-lc div {
+#flag-lc .poly {
     /* measurement units according to construction sheet */
     width: calc(150% / 4.5);
     height: calc(370.80992425% / 4.5);
@@ -19,7 +19,7 @@
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
-#flag-lc div::before {
+#flag-lc .poly::before {
     content: '';
     /* measurement units according to construction sheet */
     width: calc(100% - (100% / 7.416198485));
@@ -34,7 +34,7 @@
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
-#flag-lc div::after {
+#flag-lc .poly::after {
     content: '';
     width: 100%;
     height: 50%;

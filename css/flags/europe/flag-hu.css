@@ -2,23 +2,8 @@
 
 #flag-hu {
     aspect-ratio: 2 / 1;
-    position: relative;
-    background-color: #fff;
-}
-
-#flag-hu::before,
-#flag-hu::after {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
-}
-
-#flag-hu::before {
-    background-color: #CE2939;
-}
-
-#flag-hu::after {
-    bottom: 0;
-    background-color: #477050;
+    background: linear-gradient(to bottom,
+        #CE2939 calc(100% / 3),
+        #fff calc(100% / 3) calc(100% / 1.5),
+        #477050 calc(100% / 1.5));
 }

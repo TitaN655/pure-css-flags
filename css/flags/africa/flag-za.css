@@ -15,7 +15,6 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);
 }
 
-
 #flag-za .rect1 {
     width: 50%;
     height: calc(100% / 3);

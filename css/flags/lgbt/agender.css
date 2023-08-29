@@ -1,29 +1,11 @@
 #agender {
     aspect-ratio: 3 / 2;
-    background-color: #000;
-}
-
-#agender div {
-    height: calc(500% / 7);
-    position: relative;
-    top: calc(100% / 7);
-    background-color: #B6B6B6;
-}
-
-#agender div::before {
-    content: '';
-    height: calc(300% / 5);
-    width: 100%;
-    position: absolute;
-    top: calc(100% / 5);
-    background-color: #fff;
-}
-
-#agender div::after {
-    content: '';
-    height: calc(100% / 5);
-    width: 100%;
-    position: absolute;
-    top: calc(200% / 5);
-    background-color: #BBF884;
+    background: linear-gradient(to bottom,
+        #000 0 calc(100% / 7),
+        #B6B6B6 calc(100% / 7) calc(100% / 3.5),
+        #fff calc(100% / 3.5) calc(150% / 3.5),
+        #BBF884 calc(150% / 3.5) calc(100% / 1.75),
+        #fff calc(100% / 1.75) calc(125% / 1.75),
+        #B6B6B6 calc(125% / 1.75) calc(150% / 1.75),
+        #000 calc(150% / 1.75) 100%);
 }

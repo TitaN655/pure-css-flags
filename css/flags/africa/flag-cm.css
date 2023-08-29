@@ -3,27 +3,13 @@
 #flag-cm {
     aspect-ratio: 3 / 2;
     position: relative;
-    background-color: #CE1126;
+    background: linear-gradient(to right,
+        #007A5E calc(100% / 3),
+        #CE1126 calc(100% / 3) calc(100% / 1.5),
+        #FCD116 calc(100% / 1.5));
 }
 
-#flag-cm::before,
-#flag-cm::after {
-    content: '';
-    height: 100%;
-    width: calc(100% / 3);
-    position: absolute;
-}
-
-#flag-cm::before {
-    background-color: #007A5E;
-}
-
-#flag-cm::after {
-    right: 0;
-    background-color: #FCD116;
-}
-
-#flag-cm div {
+#flag-cm .star {
     aspect-ratio: 1 / 1;
     width: calc(100% / 4.5);
     position: absolute;

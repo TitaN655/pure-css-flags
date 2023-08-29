@@ -1,0 +1,11 @@
+#gaymen {
+    aspect-ratio: 3 / 2;
+    background: linear-gradient(to bottom,
+        #078D70 0 calc(100% / 7),
+        #26CEAA calc(100% / 7) calc(100% / 3.5),
+        #98E8C1 calc(100% / 3.5) calc(150% / 3.5),
+        #fff calc(150% / 3.5) calc(100% / 1.75),
+        #7BADE2 calc(100% / 1.75) calc(125% / 1.75),
+        #5049CC calc(125% / 1.75) calc(150% / 1.75),
+        #3D1A78 calc(150% / 1.75) 100%);
+}

@@ -3,19 +3,10 @@
 #flag-na {
     aspect-ratio: 3 / 2;
     position: relative;
-    background-color: #002F6C;
+    background: linear-gradient(146.31deg,
+        #002F6C 0 50%,
+        #009A44 50% 100%);
     overflow: hidden;
-}
-
-#flag-na::after {
-    content: '';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    right: 0;
-    background-color: #009A44;
-    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
 
 #flag-na .rect {

@@ -23,7 +23,7 @@
     background-color: #3A7728;
 }
 
-#flag-gm > div {
+#flag-gm > .rect {
     height: calc(100% / 4.5);
     position: relative;
     top: 50%;

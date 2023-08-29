@@ -2,31 +2,12 @@
 
 #flag-ae {
     aspect-ratio: 2 / 1;
-    position: relative;
-    background-color: #fff;
-}
-
-#flag-ae::before,
-#flag-ae::after {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
-}
-
-#flag-ae::before {
-    background-color: #00843D;
-}
-
-#flag-ae::after {
-    bottom: 0;
-    background-color: #000;
-}
-
-#flag-ae div {
-    position: relative;
-    width: 25%;
-    height: 100%;
-    background: #f00;
-    z-index: 1;
+    background:
+        linear-gradient(to right,
+            #f00 0 25%,
+            transparent 25% 100%),
+        linear-gradient(to bottom,
+            #00843D calc(100% / 3),
+            #fff calc(100% / 3) calc(100% / 1.5),
+            #000 calc(100% / 1.5));
 }

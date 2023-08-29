@@ -2,23 +2,8 @@
 
 #flag-lu {
     aspect-ratio: 5 / 3;
-    position: relative;
-    background-color: #fff;
-}
-
-#flag-lu::before,
-#flag-lu::after {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
-}
-
-#flag-lu::before {
-    background-color: #EF3340;
-}
-
-#flag-lu::after {
-    bottom: 0;
-    background-color: #00A3E0;
+    background: linear-gradient(to bottom,
+        #EF3340 calc(100% / 3),
+        #fff calc(100% / 3) calc(100% / 1.5),
+        #00A3E0 calc(100% / 1.5));
 }

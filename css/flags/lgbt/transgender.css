@@ -1,20 +1,9 @@
 #transgender {
     aspect-ratio: 3 / 2;
-    background-color: #60CFFA;
-}
-
-#transgender div {
-    height: calc(300% / 5);
-    position: relative;
-    top: calc(100% / 5);
-    background-color: #F4A8BA;
-}
-
-#transgender div::after {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
-    top: calc(100% / 3);
-    background-color: #fff;
+    background: linear-gradient(to bottom,
+        #60CFFA 0 20%,
+        #F4A8BA 20% 40%,
+        #fff 40% 60%,
+        #F4A8BA 60% 80%,
+        #60CFFA 80% 100%);
 }

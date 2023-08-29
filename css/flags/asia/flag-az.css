@@ -3,24 +3,10 @@
 #flag-az {
     aspect-ratio: 2 / 1;
     position: relative;
-    background-color: #EF3340;
-}
-
-#flag-az::before,
-#flag-az::after {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
-}
-
-#flag-az::before {
-    background-color: #00B5E2;
-}
-
-#flag-az::after {
-    bottom: 0;
-    background-color: #509E2F;
+    background: linear-gradient(to bottom,
+        #00B5E2 calc(100% / 3),
+        #EF3340 calc(100% / 3) calc(100% / 1.5),
+        #509E2F calc(100% / 1.5));
 }
 
 #flag-az .cres {

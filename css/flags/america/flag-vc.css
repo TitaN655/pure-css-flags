@@ -3,24 +3,10 @@
 #flag-vc {
     aspect-ratio: 3 / 2;
     position: relative;
-    background-color: #FCD116;
-}
-
-#flag-vc::before,
-#flag-vc::after {
-    content: '';
-    height: 100%;
-    width: 25%;
-    position: absolute;
-}
-
-#flag-vc::before {
-    background-color: #0072C6;
-}
-
-#flag-vc::after {
-    right: 0;
-    background-color: #009E60;
+    background: linear-gradient(to right,
+        #0072C6 0 25%,
+        #FCD116 25% 75%,
+        #009E60 75% 100%);
 }
 
 #flag-vc div {

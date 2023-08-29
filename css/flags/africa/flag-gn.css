@@ -2,23 +2,8 @@
 
 #flag-gn {
     aspect-ratio: 3 / 2;
-    position: relative;
-    background-color: #FCD116;
-}
-
-#flag-gn::before,
-#flag-gn::after {
-    content: '';
-    height: 100%;
-    width: calc(100% / 3);
-    position: absolute;
-}
-
-#flag-gn::before {
-    background-color: #CE1126;
-}
-
-#flag-gn::after {
-    right: 0;
-    background-color: #009460;
+    background: linear-gradient(to right,
+        #CE1126 calc(100% / 3),
+        #FCD116 calc(100% / 3) calc(100% / 1.5),
+        #009460 calc(100% / 1.5));
 }

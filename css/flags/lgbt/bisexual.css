@@ -1,22 +1,7 @@
 #bisexual {
     aspect-ratio: 3 / 2;
-    position: relative;
-    background-color: #9B4797;
-}
-
-#bisexual::before,
-#bisexual::after {
-    content: '';
-    width: 100%;
-    height: calc(200% / 5);
-    position: absolute;
-}
-
-#bisexual::before {
-    background-color: #D50071;
-}
-
-#bisexual::after {
-    bottom: 0;
-    background-color: #002BA9;
+    background: linear-gradient(to bottom,
+        #D50071 0 40%,
+        #9B4797 40% 60%,
+        #002BA9 60% 100%);
 }

@@ -2,12 +2,8 @@
 
 #flag-lv {
     aspect-ratio: 2 / 1;
-    background-color: #9D2235;
-}
-
-#flag-lv div {
-    height: 20%;
-    position: relative;
-    top: 40%;
-    background-color: #fff;
+    background: linear-gradient(to bottom,
+        #9D2235 40%,
+        #fff 40% 60%,
+        #9D2235 60%);
 }

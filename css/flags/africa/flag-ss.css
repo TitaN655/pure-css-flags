@@ -3,33 +3,28 @@
 #flag-ss {
     aspect-ratio: 2 / 1;
     position: relative;
-    background-color: #fff;
-
-    /* measurement units according to construction sheet */
-    --unit-y: calc(100% / 57);
-}
-
-#flag-ss::before,
-#flag-ss::after {
-    content: '';
-    height: calc(var(--unit-y) * 17);
-    width: 100%;
-    position: absolute;
-}
-
-#flag-ss::before {
-    background-color: #000;
-}
-
-#flag-ss::after {
-    bottom: 0;
-    background-color: #078930;
+    background: linear-gradient(to bottom,
+        #000 0 50%,
+        #078930 50% 100%);
 }
 
 #flag-ss .rect {
-    height: calc(var(--unit-y) * 17);
+    /* measurement according to construction sheet */
+    height: calc(calc(100% / 57) * 23);
     width: 100%;
     position: relative;
+    top: 50%;
+    background-color: #fff;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+#flag-ss .rect::after {
+    content: '';
+    /* measurement according to construction sheet */
+    height: calc((100% / 23) * 17);
+    width: 100%;
+    position: absolute;
     top: 50%;
     background-color: #DA121A;
     -webkit-transform: translate(0, -50%);
@@ -45,7 +40,6 @@
     background-color: #0F47AF;
     -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
     clip-path: polygon(100% 50%, 0 0, 0 100%);
-    z-index: 1;
 }
 
 #flag-ss .star {
@@ -81,5 +75,4 @@
         32% 57%,
         2% 35%,
         39% 35%);
-    z-index: 1;
 }

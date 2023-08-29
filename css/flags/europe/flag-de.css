@@ -2,23 +2,8 @@
 
 #flag-de {
     aspect-ratio: 5 / 3;
-    position: relative;
-    background-color: #d00;
-}
-
-#flag-de::before,
-#flag-de::after {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
-}
-
-#flag-de::before {
-    background-color: #000;
-}
-
-#flag-de::after {
-    bottom: 0;
-    background-color: #FFCC00;
+    background: linear-gradient(to bottom,
+        #000 calc(100% / 3),
+        #d00 calc(100% / 3) calc(100% / 1.5),
+        #FFCC00 calc(100% / 1.5));
 }

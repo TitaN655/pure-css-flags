@@ -3,10 +3,12 @@
 #flag-bh {
     aspect-ratio: 5 / 3;
     position: relative;
-    background-color: #fff;
+    background: linear-gradient(to right,
+        #fff 0 40%,
+        #CE1126 40% 100%);
 }
 
-#flag-bh div {
+#flag-bh .poly {
     width: 75%;
     height: 100%;
     position: absolute;

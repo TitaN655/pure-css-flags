@@ -3,24 +3,10 @@
 #flag-ly {
     aspect-ratio: 2 / 1;
     position: relative;
-    background-color: #000;
-}
-
-#flag-ly::before,
-#flag-ly::after {
-    content: '';
-    height: 25%;
-    width: 100%;
-    position: absolute;
-}
-
-#flag-ly::before {
-    background-color: #E70013;
-}
-
-#flag-ly::after {
-    bottom: 0;
-    background-color: #239E46;
+    background: linear-gradient(to bottom,
+        #E70013 0 25%,
+        #000 25% 75%,
+        #239E46 75% 100%);
 }
 
 #flag-ly .cres {

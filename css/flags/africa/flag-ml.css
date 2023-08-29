@@ -3,22 +3,8 @@
 #flag-ml {
     aspect-ratio: 3 / 2;
     position: relative;
-    background-color: #FCD116;
-}
-
-#flag-ml::before,
-#flag-ml::after {
-    content: '';
-    height: 100%;
-    width: calc(100% / 3);
-    position: absolute;
-}
-
-#flag-ml::before {
-    background-color: #14B53A;
-}
-
-#flag-ml::after {
-    right: 0;
-    background-color: #CE1126;
+    background: linear-gradient(to right,
+        #14B53A calc(100% / 3),
+        #FCD116 calc(100% / 3) calc(100% / 1.5),
+        #CE1126 calc(100% / 1.5));
 }

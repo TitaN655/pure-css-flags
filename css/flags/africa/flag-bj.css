@@ -2,24 +2,11 @@
 
 #flag-bj {
     aspect-ratio: 3 / 2;
-    position: relative;
-    background-color: #008850;
-}
-
-#flag-bj::before,
-#flag-bj::after {
-    content: '';
-    height: 50%;
-    width: 60%;
-    position: absolute;
-    left: 40%;
-}
-
-#flag-bj::before {
-    background-color: #FCD20F;
-}
-
-#flag-bj::after {
-    bottom: 0;
-    background-color: #E90929;
+    background: 
+        linear-gradient(to right,
+            #008850 0 40%,
+            transparent 40% 100%),
+        linear-gradient(to bottom,
+            #FCD20F 0 50%,
+            #E90929 50% 100%);
 }

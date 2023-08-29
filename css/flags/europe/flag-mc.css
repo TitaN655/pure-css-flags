@@ -2,14 +2,7 @@
 
 #flag-mc {
     aspect-ratio: 5 / 4;
-    position: relative;
-    background-color: #fff;
-}
-
-#flag-mc::before {
-    content: '';
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    background-color: #CE1126;
+    background: linear-gradient(to bottom,
+        #CE1126 0 50%,
+        #fff 50% 100%);
 }

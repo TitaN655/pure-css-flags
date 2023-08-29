@@ -3,22 +3,13 @@
 #flag-tz {
     aspect-ratio: 3 / 2;
     position: relative;
-    background-color: #1EB53A;
+    background: linear-gradient(146.31deg,
+        #1EB53A 0 50%,
+        #00A3DD 50% 100%);
     overflow: hidden;
 }
 
-#flag-tz::after {
-    content: '';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    right: 0;
-    background-color: #00A3DD;
-    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-}
-
-#flag-tz div {
+#flag-tz .rect {
     /* measurement according to construction sheet */
     height: calc(calc(100% / 48) * 19);
     width: 125%;
@@ -26,13 +17,13 @@
     left: 50%;
     top: 50%;
     background-color: #FCD116;
-    transform:
-        translate(-50%, -50%)
+    -webkit-transform: translate(-50%, -50%)
         rotate(-33.69deg);
-    z-index: 1;
+    transform: translate(-50%, -50%)
+        rotate(-33.69deg);
 }
 
-#flag-tz div::after {
+#flag-tz .rect::after {
     /* measurement according to construction sheet */
     --unit-y: calc(100% / 19);
 

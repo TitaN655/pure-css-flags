@@ -6,7 +6,7 @@
     background-color: #4189DD;
 }
 
-#flag-so div {
+#flag-so .star {
     aspect-ratio: 1 / 1;
     height: calc(162.5% / 3.375);
     position: absolute;

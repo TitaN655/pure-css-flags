@@ -3,52 +3,29 @@
 #flag-cf {
     aspect-ratio: 3 / 2;
     position: relative;
-    background-color: #003082;
+    background: linear-gradient(to bottom,
+        #003082 0 25%,
+        #fff 25% 50%,
+        #289728 50% 75%,
+        #FFCE00 75% 100%);
 }
 
 #flag-cf[data-aspect-ratio="3:5"] {
     aspect-ratio: 5 / 3;
 }
 
-#flag-cf::after {
-    content: '';
-    height: 25%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background-color: #FFCE00;
-}
-
-#flag-cf .rect1 {
-    height: 25%;
-    width: 100%;
-    position: relative;
-    top: 25%;
-    background-color: #fff;
-}
-
-#flag-cf .rect1::after {
-    content: '';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 100%;
-    background-color: #289728;
-}
-
-#flag-cf .rect2 {
+#flag-cf .rect {
     height: 100%;
     width: calc(100% / 6);
-    position: absolute;
+    position: relative;
     top: 0;
     left: 50%;
     background-color: #D21034;
     -webkit-transform: translate(-50%);
     transform: translate(-50%);
-    z-index: 1;
 }
 
-#flag-cf[data-aspect-ratio="3:5"] .rect2 {
+#flag-cf[data-aspect-ratio="3:5"] .rect {
     width: 15%;
 }
 

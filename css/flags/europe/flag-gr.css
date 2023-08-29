@@ -2,22 +2,16 @@
 
 #flag-gr {
     aspect-ratio: 3 / 2;
-    position: relative;
-    background-color: #0D5EAF;
-    
-    /* measurement units according to construction sheet */
-    --unit-x: calc(100% / 27);
-    --unit-y: calc(100% / 18);
-}
-
-#flag-gr div div {
-    background-color: #fff;
+    background: repeating-linear-gradient(to bottom,
+        #0D5EAF 0 calc(100% / 9),
+        #fff calc(100% / 9) calc(100% / 4.5));
 }
 
 #flag-gr .cross {
-    width: calc(var(--unit-x) * 10);
-    height: calc(var(--unit-y) * 10);
-    position: absolute;
+    width: calc(125% / 3.375);
+    height: calc(125% / 2.25);
+    position: relative;
+    background-color: #0D5EAF;
 }
 
 #flag-gr .cross .rect1 {
@@ -25,44 +19,14 @@
     height: 20%;
     position: absolute;
     top: 40%;
+    background-color: #fff;
 }
 
 #flag-gr .cross .rect2 {
     width: 20%;
-    height: 100%;
+    /* +1% accounts for visual glitches */
+    height: 101%;
     position: absolute;
     left: 40%;
-}
-
-#flag-gr .stripes1 {
-    width: calc(var(--unit-x) * 17);
-    height: calc(var(--unit-y) * 8);
-    position: absolute;
-    right: 0;
-}
-
-#flag-gr .stripes2 {
-    width: 100%;
-    height: calc(var(--unit-y) * 8);
-    position: absolute;
-    right: 0;
-    bottom: calc(var(--unit-y) * 2);;
-}
-
-#flag-gr .stripes1 .rect1, 
-#flag-gr .stripes2 .rect1 {
-    content: '';
-    width: 100%;
-    height: 25%;
-    position: absolute;
-    top: 25%;
-}
-
-#flag-gr .stripes1 .rect2, 
-#flag-gr .stripes2 .rect2 {
-    content: '';
-    width: 100%;
-    height: 25%;
-    position: absolute;
-    bottom: 0;
+    background-color: #fff;
 }

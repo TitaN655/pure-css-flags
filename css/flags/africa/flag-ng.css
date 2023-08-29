@@ -2,13 +2,8 @@
 
 #flag-ng {
     aspect-ratio: 2 / 1;
-    background-color: #008753;
-}
-
-#flag-ng div {
-    width: calc(100% / 3);
-    height: 100%;
-    position: relative;
-    left: calc(100% / 3);
-    background-color: #fff;
+    background: linear-gradient(to right,
+        #008753 calc(100% / 3),
+        #fff calc(100% / 3) calc(100% / 1.5),
+        #008753 calc(100% / 1.5));
 }

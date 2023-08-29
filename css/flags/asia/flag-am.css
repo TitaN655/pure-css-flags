@@ -2,23 +2,8 @@
 
 #flag-am {
     aspect-ratio: 2 / 1;
-    position: relative;
-    background-color: #0033A0;
-}
-
-#flag-am::before,
-#flag-am::after {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
-}
-
-#flag-am::before {
-    background-color: #D90012;
-}
-
-#flag-am::after {
-    bottom: 0;
-    background-color: #F2A800;
+    background: linear-gradient(to bottom,
+        #D90012 calc(100% / 3),
+        #0033A0 calc(100% / 3) calc(100% / 1.5),
+        #F2A800 calc(100% / 1.5));
 }

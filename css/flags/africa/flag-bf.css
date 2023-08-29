@@ -3,18 +3,12 @@
 #flag-bf {
     aspect-ratio: 3 / 2;
     position: relative;
-    background-color: #009E49;
+    background: linear-gradient(to bottom,
+        #EF2B2D 0 50%,
+        #009E49 50% 100%);
 }
 
-#flag-bf::before {
-    content: '';
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    background-color: #EF2B2D;
-}
-
-#flag-bf div {
+#flag-bf .star {
     aspect-ratio: 1 / 1;
     width: calc(100% / 4.5);
     position: absolute;
@@ -43,5 +37,4 @@
         32% 57%,
         2% 35%,
         39% 35%);
-    z-index: 1;
 }

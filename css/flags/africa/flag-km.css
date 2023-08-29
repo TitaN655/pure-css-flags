@@ -3,33 +3,11 @@
 #flag-km {
     aspect-ratio: 5 / 3;
     position: relative;
-    background-color: #FFD100;
-}
-
-#flag-km::after {
-    content: '';
-    height: 25%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background-color: #003DA5;
-}
-
-#flag-km .rect {
-    height: 25%;
-    width: 100%;
-    position: relative;
-    top: 25%;
-    background-color: #fff;
-}
-
-#flag-km .rect::after {
-    content: '';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 100%;
-    background-color: #EF3340;
+    background: linear-gradient(to bottom,
+        #FFD100 0 25%,
+        #fff 25% 50%,
+        #EF3340 50% 75%,
+        #003DA5 75% 100%);
 }
 
 #flag-km .poly {
@@ -40,7 +18,6 @@
     background: #009639;
     -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
     clip-path: polygon(100% 50%, 0 0, 0 100%);
-    z-index: 1;
 }
 
 #flag-km .cres {

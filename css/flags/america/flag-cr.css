@@ -2,21 +2,10 @@
 
 #flag-cr {
     aspect-ratio: 3 / 2;
-    background-color: #001489;
-}
-
-#flag-cr div {
-    height: calc(200% / 3);
-    position: relative;
-    top: calc(100% / 6);
-    background-color: #fff;
-}
-
-#flag-cr div::after {
-    content: '';
-    height: 50%;
-    width: 100%;
-    position: absolute;
-    top: 25%;
-    background-color: #DA291C;
+    background: linear-gradient(to bottom,
+        #001489 0 calc(100% / 6),
+        #fff calc(100% / 6) calc(100% / 3),
+        #DA291C calc(100% / 3) calc(100% / 1.5),
+        #fff calc(100% / 1.5) calc(125% / 1.5),
+        #001489 calc(125% / 1.5) 100%);
 }

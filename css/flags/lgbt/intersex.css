@@ -4,7 +4,7 @@
     background-color: #FEDB09;
 }
 
-#intersex div {
+#intersex .circ {
     aspect-ratio: 1 / 1;
     height: 49%;
     position: absolute;
@@ -16,7 +16,7 @@
     transform: translate(-50%, -50%);
 }
 
-#intersex div::after {
+#intersex .circ::after {
     content: '';
     aspect-ratio: 1 / 1;
     height: calc(194% / 2.94);

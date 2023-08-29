@@ -3,27 +3,13 @@
 #flag-gh {
     aspect-ratio: 3 / 2;
     position: relative;
-    background-color: #FCD20F;
+    background: linear-gradient(to bottom,
+        #CF0921 calc(100% / 3),
+        #FCD20F calc(100% / 3) calc(100% / 1.5),
+        #006B3D calc(100% / 1.5));
 }
 
-#flag-gh::before,
-#flag-gh::after {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
-}
-
-#flag-gh::before {
-    background-color: #CF0921;
-}
-
-#flag-gh::after {
-    bottom: 0;
-    background-color: #006B3D;
-}
-
-#flag-gh div {
+#flag-gh .star {
     /* measurements according to construction sheet */
     aspect-ratio: 1 / 1;
     width: calc((100% / 18) * 4.422291236);

@@ -2,23 +2,8 @@
 
 #flag-ci {
     aspect-ratio: 3 / 2;
-    position: relative;
-    background-color: #fff;
-}
-
-#flag-ci::before,
-#flag-ci::after {
-    content: '';
-    height: 100%;
-    width: calc(100% / 3);
-    position: absolute;
-}
-
-#flag-ci::before {
-    background-color: #F77F00;
-}
-
-#flag-ci::after {
-    right: 0;
-    background-color: #009E60;
+    background: linear-gradient(to right,
+        #F77F00 calc(100% / 3),
+        #fff calc(100% / 3) calc(100% / 1.5),
+        #009E60 calc(100% / 1.5));
 }

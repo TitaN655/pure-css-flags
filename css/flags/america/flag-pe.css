@@ -2,13 +2,8 @@
 
 #flag-pe {
     aspect-ratio: 3 / 2;
-    background-color: #D91023;
-}
-
-#flag-pe div {
-    width: calc(100% / 3);
-    height: 100%;
-    position: relative;
-    left: calc(100% / 3);
-    background-color: #fff;
+    background: linear-gradient(to right,
+        #D91023 calc(100% / 3),
+        #fff calc(100% / 3) calc(100% / 1.5),
+        #D91023 calc(100% / 1.5));
 }

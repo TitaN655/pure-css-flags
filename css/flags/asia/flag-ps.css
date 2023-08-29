@@ -2,33 +2,17 @@
 
 #flag-ps {
     aspect-ratio: 2 / 1;
-    position: relative;
-    background-color: #fff;
+    background: linear-gradient(to bottom,
+        #000 calc(100% / 3),
+        #fff calc(100% / 3) calc(100% / 1.5),
+        #009736 calc(100% / 1.5));
 }
 
-#flag-ps::before,
-#flag-ps::after {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
-}
-
-#flag-ps::before {
-    background-color: #000;
-}
-
-#flag-ps::after {
-    bottom: 0;
-    background-color: #009736;
-}
-
-#flag-ps div {
+#flag-ps .poly {
     position: relative;
     width: calc(100% / 3);
     height: 100%;
     background: #EE2A35;
     -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
     clip-path: polygon(100% 50%, 0 0, 0 100%);
-    z-index: 1;
 }

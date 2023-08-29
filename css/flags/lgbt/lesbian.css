@@ -1,37 +1,9 @@
 #lesbian {
     aspect-ratio: 3 / 2;
-    position: relative;
-    background-color: #fff;
-}
-
-#lesbian .upper-pt {
-    width: 100%;
-    height: calc(200% / 5);
-    position: relative;
-    background-color: #D52D00;
-}
-
-#lesbian .lower-pt {
-    width: 100%;
-    height: calc(200% / 5);
-    position: absolute;
-    bottom: 0;
-    background-color: #D362A4;
-}
-
-#lesbian .upper-pt::after,
-#lesbian .lower-pt::after {
-    content: '';
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    bottom: 0;
-}
-
-#lesbian .upper-pt::after {
-    background-color: #FF9A56;
-}
-
-#lesbian .lower-pt::after {
-    background-color: #A31B62;
+    background: linear-gradient(to bottom,
+        #D52D00 0 20%,
+        #FF9A56 20% 40%,
+        #fff 40% 60%,
+        #D362A4 60% 80%,
+        #A31B62 80% 100%);
 }

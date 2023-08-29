@@ -5,15 +5,15 @@
     background-color: #C10000;
 }
 
-#flag-to div {
+#flag-to .cross {
     width: calc(125% / 3);
     height: 50%;
     position: relative;
     background-color: #fff;
 }
 
-#flag-to div::before,
-#flag-to div::after {
+#flag-to .cross::before,
+#flag-to .cross::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -23,12 +23,12 @@
     transform: translate(-50%, -50%);
 }
 
-#flag-to div::before {
+#flag-to .cross::before {
     width: 45%;
     height: 25%;
 }
 
-#flag-to div::after {
+#flag-to .cross::after {
     width: 15%;
     height: 75%;
 }

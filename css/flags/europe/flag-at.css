@@ -2,12 +2,8 @@
 
 #flag-at {
     aspect-ratio: 3 / 2;
-    background-color: #ED2939;
-}
-
-#flag-at div {
-    height: calc(100% / 3);
-    position: relative;
-    top: calc(100% / 3);
-    background-color: #fff;
+    background: linear-gradient(to bottom,
+        #ED2939 calc(100% / 3),
+        #fff calc(100% / 3) calc(100% / 1.5),
+        #ED2939 calc(100% / 1.5));
 }

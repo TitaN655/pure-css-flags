@@ -3,16 +3,9 @@
 #flag-cl {
     aspect-ratio: 3 / 2;
     position: relative;
-    background-color: #fff;
-}
-
-#flag-cl::after {
-    content: '';
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    bottom: 0;
-    background-color: #D52B1E;
+    background: linear-gradient(to bottom,
+        #fff 0 50%,
+        #D52B1E 50% 100%);
 }
 
 #flag-cl .rect {

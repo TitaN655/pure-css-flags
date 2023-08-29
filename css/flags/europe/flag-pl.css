@@ -2,14 +2,7 @@
 
 #flag-pl {
     aspect-ratio: 8 / 5;
-    position: relative;
-    background-color: #DC143C;
-}
-
-#flag-pl::before {
-    content: '';
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    background-color: #fff;
+    background: linear-gradient(to bottom,
+        #fff 0 50%,
+        #DC143C 50% 100%);
 }

@@ -1,31 +1,8 @@
 #nonbinary {
     aspect-ratio: 3 / 2;
-    position: relative;
-    background-color: #FFF82F;
-}
-
-#nonbinary::after {
-    content: '';
-    height: 25%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background-color: #000;
-}
-
-#nonbinary div {
-    height: 25%;
-    width: 100%;
-    position: relative;
-    top: 25%;
-    background-color: #fff;
-}
-
-#nonbinary div::after {
-    content: '';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 100%;
-    background-color: #9C4DD2;
+    background: linear-gradient(to bottom,
+        #FFF82F 0 25%,
+        #fff 25% 50%,
+        #9C4DD2 50% 75%,
+        #000 75% 100%);
 }

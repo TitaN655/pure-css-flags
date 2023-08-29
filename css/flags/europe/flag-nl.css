@@ -2,23 +2,8 @@
 
 #flag-nl {
     aspect-ratio: 3 / 2;
-    position: relative;
-    background-color: #fff;
-}
-
-#flag-nl::before,
-#flag-nl::after {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
-}
-
-#flag-nl::before {
-    background-color: #AD1D25;
-}
-
-#flag-nl::after {
-    bottom: 0;
-    background-color: #1E4785;
+    background: linear-gradient(to bottom,
+        #AD1D25 calc(100% / 3),
+        #fff calc(100% / 3) calc(100% / 1.5),
+        #1E4785 calc(100% / 1.5));
 }

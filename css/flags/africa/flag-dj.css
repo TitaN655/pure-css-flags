@@ -3,27 +3,18 @@
 #flag-dj {
     aspect-ratio: 3 / 2;
     position: relative;
-    background-color: #6AB2E7;
-}
-
-#flag-dj::after {
-    content: '';
-    height: 50%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background-color: #12AD2B;
+    background: linear-gradient(to bottom,
+        #6AB2E7 0 50%,
+        #12AD2B 50% 100%);
 }
 
 #flag-dj .poly {
     /* equilateral triangle based on height of flag */
     height: 100%;
     width: calc((50% / 1.5) * tan(60deg));
-    position: relative;
     background-color: #fff;
     -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
     clip-path: polygon(100% 50%, 0 0, 0 100%);
-    z-index: 1;
 }
 
 #flag-dj .star {
@@ -57,5 +48,4 @@
         32% 57%,
         2% 35%,
         39% 35%);
-    z-index: 1;
 }

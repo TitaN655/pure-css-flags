@@ -2,23 +2,8 @@
 
 #flag-ie {
     aspect-ratio: 2 / 1;
-    position: relative;
-    background-color: #fff;
-}
-
-#flag-ie::before,
-#flag-ie::after {
-    content: '';
-    height: 100%;
-    width: calc(100% / 3);
-    position: absolute;
-}
-
-#flag-ie::before {
-    background-color: #169B62;
-}
-
-#flag-ie::after {
-    right: 0;
-    background-color: #FF883E;
+    background: linear-gradient(to right,
+        #169B62 calc(100% / 3),
+        #fff calc(100% / 3) calc(100% / 1.5),
+        #FF883E calc(100% / 1.5));
 }

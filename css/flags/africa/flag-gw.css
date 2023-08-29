@@ -3,31 +3,13 @@
 #flag-gw {
     aspect-ratio: 2 / 1;
     position: relative;
-    background-color: #CE1126;
-}
-
-#flag-gw .rect {
-    height: 100%;
-    width: calc(200% / 3);
-    position: absolute;
-    right: 0;
-}
-
-#flag-gw .rect::before,
-#flag-gw .rect::after {
-    content: '';
-    height: 50%;
-    width: 100%;
-    position: absolute;
-}
-
-#flag-gw .rect::before {
-    background-color: #FCD116;
-}
-
-#flag-gw .rect::after {
-    bottom: 0;
-    background-color: #009E49;
+    background: 
+        linear-gradient(to right,
+            #CE1126 0 calc(100% / 3),
+            transparent calc(100% / 3) 100%),
+        linear-gradient(to bottom,
+            #FCD116 0 50%,
+            #008850 50% 100%);
 }
 
 #flag-gw .star {

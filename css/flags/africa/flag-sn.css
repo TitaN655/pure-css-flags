@@ -3,27 +3,13 @@
 #flag-sn {
     aspect-ratio: 3 / 2;
     position: relative;
-    background-color: #FDEF42;
+    background: linear-gradient(to right,
+        #00853F calc(100% / 3),
+        #FDEF42 calc(100% / 3) calc(100% / 1.5),
+        #E31B23 calc(100% / 1.5));
 }
 
-#flag-sn::before,
-#flag-sn::after {
-    content: '';
-    height: 100%;
-    width: calc(100% / 3);
-    position: absolute;
-}
-
-#flag-sn::before {
-    background-color: #00853F;
-}
-
-#flag-sn::after {
-    right: 0;
-    background-color: #E31B23;
-}
-
-#flag-sn div {
+#flag-sn .star {
     aspect-ratio: 1 / 1;
     width: calc(100% / 4.5);
     position: absolute;

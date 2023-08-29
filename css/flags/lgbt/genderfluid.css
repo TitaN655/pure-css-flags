@@ -1,37 +1,9 @@
 #genderfluid {
     aspect-ratio: 3 / 2;
-    position: relative;
-    background-color: #BD00D7;
-}
-
-#genderfluid .upper-pt {
-    width: 100%;
-    height: calc(200% / 5);
-    position: relative;
-    background-color: #FD6EA4;
-}
-
-#genderfluid .lower-pt {
-    width: 100%;
-    height: calc(200% / 5);
-    position: absolute;
-    bottom: 0;
-    background-color: #000;
-}
-
-#genderfluid .upper-pt::after,
-#genderfluid .lower-pt::after {
-    content: '';
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    bottom: 0;
-}
-
-#genderfluid .upper-pt::after {
-    background-color: #fff;
-}
-
-#genderfluid .lower-pt::after {
-    background-color: #2F2FBE;
+    background: linear-gradient(to bottom,
+        #FD6EA4 0 20%,
+        #fff 20% 40%,
+        #BD00D7 40% 60%,
+        #000 60% 80%,
+        #2F2FBE 80% 100%);
 }

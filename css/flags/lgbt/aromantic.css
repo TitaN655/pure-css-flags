@@ -1,37 +1,9 @@
 #aromantic {
     aspect-ratio: 3 / 2;
-    position: relative;
-    background-color: #fff;
-}
-
-#aromantic .upper-pt {
-    width: 100%;
-    height: calc(200% / 5);
-    position: relative;
-    background-color: #338733;
-}
-
-#aromantic .lower-pt {
-    width: 100%;
-    height: calc(200% / 5);
-    position: absolute;
-    bottom: 0;
-    background-color: #aaa;
-}
-
-#aromantic .upper-pt::after,
-#aromantic .lower-pt::after {
-    content: '';
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    bottom: 0;
-}
-
-#aromantic .upper-pt::after {
-    background-color: #AAD77A;
-}
-
-#aromantic .lower-pt::after {
-    background-color: #000;
+    background: linear-gradient(to bottom,
+        #338733 0 20%,
+        #AAD77A 20% 40%,
+        #fff 40% 60%,
+        #aaa 60% 80%,
+        #000 80% 100%);
 }

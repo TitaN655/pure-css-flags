@@ -3,10 +3,12 @@
 #flag-qa {
     aspect-ratio: 28 / 11;
     position: relative;
-    background-color: #fff;
+    background: linear-gradient(to right,
+        #fff 0 calc(125% / 3.5),
+        #8A1538 calc(125% / 3.5) 100%);
 }
 
-#flag-qa div {
+#flag-qa .poly {
     width: calc(500% / 7);
     height: 100%;
     position: absolute;

@@ -3,32 +3,18 @@
 #flag-sd {
     aspect-ratio: 2 / 1;
     position: relative;
-    background-color: #fff;
-}
-
-#flag-sd::before,
-#flag-sd::after {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
+    background: linear-gradient(to bottom,
+        #D21034 calc(100% / 3),
+        #fff calc(100% / 3) calc(100% / 1.5),
+        #000 calc(100% / 1.5));
 }
 
 #flag-sd::before {
-    background-color: #D21034;
-}
-
-#flag-sd::after {
-    bottom: 0;
-    background-color: #000;
-}
-
-#flag-sd > div {
-    position: relative;
+    content: '';
     width: calc(100% / 3);
     height: 100%;
+    position: absolute;
     background: #007229;
     -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
     clip-path: polygon(100% 50%, 0 0, 0 100%);
-    z-index: 1;
 }

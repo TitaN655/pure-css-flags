@@ -2,21 +2,16 @@
 
 #flag-la {
     aspect-ratio: 3 / 2;
-    background-color: #CE1126;
+    background: linear-gradient(to bottom,
+        #CE1126 0 25%,
+        #002868 25% 75%,
+        #CE1126 75% 100%);
 }
 
-#flag-la div {
-    height: 50%;
-    position: relative;
-    top: 25%;
-    background-color: #002868;
-}
-
-#flag-la div::after {
-    content: '';
+#flag-la .circ {
     aspect-ratio: 1 / 1;
-    width: calc(100% / 3.75);
-    position: absolute;
+    height: 40%;
+    position: relative;
     top: 50%;
     left: 50%;
     background-color: #fff;

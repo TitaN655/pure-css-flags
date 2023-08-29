@@ -2,23 +2,8 @@
 
 #flag-ru {
     aspect-ratio: 3 / 2;
-    position: relative;
-    background-color: #0036A7;
-}
-
-#flag-ru::before,
-#flag-ru::after {
-    content: '';
-    height: calc(100% / 3);
-    width: 100%;
-    position: absolute;
-}
-
-#flag-ru::before {
-    background-color: #fff;
-}
-
-#flag-ru::after {
-    bottom: 0;
-    background-color: #D62718;
+    background: linear-gradient(to bottom,
+        #fff calc(100% / 3),
+        #0036A7 calc(100% / 3) calc(100% / 1.5),
+        #D62718 calc(100% / 1.5));
 }
