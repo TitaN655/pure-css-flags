@@ -1,0 +1,63 @@
+/* Democratic People's Republic of Korea (North Korea) */
+
+#flag-kp {
+    aspect-ratio: 2 / 1;
+    background-color: #024FA2;
+}
+
+#flag-kp .rect {
+    width: 100%;
+    height: calc(100% / 1.5);
+    position: relative;
+    top: calc(100% / 6);
+    background-color: #fff;
+}
+
+#flag-kp .rect::before {
+    content: '';
+    width: 100%;
+    height: calc(137.5% / 1.5);
+    position: absolute;
+    top: calc(100% / 24);
+    background-color: #ED1C27;
+}
+
+#flag-kp .circ {
+    width: calc(100% / 4.5);
+    height: calc(100% / 1.5);
+    position: relative;
+    top: calc(100% / 6);
+    left: calc(100% / 4.5);
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+#flag-kp .star {
+    width: 96.875%;
+    height: 96.875%;
+    position: relative;
+    top: 1.5625%;
+    left: 1.5625%;
+    background-color: #ED1C27;
+    /* 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+}

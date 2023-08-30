@@ -1,0 +1,63 @@
+/* Honduras */
+
+#flag-hn {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background: linear-gradient(to bottom,
+        #00BCE4 calc(100% / 3),
+        #fff calc(100% / 3) calc(100% / 1.5),
+        #00BCE4 calc(100% / 1.5));
+}
+
+#flag-hn div {
+    aspect-ratio: 1 / 1;
+    height: calc(100% / 9);
+    position: absolute;
+    background-color: #00BCE4;
+    /* 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+}
+
+#flag-hn .star1 {
+    top: calc(162.5% / 4.5);
+    left: calc(100% / 3);
+}
+
+#flag-hn .star2 {
+    top: calc(118.75% / 2.25);
+    left: calc(100% / 3);
+}
+
+#flag-hn .star3 {
+    top: calc(100% / 2.25);
+    left: calc(106.25% / 2.25)
+}
+
+#flag-hn .star4 {
+    top: calc(162.5% / 4.5);
+    right: calc(100% / 3);
+}
+
+#flag-hn .star5 {
+    top: calc(118.75% / 2.25);
+    right: calc(100% / 3);
+}

@@ -1,0 +1,45 @@
+/* Liberia */
+
+#flag-lr {
+    aspect-ratio: 19 / 10;
+    position: relative;
+    background: repeating-linear-gradient(to bottom,
+        #BF0A30 0 calc(100% / 11),
+        #fff calc(100% / 11) calc(100% / 5.5));
+}
+
+#flag-lr .rect {
+    aspect-ratio: 1 / 1;
+    height: calc(125% / 2.75);
+    background-color: #002868;
+}
+
+#flag-lr .star {
+    aspect-ratio: 1 / 1;
+    height: 60%;
+    position: relative;
+    top: 20%;
+    left: 20%;
+    background-color: #fff;
+    /* 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+}

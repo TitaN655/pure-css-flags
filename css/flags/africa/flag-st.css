@@ -1,0 +1,59 @@
+/* Sao Tome and Principe */
+
+#flag-st {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background: linear-gradient(to bottom,
+        #009739 calc(100% / 3.5),
+        #ffD100 calc(100% / 3.5) calc(125% / 1.75),
+        #009739 calc(125% / 1.75));
+}
+
+#flag-st::before {
+    content: '';
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    background: #EF3340;
+    -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+
+#flag-st div {
+    aspect-ratio: 1 / 1;
+    height: 34.22011075%;
+    position: absolute;
+    top: calc(181.25% / 5.25);
+    background-color: #000;
+    /* 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+}
+
+#flag-st .star1 {
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#flag-st .star2 {
+    left: 75%;
+    transform: translate(-50%);
+}

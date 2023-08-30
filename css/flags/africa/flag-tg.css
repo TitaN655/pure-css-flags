@@ -1,0 +1,47 @@
+/* Togo */
+
+#flag-tg {
+    /* Golden ratio (φ = (1 + √5) / 2) rounded to 11 significant places */
+    aspect-ratio: 1.61803398875;
+    background: repeating-linear-gradient(to bottom,
+        #006A4D 0 20%,
+        #FFCF00 20% 40%);
+}
+
+#flag-tg .rect {
+    width: 40%;
+    height: 60%;
+    background-color: #D30731;
+}
+
+#flag-tg .star {
+    aspect-ratio: 1 / 1;
+    height: calc(118.75% / 1.875);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+}
