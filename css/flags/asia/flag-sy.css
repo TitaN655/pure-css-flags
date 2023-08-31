@@ -1,0 +1,51 @@
+/* Syria */
+
+#flag-sy {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background: linear-gradient(to bottom,
+        #CE1126 calc(100% / 3),
+        #fff calc(100% / 3) calc(100% / 1.5),
+        #000 calc(100% / 1.5));
+}
+
+#flag-sy div {
+    aspect-ratio: 1 / 1;
+    height: 25%;
+    position: absolute;
+    top: 37.5%;
+    background-color: #007A3D;
+    /* 5-pointed star measured by box */
+    -webkit-clip-path: polygon(50% 0%,
+        61.8% 36.32%,
+        100% 36.32%,
+        69.1% 58.78%,
+        80.9% 95.1%,
+        50% 72.65%,
+        19.1% 95.1%,
+        30.9% 58.78%,
+        0% 36.32%,
+        38.2% 36.32%);
+    clip-path: polygon(50% 0%,
+        61.8% 36.32%,
+        100% 36.32%,
+        69.1% 58.78%,
+        80.9% 95.1%,
+        50% 72.65%,
+        19.1% 95.1%,
+        30.9% 58.78%,
+        0% 36.32%,
+        38.2% 36.32%);
+}
+
+#flag-sy .star1 {
+    left: calc(100% / 3);
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+#flag-sy .star2 {
+    right: calc(100% / 3);
+    -webkit-transform: translate(50%);
+    transform: translate(50%);
+}

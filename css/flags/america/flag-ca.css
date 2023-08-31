@@ -1,0 +1,188 @@
+/* Canada */
+
+#flag-ca {
+    aspect-ratio: 2 / 1;
+    background: linear-gradient(to right,
+        #D52D1E 0 25%,
+        #fff 25% 75%,
+        #D52D1E 75% 100%);
+}
+
+#flag-ca .leaf {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    left: 25%;
+    
+    /* measurement units according to construction sheet */
+    --unit: calc(100% / 96);
+}
+
+#flag-ca .leaf::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #D52D1E;
+    /* Canada-specific polygon resembling a maple leaf measured according to construction sheet */
+    -webkit-clip-path: polygon(50% 8.33%,
+        56.92% 21.92%,
+        58.81% 22.48%,
+        65.63% 18.54%,
+        61.36% 40.46%,
+        63.68% 41.64%,
+        72.5% 32.19%,
+        74.68% 37.33%,
+        76.21% 38.13%,
+        87.5% 35.73%,
+        83.42% 47.65%,
+        84.34% 49.3%,
+        88.75% 51.35%,
+        69.14% 67.23%,
+        68.72% 68.75%,
+        71.15% 75.42%,
+        53.25% 72.26%,
+        50.93% 74.31%,
+        51.88% 92.29%,
+        48.13% 92.29%,
+        49.07% 74.31%,
+        46.75% 72.26%,
+        28.85% 75.42%,
+        31.28% 68.75%,
+        30.86% 67.23%,
+        11.25% 51.35%,
+        15.66% 49.3%,
+        16.37% 47.65%,
+        12.5% 35.73%,
+        23.79% 38.13%,
+        25.32% 37.33%,
+        27.5% 32.19%,
+        36.32% 41.64%,
+        38.64% 40.46%,
+        34.38% 18.54%,
+        41.19% 22.48%,
+        43.08% 21.92%);
+    clip-path: polygon(50% 8.33%,
+        56.92% 21.92%,
+        58.81% 22.48%,
+        65.63% 18.54%,
+        61.36% 40.46%,
+        63.68% 41.64%,
+        72.5% 32.19%,
+        74.68% 37.33%,
+        76.21% 38.13%,
+        87.5% 35.73%,
+        83.42% 47.65%,
+        84.34% 49.3%,
+        88.75% 51.35%,
+        69.14% 67.23%,
+        68.72% 68.75%,
+        71.15% 75.42%,
+        53.25% 72.26%,
+        50.93% 74.31%,
+        51.88% 92.29%,
+        48.13% 92.29%,
+        49.07% 74.31%,
+        46.75% 72.26%,
+        28.85% 75.42%,
+        31.28% 68.75%,
+        30.86% 67.23%,
+        11.25% 51.35%,
+        15.66% 49.3%,
+        16.37% 47.65%,
+        12.5% 35.73%,
+        23.79% 38.13%,
+        25.32% 37.33%,
+        27.5% 32.19%,
+        36.32% 41.64%,
+        38.64% 40.46%,
+        34.38% 18.54%,
+        41.19% 22.48%,
+        43.08% 21.92%);
+}
+
+#flag-ca .leaf div {
+    aspect-ratio: 1 / 1;
+    width: calc(162.5% / 60);
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#flag-ca .arc:nth-child(1),
+#flag-ca .arc:nth-child(2) {
+    width: calc(118.75% / 30);
+}
+
+#flag-ca .arc:nth-child(1) {
+    /* Arc L according to construction sheet */
+    top: calc(var(--unit) * 71.2423);
+    left: calc(var(--unit) * 50.7929);
+}
+
+#flag-ca .arc:nth-child(2) {
+    /* Arc A according to construction sheet */
+    top: calc(var(--unit) * 71.2423);
+    left: calc(var(--unit) * 45.2071);
+}
+
+#flag-ca .arc:nth-child(3) {
+    /* Arc B according to construction sheet */
+    top: calc(var(--unit) * 65.5553);
+    left: calc(var(--unit) * 28.8079);
+}
+
+#flag-ca .arc:nth-child(4) {
+    /* Arc C according to construction sheet */
+    top: calc(var(--unit) * 46.1483);
+    left: calc(var(--unit) * 14.4828);
+}
+
+#flag-ca .arc:nth-child(5) {
+    /* Arc D according to construction sheet */
+    top: calc(var(--unit) * 35.3317);
+    left: calc(var(--unit) * 23.1066);
+}
+
+#flag-ca .arc:nth-child(6) {
+    /* Arc E according to construction sheet */
+    top: calc(var(--unit) * 39.0889);
+    left: calc(var(--unit) * 35.8138);
+}
+
+#flag-ca .arc:nth-child(7) {
+    /* Arc F according to construction sheet */
+    top: calc(var(--unit) * 20.4533);
+    left: calc(var(--unit) * 40.1957);
+}
+
+#flag-ca .arc:nth-child(8) {
+    /* Arc G according to construction sheet */
+    top: calc(var(--unit) * 20.4533);
+    left: calc(var(--unit) * 55.8043);
+}
+
+#flag-ca .arc:nth-child(9) {
+    /* Arc H according to construction sheet */
+    top: calc(var(--unit) * 39.0889);
+    left: calc(var(--unit) * 60.1862);
+}
+
+#flag-ca .arc:nth-child(10) {
+    /* Arc I according to construction sheet */
+    top: calc(var(--unit) * 35.3317);
+    left: calc(var(--unit) * 72.8934);
+}
+
+#flag-ca .arc:nth-child(11) {
+    /* Arc J according to construction sheet */
+    top: calc(var(--unit) * 46.1483);
+    left: calc(var(--unit) * 81.5172);
+}
+
+#flag-ca .arc:nth-child(12) {
+    /* Arc K according to construction sheet */
+    top: calc(var(--unit) * 65.5553);
+    left: calc(var(--unit) * 67.1921);
+}

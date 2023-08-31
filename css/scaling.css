@@ -31,17 +31,17 @@
 }
 
 .scale-medium .flag-container {
-    width: 250px !important;
+    width: 45vw !important;
     height: auto !important;
 }
 
 .scale-large .flag-container {
-    width: 500px !important;
+    width: 70vw !important;
     height: auto !important;
 }
 
 .scale-x-large .flag-container {
-    width: 1000px !important;
+    width: 95vw !important;
     height: auto !important;
 }
 
