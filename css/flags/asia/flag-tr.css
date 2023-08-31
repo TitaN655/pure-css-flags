@@ -9,10 +9,10 @@
 #flag-tr .cres {
     aspect-ratio: 1 / 1;
     height: 50%;
-    background-color: #fff;
     position: absolute;
     top: 50%;
     left: 37.5%;
+    background-color: #fff;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -22,10 +22,10 @@
     content: '';
     aspect-ratio: 1 / 1;
     height: 80%;
-    background-color: #E30A17;
     position: absolute;
     top: 50%;
     left: 62.5%;
+    background-color: #E30A17;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 50%;
