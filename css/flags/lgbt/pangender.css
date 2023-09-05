@@ -1,0 +1,15 @@
+#pangender {
+    aspect-ratio: 3 / 2;
+    background: linear-gradient(to bottom,
+        #FFF798 0 calc(100% / 7),
+        #FEDDCC calc(100% / 7) calc(100% / 3.5),
+        #FFEBFC calc(100% / 3.5) calc(150% / 3.5),
+        #fff calc(150% / 3.5) calc(100% / 1.75),
+        #FFEBFC calc(100% / 1.75) calc(125% / 1.75),
+        #FEDDCC calc(125% / 1.75) calc(150% / 1.75),
+        #FFF798 calc(150% / 1.75) 100%);
+}
+
+#pangender[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}

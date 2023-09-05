@@ -1,0 +1,11 @@
+#polysexual {
+    aspect-ratio: 3 / 2;
+    background: linear-gradient(to bottom,
+        #F61CB9 0 calc(100% / 3),
+        #07D569 calc(100% / 3) calc(100% / 1.5),
+        #1C92F6 calc(100% / 1.5) 100%);
+}
+
+#polysexual[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}

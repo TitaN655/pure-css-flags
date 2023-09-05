@@ -1,0 +1,18 @@
+#demisexual {
+    aspect-ratio: 5 / 3;
+    position: relative;
+    background: linear-gradient(to bottom,
+        #fff 0 calc(125% / 3),
+        #6E0070 calc(125% / 3) calc(175% / 3),
+        #D2D2D2 calc(175% / 3) 100%);
+}
+
+#demisexual::before {
+    content: '';
+    width: 38.25%;
+    height: 100%;
+    position: absolute;
+    background: #000;
+    -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+}

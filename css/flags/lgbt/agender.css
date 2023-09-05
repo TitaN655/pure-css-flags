@@ -9,3 +9,7 @@
         #B6B6B6 calc(125% / 1.75) calc(150% / 1.75),
         #000 calc(150% / 1.75) 100%);
 }
+
+#agender[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}

@@ -1,0 +1,13 @@
+#aroace {
+    aspect-ratio: 3 / 2;
+    background: linear-gradient(to bottom,
+        #E28C00 0 20%,
+        #ECCD00 20% 40%,
+        #fff 40% 60%,
+        #62AEDC 60% 80%,
+        #203856 80% 100%);
+}
+
+#aroace[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}

@@ -6,6 +6,10 @@
         #fff calc(100% / 6) calc(100% / 3));
 }
 
+#flag-ally[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}
+
 #flag-ally::after {
     content: '';
     width: 100%;

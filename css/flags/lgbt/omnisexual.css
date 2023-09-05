@@ -1,0 +1,13 @@
+#omnisexual {
+    aspect-ratio: 3 / 2;
+    background: linear-gradient(to bottom,
+        #FF9BCD 0 20%,
+        #FF53BE 20% 40%,
+        #250046 40% 60%,
+        #675FFF 60% 80%,
+        #8CA5FF 80% 100%);
+}
+
+#omnisexual[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}

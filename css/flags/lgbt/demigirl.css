@@ -1,0 +1,15 @@
+#demigirl {
+    aspect-ratio: 3 / 2;
+    background: linear-gradient(to bottom,
+        #7F7F7F 0 calc(100% / 7),
+        #C4C4C4 calc(100% / 7) calc(100% / 3.5),
+        #FFAEC9 calc(100% / 3.5) calc(150% / 3.5),
+        #fff calc(150% / 3.5) calc(100% / 1.75),
+        #FFAEC9 calc(100% / 1.75) calc(125% / 1.75),
+        #C4C4C4 calc(125% / 1.75) calc(150% / 1.75),
+        #7F7F7F calc(150% / 1.75) 100%);
+}
+
+#demigirl[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}

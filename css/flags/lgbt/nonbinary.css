@@ -6,3 +6,7 @@
         #9C4DD2 50% 75%,
         #000 75% 100%);
 }
+
+#nonbinary[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}

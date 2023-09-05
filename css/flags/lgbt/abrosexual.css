@@ -1,0 +1,13 @@
+#abrosexual {
+    aspect-ratio: 3 / 2;
+    background: linear-gradient(to bottom,
+        #65C286 0 20%,
+        #B4E4CC 20% 40%,
+        #fff 40% 60%,
+        #E796B7 60% 80%,
+        #D9446E 80% 100%);
+}
+
+#abrosexual[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}

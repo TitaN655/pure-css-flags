@@ -6,3 +6,7 @@
         #fff 50% 75%,
         #7F0081 75% 100%);
 }
+
+#asexual[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}

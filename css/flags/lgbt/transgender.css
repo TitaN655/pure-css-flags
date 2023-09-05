@@ -7,3 +7,7 @@
         #F4A8BA 60% 80%,
         #60CFFA 80% 100%);
 }
+
+#transgender[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}

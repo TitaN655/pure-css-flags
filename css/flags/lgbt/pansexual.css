@@ -5,3 +5,7 @@
         #FEDB09 calc(100% / 3) calc(100% / 1.5),
         #27B1FF calc(100% / 1.5) 100%);
 }
+
+#pansexual[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}

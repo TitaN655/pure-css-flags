@@ -7,3 +7,7 @@
         #000 60% 80%,
         #2F2FBE 80% 100%);
 }
+
+#genderfluid[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}

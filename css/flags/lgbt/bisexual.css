@@ -5,3 +5,7 @@
         #9B4797 40% 60%,
         #002BA9 60% 100%);
 }
+
+#bisexual[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}

@@ -1,0 +1,13 @@
+#gray-asexual {
+    aspect-ratio: 3 / 2;
+    background: linear-gradient(to bottom,
+        #740195 0 20%,
+        #B2B2B2 20% 40%,
+        #fff 40% 60%,
+        #B2B2B2 60% 80%,
+        #740195 80% 100%);
+}
+
+#gray-asexual[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}

@@ -1,0 +1,11 @@
+#genderqueer {
+    aspect-ratio: 3 / 2;
+    background: linear-gradient(to bottom,
+        #B57EDC 0 calc(100% / 3),
+        #fff calc(100% / 3) calc(100% / 1.5),
+        #4A8123 calc(100% / 1.5) 100%);
+}
+
+#genderqueer[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}

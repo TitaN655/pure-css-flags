@@ -1,0 +1,25 @@
+#polyamory {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background: linear-gradient(to bottom,
+        #00f 0 calc(100% / 3),
+        #f00 calc(100% / 3) calc(100% / 1.5),
+        #000 calc(100% / 1.5) 100%);
+}
+
+#polyamory::before {
+    /* SVG used due to high the complexity of this component */
+    /* Source (public domain) (modified): https://commons.wikimedia.org/wiki/File:Polyamory_Pride_Flag.svg */
+    content: url("data:image/svg+xml,%3Csvg viewBox='0 0 37.5 34.8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m37.5 0c-0.048 3.44-0.967 5.49-2.76 6.17-0.774 0.338-2.88 0.508-6.31 0.508v20.5c0 3.34 1.02 5.01 3.05 5.01 2.32 0 3.63-2.49 3.92-7.47v-1.23h1.74c-1e-3 7.55-2.54 11.3-7.62 11.3-3.82 0-6.12-1.89-6.89-5.66-0.194-0.822-0.291-1.72-0.291-2.68v-19.8h-9.72v10.7c-0.387 11.6-2.83 17.4-7.33 17.4-2.95 0-4.64-1.6-5.08-4.79-0.096-0.629-0.169-2.2-0.217-4.72h1.74c0 1.89 0.557 3.17 1.67 3.85 0.339 0.242 0.726 0.363 1.16 0.363 3.97 0 5.95-6.85 5.95-20.5v-2.32h-3.63c-2.37 0-3.87 1.06-4.5 3.19-0.048 0.096-0.072 0.193-0.072 0.29h-1.74c0.629-4.02 1.98-6.58 4.06-7.69 1.45-0.726 3.92-1.09 7.4-1.09l21.1 0.508h0.218c1.64 0 2.56-0.629 2.76-1.89z' fill='%23ff0'/%3E%3C/svg%3E%0A");
+    width: 13.028%;
+    height: 18.140625%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* CSS to SVG ratio */
+.css-ratio[data-flag="polyamory"]::after {
+    width: 50%;
+}

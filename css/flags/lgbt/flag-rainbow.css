@@ -8,3 +8,7 @@
         #004CFF calc(100% / 1.5) calc(125% / 1.5),
         #708 calc(125% / 1.5) 100%);
 }
+
+#flag-rainbow[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}

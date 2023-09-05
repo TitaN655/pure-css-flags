@@ -9,3 +9,7 @@
         #5049CC calc(125% / 1.75) calc(150% / 1.75),
         #3D1A78 calc(150% / 1.75) 100%);
 }
+
+#gay-men[data-aspect-ratio="3:5"] {
+    aspect-ratio: 5 / 3;
+}
