@@ -20,11 +20,18 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    margin: .5rem 4px;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: normal;
+}
+
 .flags {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .flag {
@@ -32,10 +39,9 @@ h2 {
     min-width: 175px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
-    background-color: white;
-    padding: 5px 16px;
+    padding: 10px 16px;
+    flex-grow: 1;
 }
 
 .flag-container {
@@ -43,6 +49,7 @@ h2 {
     width: 100%;
     min-width: 175px;
     min-height: 175px;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,9 +59,14 @@ h2 {
     /* Prevents animation when down-scaling */
     -webkit-transition: height 0s;
     transition: height 0s;
+    z-index: 1;
 }
 
 .flag-container:hover {
+    -webkit-box-shadow: -1px 0 black,
+        0 1px black,
+        1px 0 black,
+        0 -1px black;
     box-shadow: -1px 0 black,
         0 1px black,
         1px 0 black,
@@ -94,34 +106,90 @@ h2 {
     }
 }
 
-.flag p {
-    font-size: 1.1rem;
-    text-align: center;
-    margin: .5rem;
+.flag-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-top: transparent;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    flex-grow: 1;
+    -webkit-box-shadow: 0px 3px 4px 0px #ddd;
+    box-shadow: 0px 3px 4px 0px #ddd;
 }
 
-.flag .ratios {
+.css-ratio {
+    position: relative;
+    margin: 4px;
+    padding: 0;
+    padding-top: 1px;
+    border-top: 4px solid;
+    border-color: #264DE4; /* CSS3 colour */
+    font-size: .6rem;
+}
+
+.css-ratio::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: 0;
+    border-top: 4px solid #FFB13B; /* SVG colour */
+    clear: right;
+}
+
+.css-ratio li {
+    display: inline;
+    list-style: none;
+}
+
+.css-ratio li:last-child:not(:first-child) {
+    float: right;
+}
+
+.css-link {
+    color: #264DE4;
+    text-decoration-style: dotted;
+}
+
+.css-link:hover {
+    text-decoration-style: solid;
+}
+
+.css-link:hover::after {
+    content: url("data:image/svg+xml,%3Csvg viewBox='0 0 106 66.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cg transform='translate(0 -19.8)'%3E%3Cpath d='m52.9 19.8c24.9 0 52.9 33.8 52.9 33.1 0-0.686-28 33.1-52.9 33.1-24.9 0-52.9-33.8-52.9-33.1 0 0.686 28-33.1 52.9-33.1z'/%3E%3Ccircle cx='52.9' cy='52.9' r='27.8' fill='%23fff'/%3E%3Ccircle cx='52.9' cy='52.9' r='14.6'/%3E%3C/g%3E%3C/svg%3E%0A");
+    width: 1.2em;
+    height: 1em;
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.ratios {
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.flag .ratios li {
+.ratios li {
     margin: 0;
-    padding: 4px 4%;
+    padding: 4px;
     list-style: none;
 }
 
-.flag .ratios li a {
+.ratios li a {
     padding: 2px 8px;
     border: 1px solid;
+    font-size: .8rem;
     text-decoration: none;
 }
 
-.flag .ratios li a:hover {
+.ratios li a:hover {
     background-color: #CCE6FF;
 }

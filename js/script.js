@@ -1,17 +1,38 @@
-var flagContainers = document.getElementsByClassName("flag-container");
+const flagContainers = document.getElementsByClassName("flag-container");
 
-for (var i = 0; i < flagContainers.length; i++)
+for (let containerNo = 0; containerNo < flagContainers.length; containerNo++)
 {
-    flagContainers[i].addEventListener(
-        "click",
-        (function(i)
+    const container = flagContainers[containerNo];
+
+    container.addEventListener('click',
+        toggleScalable
+            .bind(null, container));
+
+    var flagRatios = container.getElementsByClassName("ratios");
+
+    if (flagRatios.length > 0)
+    {
+        var flagRatio = flagRatios[0];
+        var ratioList = flagRatio.getAttribute("data-ratios")
+            .split(',');
+
+        for (let ratioIndex = 0; ratioIndex < ratioList.length; ratioIndex++) {
+            var aspectRatio = ratioList[ratioIndex];
+
+            flagRatio.innerHTML += 
+                `<li>
+                    <a href=\"javascript:void(0)\" data-aspect-ratio=\"${aspectRatio}\">${aspectRatio}</a>
+                </li>`;
+        }
+
+        flagRatio.querySelectorAll("a").forEach(element =>
         {
-            return function()
-            {
-                toggleScalable(flagContainers[i]);
-            }
-        })(i),
-        false);
+            element.addEventListener('click',
+                (event) => updateAspectRatio(event,
+                    container.querySelector("div[id]"),
+                    element.getAttribute("data-aspect-ratio")));
+        });
+    }
 }
 
 function toggleScalable(element)
@@ -24,7 +45,6 @@ function toggleScalable(element)
     }
     else
     {
-        var flagContainers = document.getElementsByClassName("flag-container");
         for (var i = 0; i < flagContainers.length; i++)
         {
             var containerParent = flagContainers[i].parentElement;
@@ -37,8 +57,8 @@ function toggleScalable(element)
     parent.scrollIntoView(true);
 }
 
-function updateAspectRatio(elementId, ratio)
+function updateAspectRatio(event, element, ratio)
 {
-    var element = document.getElementById(elementId);
+    event.stopPropagation();
     element.setAttribute("data-aspect-ratio", ratio);
 }

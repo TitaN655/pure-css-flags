@@ -17,3 +17,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* CSS to SVG ratio */
+.css-ratio[data-flag="flag-al"]::after {
+    width: 50%;
+}
