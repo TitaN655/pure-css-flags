@@ -1,0 +1,70 @@
+/* Morocco */
+
+#flag-ma {
+    aspect-ratio: 3 / 2;
+    background-color: #C1272D;
+}
+
+#flag-ma .star {
+    width: calc(119.11953125% / 7.03125);
+    height: calc(149.6984375% / 9.375);
+    position: relative;
+    top: calc(196.20625% / 4.6875);
+    left: calc(117.051171875% / 3.515625);
+}
+
+#flag-ma .star > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    transform-origin: calc(117.4625% / 1.1911953125) calc(152.66875% / 2.99396875);
+    -webkit-clip-path: polygon(0 0,
+        77.051% 0,
+        71.871% 25.367%,
+        49.036% 25.367%,
+        100% 84.346%,
+        86.47% 100%);
+    clip-path: polygon(0 0,
+        77.051% 0,
+        71.871% 25.367%,
+        49.036% 25.367%,
+        100% 84.346%,
+        86.47% 100%);
+}
+
+#flag-ma .star > div::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #006233;
+    -webkit-clip-path: polygon(10.088% 5.215%,
+        74.264% 5.215%,
+        71.209% 20.154%,
+        38.948% 20.154%,
+        95.823% 85.959%,
+        87.868% 95.162%);
+    clip-path: polygon(10.088% 5.215%,
+        74.264% 5.215%,
+        71.209% 20.154%,
+        38.948% 20.154%,
+        95.823% 85.959%,
+        87.868% 95.162%);
+}
+
+#flag-ma .pt2 {
+    transform: rotate(72deg);
+}
+
+#flag-ma .pt3 {
+    transform: rotate(144deg);
+}
+
+#flag-ma .pt4 {
+    transform: rotate(216deg);
+}
+
+#flag-ma .pt5 {
+    transform: rotate(288deg);
+}

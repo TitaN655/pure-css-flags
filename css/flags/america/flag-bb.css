@@ -1,0 +1,27 @@
+/* Barbados */
+
+#flag-bb {
+    aspect-ratio: 3 / 2;
+    position: relative;
+    background: linear-gradient(to right,
+        #00267F calc(100% / 3),
+        #FFC726 calc(100% / 3) calc(100% / 1.5),
+        #00267F calc(100% / 1.5));
+}
+
+#flag-bb::before {
+    /* SVG used due to high the complexity of this component */
+    /* Source (public domain) (modified): https://commons.wikimedia.org/wiki/File:Flag_of_Barbados.svg */
+    content: url("data:image/svg+xml,%3Csvg viewBox='0 0 8e3 7752' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath id='h' d='m4e3 2.5e-6c-260 709-525 1447-1092 2012 176-58 484-110 682-105v2982l-842 125c-30-3-40-50-40-114-81-926-300-1704-552-2509-18-110-337-530-91-456 30 4 359 138 307 74-448-464-1103-798-1739-897-56-14-89 14-39 79 844 1299 1550 2832 1544 4651 328 0 1123-194 1452-194v2104h415l95-5876z'/%3E%3Cuse transform='matrix(-1 0 0 1 8e3 0)' xlink:href='%23h'/%3E%3C/svg%3E%0A");
+    width: calc(100% / 3);
+    height: 48.45%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* CSS to SVG ratio */
+.css-ratio[data-flag="flag-bb"]::after {
+    width: 50%;
+}

@@ -1,1 +1,3 @@
 /* CSS files that have not yet been added/updated in flags.min.css */
+@import "./flags/america/flag-bb.css";
+@import "./flags/africa/flag-ma.css";
