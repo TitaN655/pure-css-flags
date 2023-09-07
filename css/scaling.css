@@ -4,6 +4,7 @@
 
 .flag.scalable .flag-container {
     height: 90vh;
+    border-color: #aaa;
     cursor: zoom-out;
     /* Allows animation when up-scaling */
     -webkit-transition: height .5s;
