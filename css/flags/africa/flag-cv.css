@@ -1,0 +1,122 @@
+/* Cabo Verde */
+/* Source: https://www.fotw.info/flags/cv'.html */
+
+#flag-cv {
+    aspect-ratio: 17 / 10;
+    background: linear-gradient(to bottom,
+        #003893 0 50%,
+        #fff 50% 75%,
+        #003893 75% 100%);
+}
+
+#flag-cv[data-aspect-ratio="2:3"] {
+    aspect-ratio: 3 / 2;
+}
+
+#flag-cv .rect {
+    width: 100%;
+    height: calc(100% / 12);
+    position: relative;
+    top: calc(175% / 3);
+    background-color: #CF2027;
+}
+
+#flag-cv .rect div {
+    aspect-ratio: 1 / 1;
+    height: 120%;
+    position: absolute;
+    background-color: #F7D116;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* 5-pointed star measured by cicle */
+    -webkit-clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+    clip-path: polygon(50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%);
+}
+
+#flag-cv .star1 {
+    top: -250%;
+    left: 37.5%
+}
+
+#flag-cv .star2 {
+    top: calc(50% - (300% * cos(36deg)));
+    left: calc(37.5% + ((150% / 10.2) * sin(36deg)));
+}
+
+#flag-cv .star3 {
+    top: calc(50% - (300% * cos(72deg)));
+    left: calc(37.5% + ((150% / 10.2) * sin(72deg)));
+}
+
+#flag-cv .star4 {
+    top: calc(50% + (300% * cos(72deg)));
+    left: calc(37.5% + ((150% / 10.2) * sin(72deg)));
+}
+
+#flag-cv .star5 {
+    top: calc(50% + (300% * cos(36deg)));
+    left: calc(37.5% + ((150% / 10.2) * sin(36deg)));
+}
+
+#flag-cv .star6 {
+    top: 350%;
+    left: 37.5%
+}
+
+#flag-cv .star7 {
+    top: calc(50% + (300% * cos(36deg)));
+    left: calc(37.5% - ((150% / 10.2) * sin(36deg)));
+}
+
+#flag-cv .star8 {
+    top: calc(50% + (300% * cos(72deg)));
+    left: calc(37.5% - ((150% / 10.2) * sin(72deg)));
+}
+
+#flag-cv .star9 {
+    top: calc(50% - (300% * cos(72deg)));
+    left: calc(37.5% - ((150% / 10.2) * sin(72deg)));
+}
+
+#flag-cv .star10 {
+    top: calc(50% - (300% * cos(36deg)));
+    left: calc(37.5% - ((150% / 10.2) * sin(36deg)));
+}
+
+#flag-cv[data-aspect-ratio="2:3"] .star2,
+#flag-cv[data-aspect-ratio="2:3"] .star5 {
+    left: calc(37.5% + ((100% / 6) * sin(36deg)));
+}
+
+#flag-cv[data-aspect-ratio="2:3"] .star3,
+#flag-cv[data-aspect-ratio="2:3"] .star4 {
+    left: calc(37.5% + ((100% / 6) * sin(72deg)));
+}
+
+#flag-cv[data-aspect-ratio="2:3"] .star7,
+#flag-cv[data-aspect-ratio="2:3"] .star10 {
+    left: calc(37.5% - ((100% / 6) * sin(36deg)));
+}
+
+#flag-cv[data-aspect-ratio="2:3"] .star8,
+#flag-cv[data-aspect-ratio="2:3"] .star9 {
+    left: calc(37.5% - ((100% / 6) * sin(72deg)));
+}

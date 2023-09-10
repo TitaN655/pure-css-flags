@@ -1,0 +1,92 @@
+/* Ethiopia */
+
+#flag-et {
+    aspect-ratio: 2 / 1;
+    position: relative;
+    background: linear-gradient(to bottom,
+        #078930 calc(100% / 3),
+        #FCDD09 calc(100% / 3), calc(100% / 1.5),
+        #DA121A calc(100% / 1.5));
+}
+
+#flag-et .circ {
+    width: calc(100% / 3);
+    height: calc(100% / 1.5);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background-color: #0F47AF;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#flag-et .star {
+    width: calc(110.903125% / 9.375);
+    height: 20.6485%;
+    position: absolute;
+    top: calc(175% / 7.5);
+    left: calc(113.090234375% / 2.34375);
+}
+
+#flag-et .flag-obj {
+    width: calc(166.675% / 300);
+    height: 14.4445%;
+    position: absolute;
+    top: calc(145.833203125% / 2.34375);
+    left: 49.72225%;
+}
+
+#flag-et .star div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #FCDD09;
+    -webkit-transform-origin: calc(131.1125% / 8.87225) calc(125% / .9678984375);
+    transform-origin: calc(131.1125% / 8.87225) calc(125% / .9678984375);
+    -webkit-clip-path: polygon(14.777% 0,
+        40.083% 89.237%,
+        100% 89.237%,
+        87.072% 100%,
+        0 100%,
+        3.052% 89.237%,
+        30.207% 89.237%,
+        9.84% 17.414%);
+    clip-path: polygon(14.777% 0,
+        40.083% 89.237%,
+        100% 89.237%,
+        87.072% 100%,
+        0 100%,
+        3.052% 89.237%,
+        30.207% 89.237%,
+        9.84% 17.414%);
+}
+
+#flag-et .flag-obj div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #FCDD09;
+    -webkit-transform-origin: 50% calc(-114.5828125% / 1.354171875);
+    transform-origin: 50% calc(-114.5828125% / 1.354171875);
+}
+
+#flag-et .pt2 {
+    -webkit-transform: rotate(72deg);
+    transform: rotate(72deg);
+}
+
+#flag-et .pt3 {
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
+}
+
+#flag-et .pt4 {
+    -webkit-transform: rotate(216deg);
+    transform: rotate(216deg);
+}
+
+#flag-et .pt5 {
+    -webkit-transform: rotate(288deg);
+    transform: rotate(288deg);
+}
