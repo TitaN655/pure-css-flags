@@ -2,7 +2,6 @@
 
 #flag-tz {
     aspect-ratio: 3 / 2;
-    position: relative;
     background: linear-gradient(146.31deg,
         #1EB53A 0 50%,
         #00A3DD 50% 100%);
@@ -13,7 +12,7 @@
     /* measurement according to construction sheet */
     height: calc(calc(100% / 48) * 19);
     width: 125%;
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 50%;
     background-color: #FCD116;
